@@ -1,0 +1,488 @@
+body {
+	min-width: $base-min-width;
+
+    @include media-breakpoint-down(xl) {
+        line-height: 1.75;
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        line-height: 1.5;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 14px;
+    }
+
+    &.nav-active {
+        overflow: hidden;
+    }
+}
+
+h1, .h1 {
+    @include media-breakpoint-down(xxxl) {
+        font-size: 55px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 48px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 42px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 34px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+    }
+}
+
+h2, .h2 {
+    @include media-breakpoint-down(xxxl) {
+        font-size: 42px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 38px;
+    }
+    
+    @include media-breakpoint-down(xl) {
+        font-size: 34px;
+    }
+    
+    @include media-breakpoint-down(lg) {
+        font-size: 31px;
+    }
+    
+    @include media-breakpoint-down(md) {
+        font-size: 28px;
+    }
+}
+
+h3, .h3 {
+    @include media-breakpoint-down(xxl) {
+        font-size: 32px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 28px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 24px;
+    }
+}
+
+h4, .h4 {
+    @include media-breakpoint-down(xxl) {
+        font-size: 27px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 24px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 21px;
+    }
+}
+
+h5, .h5 {
+    @include media-breakpoint-down(lg) {
+        font-size: 21px;
+    }
+    
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}
+
+p {
+    @include media-breakpoint-down(md) {
+        margin: 0 0 15px;
+    }
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+}
+
+.text-link {
+    color: $primary;
+    font-weight: 600;
+    text-decoration: underline;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+// main container styles
+#wrapper {
+	width: 100%;
+	position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    overflow: hidden;
+    position: relative;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 20px;
+        padding: 15px 35px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 16px;
+    }
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        content: '';
+        border-radius: 40px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &.btn-primary {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:hover {
+            &:before {
+                background: $info;
+            }
+        }
+    }
+
+    &.btn-info {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:hover {
+            &:before {
+                background: $primary;
+            }
+        }
+    }
+
+    &.btn-link {
+        color: $black;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    &.btn-sm {
+        @include media-breakpoint-down(xxl) {
+            padding: 10px 28px;
+            font-size: 17px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+
+    &.btn-green,
+    &.btn-orange,
+    &.btn-brown {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:before {
+            opacity: 0.5;
+        }
+
+        &.btn-sm {
+            font-size: 16px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+
+            @include media-breakpoint-down(md) {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+
+    &.btn-green {
+        &:hover {
+            &:before {
+                background: $dark-green;
+            }
+        }
+    }
+
+    &.btn-orange,
+    &.btn-brown {
+        &:hover {
+            &:before {
+                background: rgba(0,0,0,0.3);
+            }
+        }
+    }
+
+    &.btn-dark-yellow,
+    &.btn-white {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:before {
+            opacity: 0.5;
+        }
+
+        &:hover {
+            &:before {
+                background: #bf8300;
+            }
+        }
+
+        &.btn-sm {
+            font-size: 16px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+    }
+
+    &.btn-white {
+        color: $black;
+        background: $white;
+
+        &:hover {
+            &:before {
+                background: #bfbfbf;
+            }
+        }
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.form-control {
+    color: $black;
+    border-color: #c0c0c0;
+
+    @include media-breakpoint-down(xl) {
+        font-size: 18px;
+        padding: 13px 32px;
+        border-width: 1px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        padding: 10px 25px;
+        border-width: 1px;
+    }
+
+    &:focus {
+        box-shadow: none;
+        border-color: #c0c0c0;
+    }
+
+    &::placeholder {
+        color: rgba(0,0,0,0.3);
+        opacity: 1;
+    }
+
+    &.form-control-sm {
+        min-height: inherit;
+        line-height: 24px;
+    }
+
+    &.form-control-lg {
+        border-radius: 55px;
+        border-width: 2px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 20px;
+            padding: 15px 40px;
+            min-height: inherit;
+        }
+
+        @include media-breakpoint-down(xl) {
+            font-size: 18px;
+            padding: 13px 32px;
+            border-width: 1px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            padding: 10px 25px;
+            border-width: 1px;
+        }
+    }
+}
+
+textarea {
+    resize: none;
+
+    &.form-control {
+        &.form-control-sm {
+            height: 140px;
+            border-radius: 7px;
+        }
+
+        &.form-control-lg {
+            border-radius: 10px;
+            height: 420px;
+
+            @include media-breakpoint-down(xxl) {
+                height: 350px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                height: 280px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                height: 200px;
+            }
+        }
+    }
+}
+
+/* Page Loader Styles */
+.page-loader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 101;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $white;
+	transition: 0.3s;
+
+	.loaded & {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.loader-logo {
+		width: 44px;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 7px;
+		border-radius: 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background: $white;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+	}
+}
+
+.loader-animmte {
+	width: 80px;
+	height: 80px;
+	border: 3px dotted $yellow;
+	border-style: solid solid dotted dotted;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	animation: rotation 2s linear infinite;
+
+	&:after {
+		content: '';  
+		box-sizing: border-box;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		border: 3px dotted $green;
+		border-style: solid solid dotted;
+		width: 64px;
+		height: 64px;
+		border-radius: 50%;
+		animation: rotationBack 1s linear infinite;
+		transform-origin: center center;
+	}
+}
+	
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotationBack {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+/* Tabs */
+.tabsMain {
+    .tabsMainContent {
+        display: none;
+    }
+}

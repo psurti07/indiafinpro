@@ -1,0 +1,316 @@
+.visual-theme-8 {
+    font-family: $font-family-epilogue;
+
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+
+    &:before {
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 73px;
+        height: 73px;
+        content: '';
+        background: url('../images/pattern-circle.png') no-repeat;
+        background-size: 100% 100%;
+        display: none;
+
+        @include media-breakpoint-up(xxxl) {
+            display: block;
+        }
+    }
+
+    &:after {
+        display: none;
+    }
+
+    .visual-textbox {
+        @include media-breakpoint-up(lg) {
+            max-width: 600px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-width: 715px;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            max-width: 790px;
+        }
+
+        &:after {
+            position: absolute;
+            left: -150px;
+            bottom: 18%;
+            width: 84px;
+            height: 16px;
+            background: url('../images/line-zigzag.png') no-repeat;
+            background-size: 100% 100%;
+            content: '';
+        }
+
+        h1, .h1 {
+            font-weight: 800;
+            line-height: 1.2;
+            padding-bottom: 0;
+            font-family: $font-family-epilogue;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 60px;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 75px;
+                margin: 0 0 30px;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            .text-outlined {
+                position: relative;
+
+                &:before {
+                    width: 100%;
+                    height: 6px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: '';
+                    background: url('../images/outline-orange.png') no-repeat;
+                    background-size: 100% 100%;
+
+                    @include media-breakpoint-up(md) {
+                        height: 9px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        height: 12px;
+                    }
+
+                    @include media-breakpoint-up(xxl) {
+                        height: 15px;
+                        max-width: 200px;
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        p {
+            color: #444;
+        }
+    }
+
+    .form-search {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            background: $white;
+            padding: 7px;
+            border-radius: 8px;
+            border: 1px solid #d5d5d5;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-right: -185px;
+            max-width: inherit;
+        }
+    
+        .fields-holder {
+            padding: 13px 0;
+            
+            @include media-breakpoint-down(md) {
+                padding: 0;
+                background: transparent !important;
+            }
+    
+            @include media-breakpoint-up(md) {
+                border-radius: 100px;
+                margin: 0 0 20px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin: 0;
+                flex-grow: 1;
+                min-width: 0;
+            }
+        }
+    
+        .form-group {
+            padding: 8px 20px 8px 55px;
+    
+            @include media-breakpoint-up(md) {
+                padding: 0 25px 0 55px;
+                width: 100%;
+            }
+    
+            + .form-group {
+                @include media-breakpoint-up(md) {
+                    border-left: 1px solid #666;
+                }
+            }
+    
+            .icon {
+                left: 20px;
+                font-size: 21px;
+            }
+        }
+    
+        .form-control {
+            font-size: 16px;
+            padding: 8px 0 6px;
+    
+            &::placeholder {
+                color: #666;
+            }
+        }
+    
+        .btn {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 10px;
+                min-width: 140px;
+                border-radius: 8px;
+            }
+
+            &:before {
+                @include media-breakpoint-up(lg) {
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .users-box {
+        position: static;
+        min-width: inherit;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+
+        &:after {
+            display: none;
+        }
+
+        .title {
+            color: currentColor;
+            font-size: 14px;
+            font-weight: 600;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 18px;
+            }
+        }
+
+        .users-list {
+            li {
+                width: 41px;
+                height: 41px;
+                margin: 0 4px 0 0;
+                border: 1px solid $white;
+                font-size: 20px;
+                color: $black;
+                font-weight: 700;
+                background: #ebebeb;
+                box-shadow: 2px 2px 7px rgba(0,0,0,0.15);
+            }
+        }
+    }
+
+    .visual-image {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-right: 0;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 40px;
+        }
+        
+        &:before,
+        &:after {
+            position: absolute;
+            content: '';
+        }
+
+        &:before {
+            right: -88px;
+            bottom: 60px;
+            width: 175px;
+            height: 175px;
+            border-radius: 100%;
+            border: 45px solid #f0c44f;
+        }
+
+        &:after {
+            width: 43px;
+            height: 84px;
+            background: url('../images/pattern-ico.png') no-repeat;
+            background-size: 100% 100%;
+            bottom: -43px;
+            right: 30%;
+        }
+
+        .image-holder {
+            width: 47.5%;
+            position: relative;
+
+            &:before {
+                width: 88px;
+                height: 136px;
+                background: url('../images/dot-pattern.png');
+                position: absolute;
+                content: '';
+                left: -20px;
+                top: 100px;
+
+                @include media-breakpoint-up(xl) {
+                    left: -43px;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                position: relative;
+                border-radius: 25px;
+
+                @include media-breakpoint-up(xl) {
+                    border-radius: 45px;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-top: 50px;
+
+                &:before {
+                    left: auto;
+                    right: -20px;
+                    top: -20px;
+
+                    @include media-breakpoint-up(xl) {
+                        right: -30px;
+                        top: -30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.header-theme-6 {
+	background: $white;
+
+	.btn {
+		color: $black;
+		background: $texas-rose;
+
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($texas-rose, 10%);
+		}
+	}
+
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $black;
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $texas-rose;
+			}
+		}
+	}
+
+	.nav-drop {
+		@include media-breakpoint-down(lg) {
+			background: $white;
+		}
+	}
+
+	.navigation {
+		> li {
+			> a {
+				color: $black;
+				
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $black;
+					}
+
+					&:hover {
+						color: $texas-rose;
+					}
+				}
+
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $texas-rose;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $texas-rose;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $texas-rose;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			li {
+				&.active {
+					> a {
+						color: $texas-rose;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $texas-rose;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				color: $black;
+				
+				&:hover {
+					background: $texas-rose;
+				}
+			}
+		}
+	}
+}
+
+.sticky-header {
+	.header-theme-6 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+
+		.navigation {
+			> li {
+				> a {
+					color: $black;
+					
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $texas-rose;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $texas-rose;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $texas-rose;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $texas-rose;
+					}
+				}
+			}
+
+		}
+	}
+}

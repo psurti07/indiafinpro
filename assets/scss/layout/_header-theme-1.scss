@@ -1,0 +1,151 @@
+.header-theme-1 {
+    background: $white;
+
+    + .visual-block,
+    + .subvisual-block,
+    + .visual-map {
+        margin-top: 80px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 91px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 94px;
+        }
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $green;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $green;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $dark-green;
+        }
+    }
+
+    .navigation {
+        > li {
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $black;
+                    }
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $green;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $green;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            font-size: 14px;
+
+            li {
+                &.active {
+                    > a {
+                        color: $green;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $green;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $green;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-1 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $black;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $green;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $green;
+                }
+            }
+        }
+    }
+}

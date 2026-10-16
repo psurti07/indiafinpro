@@ -1,0 +1,285 @@
+.visual-theme-2 {
+    font-family: $font-family-epilogue;
+    background-image: url('../images/bg-visual-blue.jpg');
+
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+
+    &:after {
+        background: transparent;
+        transform: none;
+        right: 0;
+        width: auto;
+        border-style: solid;
+        border-width: 0 0 80px 100vw;
+        border-color: transparent transparent $white transparent;
+
+        @include media-breakpoint-up(md) {
+            border-width: 0 0 170px 100vw;
+        }
+
+        @include media-breakpoint-up(xl) {
+            border-width: 0 0 240px 100vw;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            border-width: 0 0 340px 100vw;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            border-width: 0 0 375px 100vw;
+        }
+    }
+
+    .container {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .visual-textbox {
+        h1, .h1 {
+            font-weight: 800;
+            line-height: 1.2;
+            padding-bottom: 0;
+            font-family: $font-family-epilogue;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 60px;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 65px;
+                margin: 0 0 30px;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            .text-outlined {
+                position: relative;
+                color: $dark-yellow;
+
+                &:before {
+                    width: 100%;
+                    height: 6px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: '';
+                    background: url('../images/outline-yellow.png') no-repeat;
+                    background-size: 100% 100%;
+
+                    @include media-breakpoint-up(md) {
+                        height: 9px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        height: 12px;
+                    }
+
+                    @include media-breakpoint-up(xxl) {
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .bg-patterns {
+            position: absolute;
+            right: 100%;
+            top: 20px;
+            display: none;
+
+            @include media-breakpoint-up(xl) {
+                top: 45px;
+                display: block;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                top: 20px;
+            }
+        }
+    }
+
+    .form-search {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 50px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            display: flex;
+            background: $white;
+            padding: 4px;
+            border-radius: 40px;
+            max-width: 705px;
+        }
+    
+        .fields-holder {
+            padding: 13px 0;
+            
+            @include media-breakpoint-down(md) {
+                padding: 0;
+                background: transparent !important;
+            }
+    
+            @include media-breakpoint-up(md) {
+                border-radius: 100px;
+                margin: 0 0 20px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                margin: 0;
+            }
+        }
+    
+        .form-group {
+            padding: 8px 20px 8px 55px;
+    
+            @include media-breakpoint-up(md) {
+                padding: 0 25px 0 55px;
+            }
+    
+            + .form-group {
+                @include media-breakpoint-up(md) {
+                    border-left: 1px solid #666;
+                }
+            }
+    
+            .icon {
+                left: 20px;
+                font-size: 21px;
+            }
+        }
+    
+        .form-control {
+            font-size: 16px;
+            padding: 7px 0;
+    
+            &::placeholder {
+                color: #666;
+            }
+        }
+    
+        .select2 {
+            font-size: 16px;
+    
+            .select2-selection {
+                padding: 5px 0;
+            }
+        }
+    
+        .select2-container--default {
+            .select2-selection--single {    
+                .select2-selection__placeholder {
+                    color: #666;
+                }
+    
+                .select2-selection__arrow {
+                    &:before {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    
+        .btn {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                margin-left: 10px;
+                min-width: 140px;
+            }
+        }
+    }
+
+    .users-box {
+        position: static;
+        min-width: inherit;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+
+        &:after {
+            display: none;
+        }
+
+        .title {
+            color: $white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .users-list {
+            li {
+                width: 41px;
+                height: 41px;
+                margin: 0 4px 0 0;
+                border: 1px solid $white;
+                font-size: 20px;
+                color: $black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .visual-image {
+        margin-right: 0;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: -8%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-left: 0;
+        }
+
+        .icons-black {
+            position: absolute;
+            right: -100px;
+            top: 0;
+            width: 200px;
+            z-index: -1;
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: block;
+            }
+
+            @include media-breakpoint-up(xl) {
+                width: 306px;
+                right: -140px;
+                top: 37px;
+            }
+        }
+
+        .icon-circle {
+            width: 65px;
+            position: absolute;
+            left: 20%;
+            bottom: -15%;
+            z-index: -1;
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: block;
+            }
+
+            @include media-breakpoint-up(xl) {
+                width: 95px;
+                bottom: -9%;
+            }
+        }
+    }
+}

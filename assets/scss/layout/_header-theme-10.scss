@@ -1,0 +1,154 @@
+.header-theme-10 {
+	background: $white;
+	
+	.btn {
+		color: $white;
+		background: $burning-orange;
+
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($burning-orange, 10%);
+		}
+	}
+
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $black;
+
+			.nav-active & {
+				background: $white;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $burning-orange;
+			}
+		}
+	}
+
+	.nav-drop {
+		@include media-breakpoint-down(lg) {
+			background: $meteorite;
+		}
+	}
+
+	.navigation {
+		> li {
+			> a {
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $black;
+					}
+
+					&:hover {
+						color: $burning-orange;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $burning-orange;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $burning-orange;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $burning-orange;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			li {
+				&.active {
+					> a {
+						color: $burning-orange;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $burning-orange;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				&:hover {
+					background: $burning-orange;
+				}
+			}
+		}
+	}
+}
+
+.sticky-header {
+	.header-theme-10 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $burning-orange;
+						}
+					}
+					
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $burning-orange;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $burning-orange;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $burning-orange;
+					}
+				}
+			}
+		}
+	}
+}

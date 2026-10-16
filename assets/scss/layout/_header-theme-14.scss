@@ -1,0 +1,139 @@
+.header-theme-14 {
+    .sticky-header & {
+        background: #01140f;
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $green;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $green;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: #01140f;
+        }
+    }
+
+    .navigation {
+        > li {
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $white;
+                    }
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $green;
+                        }
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &:after {
+                        margin-left: auto;
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $green;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $green;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                &.active {
+                    > a {
+                        color: $green;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+				&.tabActive {
+                    > a {
+                        background: $green;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $green;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-14 {
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $green;
+                }
+            }
+        }
+
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $green;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

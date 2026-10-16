@@ -1,0 +1,343 @@
+.visual-theme-14 {
+    font-family: 'DM Sans', sans-serif;
+    background-image: url('../images/bg_img08.jpg');
+
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+
+    &:after {
+        display: none;
+    }
+
+    .visual-textbox {
+        max-width: 100%;
+        padding-top: 30px;
+        @include media-breakpoint-up(xl) {
+            padding-top: 118px;
+        }
+        p {
+            letter-spacing: 1px;
+        }
+        h1, .h1 {
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            padding-bottom: 0;
+            font-family: 'DM Sans', sans-serif;
+            @include media-breakpoint-up(xxl) {
+                font-size: 50px;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 55px;
+                margin: 0 0 30px;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            .text-green {
+                color: #23b762;
+            }
+
+            .text-outlined {
+                position: relative;
+                color: $dark-yellow;
+
+                &:before {
+                    width: 100%;
+                    height: 6px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: '';
+                    background: url('../images/outline-yellow.png') no-repeat;
+                    background-size: 100% 100%;
+
+                    @include media-breakpoint-up(md) {
+                        height: 9px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        height: 12px;
+                    }
+
+                    @include media-breakpoint-up(xxl) {
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-search {
+        overflow: hidden;
+        margin-bottom: 50px;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 53px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            display: flex;
+            padding: 4px;
+            border-radius: 40px;
+            max-width: 705px;
+            border: 1px solid #fff;
+            background: rgba(#fff , 0.05);
+        }
+    
+        .fields-holder {
+            padding: 13px 0;
+
+            @include media-breakpoint-up(md) {
+                border-radius: 100px;
+                margin: 0;
+            }
+
+            @include media-breakpoint-down(xxl) {
+                margin: 0 0 20px;
+                background: rgba(#fff , 0.05);
+            }
+            
+            @include media-breakpoint-down(md) {
+                padding: 0;
+                background: transparent !important;
+            }
+        }
+    
+        .form-group {
+            padding: 8px 20px 8px 55px;
+            background: rgba(#fff , 0.05);
+    
+            @include media-breakpoint-up(md) {
+                padding: 0 25px 0 55px;
+                background: none;
+            }
+    
+            + .form-group {
+                @include media-breakpoint-up(md) {
+                    border-left: 1px solid #666;
+                }
+            }
+    
+            .icon {
+                left: 20px;
+                font-size: 21px;
+                color: #fff;
+            }
+        }
+    
+        .form-control {
+            font-size: 16px;
+            padding: 7px 0;
+            color: #fff;
+            background: transparent;
+    
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    
+        .select2 {
+            font-size: 16px;
+    
+            .select2-selection {
+                padding: 5px 0;
+            }
+        }
+    
+        .select2-container--default {
+            .select2-selection--single {
+                background: transparent;
+                color: #fff;
+
+                .select2-selection__rendered,
+                .select2-selection__placeholder {
+                    color: #fff;
+                }
+    
+                .select2-selection__arrow {
+                    &:before {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    
+        .btn {
+            padding: 17px 20px;
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                margin-left: 10px;
+                min-width: 140px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .search_result {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $white;
+        letter-spacing: 0;
+        margin: 0 0 20px;
+        display: block;
+
+        @include media-breakpoint-up(md) {
+            margin: 0 0 50px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 0 112px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .visual-image {
+        margin: 0;
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            padding: 0 0 0 15%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 43%;
+            right: 0;
+            bottom: -16px;
+            padding: 0;
+            position: absolute;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 50%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 46%;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+
+        .users-box {
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 65px;
+            border-radius: 50px;
+            padding: 10px;
+            bottom: 16.6%;
+            transform: translateX(-50%);
+
+            @include media-breakpoint-up(xl) {
+                bottom: 7.9%;
+                left: 24%;
+                transform: translateX(0);
+            }
+            
+            &:after {
+                display: none;
+            }
+    
+            .title {
+                color: $black;
+                font-size: 14px;
+                font-weight: 700;
+                margin: 0 15px 0 0;
+            }
+    
+            .users-list {
+                li {
+                    width: 41px;
+                    height: 41px;
+                    margin: 0 -5px 0 0;
+                    border: 1px solid $white;
+                    font-size: 20px;
+                    color: $black;
+                    font-weight: 700;
+                    background: #d7d7d7;
+                }
+            }
+        }
+    }
+
+    .searches_holder {
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            padding: 0 7px;
+        }
+    }
+}
+
+.btn_upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    min-width: 238px;
+    min-height: 54px;
+    background: #fff;
+
+    .icon {
+        display: block;
+        font-size: 25px;
+        color: $black;
+        margin-right: 10px;
+    }
+
+    .text {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $black;
+    }
+}
+
+.btn_hire {
+    padding: 0 44px;
+    min-height: 54px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px;
+    min-width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 0;
+        margin-left: 10px;
+        min-width: inherit;
+    }
+
+    &:hover {
+        background: $green;
+        border-color: $green;
+        color: #fff;
+    }
+}

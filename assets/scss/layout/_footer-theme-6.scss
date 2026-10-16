@@ -1,0 +1,202 @@
+/* Footer Theme 6 Styles */
+.footer-theme-6 {
+	font-family: $font-family-epilogue;
+	position: relative;
+	overflow: visible;
+	background: $merino;
+
+	h5 {
+		position: relative;
+		padding-top: 0;
+		padding-bottom: 7px;
+
+		@include media-breakpoint-down(xl) {
+			font-size: 20px;
+		}
+
+		&:after {
+			width: 50px;
+			height: 3px;
+			content: '';
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			background: $texas-rose;
+		}
+	}
+
+	.pri-footer {
+		position: relative;
+		overflow: visible;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center bottom;
+
+		.logo {
+			display: block;
+			margin: 0 15px 0 0;
+			@include size(80px, 80px);
+			img {
+				display: block;
+				@include size(100%, auto);
+			}
+		}
+
+		.btn {
+			width: 100%;
+			min-width: 206px;
+			border-radius: 10px;
+			background: $texas-rose;
+			@include media-breakpoint-up(md) {
+				width: inherit;
+			}
+			&:before {
+				border-radius: 10px;
+				background: darken($texas-rose, 10%);
+			}
+		}
+
+		.footer-info {
+			p {
+				@include media-breakpoint-up(xl) {
+					margin: 0 0 15px;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.form-subscribe {
+		.form-control, .btn, .btn:after {
+			border-radius: 10px;
+		}
+		.form-control {
+			@include placeholder() {
+				color: $dusty-gray;
+			}
+		}
+	}
+	.footer-links {
+		li {
+			position: relative;
+			padding: 6px 0 6px 15px;
+			@include media-breakpoint-up(lg) {
+				padding: 11px 0 11px 15px;
+			}
+			a {
+				&:hover {
+					color: $texas-rose;
+				}
+			}
+			&:before {
+				left: 0;
+				top: 10px;
+				content: ">";
+				color: $black;
+				position: absolute;
+			}
+		}
+	}
+
+	.sec-footer {
+		font-weight: 400;
+		border-top: 1px solid $silver;
+
+		@include media-breakpoint-up(md) {
+			font-size: 14px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: 16px;
+		}
+
+		p {
+			.site-link {
+				font-weight: 600;
+				color: currentColor;
+				border-bottom: 1px solid rgba(0,0,0,0.55);
+
+				&:hover {
+					color: $texas-rose;
+				}
+			}
+		}
+	}
+
+	.social-networks {
+		li {
+			a {
+				color: $black;
+
+				&:hover {
+					color: $texas-rose;
+				}
+			}
+		}
+
+		&.no-bg {
+			li {
+				&:before {
+					background: currentColor;
+				}
+			}
+		}
+	}
+	
+	.contact-info-box {
+		display: flex;
+		flex-direction: column;
+		* {
+			display: block;
+		}
+		.text {
+			font-size: 14px;
+			margin: 0 0 10px;
+		}
+		.phone {
+			margin: 0 0 15px;
+			font-weight: 700;
+			line-height: normal;
+			a {
+				color: $black;
+				font-size: 26px;
+				line-height: 32px;
+				position: relative;
+				display: inline-block;
+				&:after {
+					left: 0;
+					right: 0;
+					top: 100%;
+					content: "";
+					height: 3px;
+					background: $texas-rose;
+					position: absolute;
+				}
+				&:hover {
+					color: $texas-rose;
+				}
+			}
+		}
+		.email {
+			font-size: 16px;
+			font-weight: 400;
+			margin: 0 0 25px;
+			line-height: normal;
+			a {
+				color: $black;
+				display: inline-block;
+				&:hover {
+					color: $texas-rose;
+				}
+			}
+		}
+		address {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	}
+}

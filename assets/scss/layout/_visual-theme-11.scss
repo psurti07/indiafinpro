@@ -1,0 +1,353 @@
+.visal-theme-11 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+	font-family: $font-family-DMSans;
+	position: relative;
+	padding-top: 100px;
+
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	.container {
+		
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.visual-textbox {
+		margin: 0;
+		text-align:center;
+		max-width: inherit;
+
+		@include media-breakpoint-up(xxl) {
+			padding-top: 76px;
+		}
+
+		h1, .h1 {
+			color: $white;
+			font-size: 22px;
+			font-weight: 800;
+			line-height: 1.2;
+			margin: 0 0 60px;
+			padding-bottom: 0;
+			max-width: 100% !important;
+			font-family: $font-family-epilogue;
+
+			@include media-breakpoint-up(md) {
+				font-size: 40px;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				font-size: 60px;
+			}
+
+			@include media-breakpoint-up(xxxl) {
+				font-size: 75px;
+				margin: 0 0 30px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		p {
+			color: $white;
+			font-size: 14px;
+
+			@include media-breakpoint-up(md) {
+				font-size: 18px;
+			}
+			@include media-breakpoint-up(xxxl) {
+				font-size: 22px;
+			}
+		}
+
+		h1, .h1, p {
+			@include media-breakpoint-up(lg) {
+				max-width: 90%;
+			}
+			@include media-breakpoint-up(xxl) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.image-holder {
+		overflow: hidden;
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.form-search {
+		overflow: hidden;
+		margin-bottom: 40px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 40px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			padding: 0px;
+			background: $white;
+			border-radius: 40px;
+			max-width: inherit;
+			box-shadow: 0 3px 51px 0 rgba(0, 0, 0, 0.14);
+		}
+		@include media-breakpoint-up(xl) {
+			border-radius: 40px;
+		}
+		@include media-breakpoint-up(xxl) {
+			border-radius: 40px;
+			margin-bottom: 85px;
+		}
+	
+		.fields-holder {
+			padding: 13px 0;
+			
+			@include media-breakpoint-down(md) {
+				padding: 0;
+				background: transparent !important;
+			}
+	
+			@include media-breakpoint-up(md) {
+				border-radius: 10px;
+				margin: 0 0 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin: 0;
+				flex-grow: 1;
+				min-width: 0;
+			}
+		}
+		
+		.form-group {
+			padding: 8px 20px 8px 50px;
+			border-radius: 10px;
+			@include media-breakpoint-up(md) {
+				width: 100%;
+				padding: 8px 20px 8px 60px;
+				border-radius: 0;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				width: 38%;
+			}
+
+			&:first-child {
+				@include media-breakpoint-up(xxl) {
+					width: 63%;
+				}
+			}
+	
+			+ .form-group {
+				@include media-breakpoint-up(md) {
+					border-left: 1px solid #666;
+				}
+			}
+			.icon{
+				left: 20px;
+			}
+		}
+		
+		label {
+			color: $black;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.form-control {
+			padding: 6px 0 6px 10px;
+			font-size: 14px;
+	
+			&::placeholder {
+				color: #000;
+			}
+		}
+	
+		.btn {
+			color: $white;
+			display: flex;
+			font-size: 15px;
+			align-items: center;
+			border-radius: 10px;
+			justify-content: center;
+			background: $dark-yellow;
+			@include media-breakpoint-up(lg) {
+				min-width: 140px;
+				border-radius: 15px;
+			}
+			@include media-breakpoint-up(xl) {
+				border-radius: 40px;
+			}
+			@include media-breakpoint-up(xxl) {
+				border-radius: 30px;
+				min-width: 157px;
+			}
+			i {
+				z-index: 2;
+				margin-right: 10px;
+				position: relative;
+			}
+
+			&:before {
+				border-radius: 10px;
+				background: darken($burning-orange, 10%);
+				@include media-breakpoint-up(lg) {
+					border-radius: 15px;
+				}
+				@include media-breakpoint-up(xl) {
+					border-radius: 20px;
+				}
+				@include media-breakpoint-up(xxl) {
+					border-radius: 30px;
+				}
+			}
+		}
+		.select2-selection__placeholder{
+			color : $black !important;
+			font-size: 14px;
+		}
+	}
+
+	.social-icons{
+		padding: 0;
+		margin:0;
+		list-style: none;
+		li{
+			&:nth-child(1){
+				position: absolute;
+				top: 20px;
+				left: 0;
+				a{
+					width: 40px;
+					height: 40px;
+					padding: 6px;
+
+					@include media-breakpoint-up(lg) {
+						width: 86px;
+						height: 86px;
+						padding: 20px;
+					}
+
+				}
+			}
+			&:nth-child(2){
+				position: absolute;
+				top: -50px;
+				left: 280px;
+				@include media-breakpoint-up(lg) {
+					top: 0;
+				}
+				a{
+					width: 40px;
+					height: 40px;
+					padding: 6px;
+
+					@include media-breakpoint-up(lg) {
+						width: 50px;
+						height: 50px;
+						padding: 8px;
+					}
+				}
+			}
+			&:nth-child(3){
+				position: absolute;
+				top: 120px;
+				left: 40px;
+					@include media-breakpoint-up(lg) {
+						left: 140px;
+						top: 140px;
+					}
+				a{
+					width: 40px;
+					height: 40px;
+					@include media-breakpoint-up(lg) {
+						width: 60px;
+						height: 60px;
+						padding: 14px;
+					}
+				}
+			}
+			&:nth-child(4){
+				position: absolute;
+				top: 120px;
+				right: 0px;
+				a{
+					width: 40px;
+					height: 40px;
+					padding: 6px;
+
+					@include media-breakpoint-up(lg) {
+						width: 108px;
+						height: 108px;
+						padding: 20px;
+					}
+
+					img{
+						width: 20px;
+						@include media-breakpoint-up(lg) {
+							width: auto;
+						}
+					}
+				}
+			}
+			&:nth-child(5){
+				position: absolute;
+				bottom: -50px;
+				left: 12%;
+				a{
+					width: 45px;
+					height: 45px;
+					padding: 6px;
+
+					@include media-breakpoint-up(lg) {
+						width: 85px;
+						height: 85px;
+						padding: 15px;
+					}
+				}
+			}
+			&:nth-child(6){
+				position: absolute;
+				bottom: -40px;
+				right: 1%;
+				a{
+					width: 44px;
+					height: 44px;
+					padding: 6px;
+					@include media-breakpoint-up(lg) {
+						width: 85px;
+						height: 85px;
+						padding: 15px;
+					}
+				}
+			}
+			a{
+				width: 46px;
+				height: 46px;
+				display: flex;
+				padding: 7px;
+				background:$white;
+				border-radius: 100%;
+				align-items: center;
+				justify-content: center;
+				pointer-events: none;
+
+				img{
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+}

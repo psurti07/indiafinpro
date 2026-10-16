@@ -1,0 +1,300 @@
+/* Footer Theme 4 Styles */
+.footer-theme-4 {
+	font-family: $font-family-epilogue;
+	position: relative;
+	overflow: visible;
+	.h4 {
+		display: block;
+		margin: 0 0 15px;
+		@include media-breakpoint-up(md) {
+			margin: 0;
+			text-align: left;
+		}
+		@include media-breakpoint-up(lg) {
+			max-width: 300px;
+		}
+	}
+	h5 {
+		padding-top: 0;
+		position: relative;
+		padding-bottom: 7px;
+		@include media-breakpoint-down(xl) {
+			font-size: 20px;
+		}
+		&:after {
+			width: 50px;
+			height: 3px;
+			content: '';
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			background: $purple-heart;
+		}
+	}
+	.subscription-form {
+		display: flex;
+		margin: 0 0 15px;
+		align-items: center;
+		flex-direction: column;
+		@include media-breakpoint-up(lg) {
+			margin: 0 0 37px;
+		}
+		.form-control {
+			margin: 0 0 15px;
+			@include media-breakpoint-up(md) {
+				margin: 0;
+				font-size: 16px;
+				width: calc(100% - 170px);
+			}
+			@include media-breakpoint-up(lg) {
+				width: calc(100% - 190px);
+			}
+			@include media-breakpoint-up(xl) {
+				width: calc(100% - 215px);
+				padding: 13px 30px;
+			}
+		}
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	.pri-footer {
+		position: relative;
+		background-color: #000b5d;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center bottom;
+		.logo {
+			@include media-breakpoint-up(lg) {
+				margin: 0 0 30px;
+			}
+		}
+		p {
+			@include media-breakpoint-up(md) {
+				margin: 0 0 10px;
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: 16px;
+				margin: 0 0 30px;
+			}
+		}
+		.btn-purple {
+			width: 100%;
+			color: $white;
+			border-radius: 29px;
+			background: $purple-heart;
+			border: 2px solid $purple-heart;
+			@include media-breakpoint-up(md) {
+				max-width: 156px;
+				min-width: 156px;
+				font-size: 14px;
+				padding: 16px 20px;
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: 16px;
+				max-width: 180px;
+				padding: 17px 20px;
+				border-radius: 31px;
+			}
+			@include media-breakpoint-up(xl) {
+				max-width: 202px;
+			}
+			&:before {
+				z-index: 1;
+				background: $purple-heart;
+			}
+			&:hover {
+				color: $white;
+			}
+			span {
+				z-index: 2;
+				position: relative;
+			}
+		}
+	}
+	.pri-footer-top {
+		border-bottom: 1px solid #495198;
+	}
+	.footer-links {
+		margin: 0 0 20px;
+		li {
+			position: relative;
+			padding: 6px 0 6px 15px;
+			@include media-breakpoint-up(lg) {
+				padding: 11px 0 11px 15px;
+			}
+			a {
+				&:hover {
+					color: $purple-heart;
+				}
+			}
+			&:before {
+				left: 0;
+				top: 5px;
+				content: ">";
+				color: $white;
+				position: absolute;
+				@include media-breakpoint-up(lg) {
+					top: 10px;
+				}
+			}
+		}
+	}
+	.sec-footer {
+		font-weight: 400;
+		background: $blue-darker;
+		@include media-breakpoint-up(md) {
+			font-size: 14px;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 16px;
+		}
+		p {
+			.site-link {
+				font-weight: 600;
+				color: currentColor;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+				&:hover {
+					color: $purple-heart;
+				}
+			}
+		}
+	}
+	.social-networks {
+		li {
+			a {
+				color: currentColor;
+				&:hover {
+					color: $purple-heart;
+				}
+			}
+		}
+		&.no-bg {
+			li {
+				&:before {
+					background: currentColor;
+				}
+			}
+		}
+	}
+	.contact-info-box {
+		display: flex;
+		flex-direction: column;
+		* {
+			display: block;
+		}
+		.text {
+			font-size: 14px;
+			margin: 0 0 10px;
+		}
+		.phone {
+			margin: 0 0 15px;
+			font-weight: 700;
+			line-height: normal;
+			a {
+				color: $white;
+				font-size: 26px;
+				line-height: 32px;
+				position: relative;
+				display: inline-block;
+				&:after {
+					left: 0;
+					right: 0;
+					top: 100%;
+					content: "";
+					height: 3px;
+					background: $purple-heart;
+					position: absolute;
+				}
+			}
+		}
+	}
+	.active-candidates {
+		display: flex;
+		flex-direction: column;
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+			align-items: center
+		}
+		.title {
+			display: block;
+			margin: 0 0 10px;
+			@include media-breakpoint-up(lg) {
+				margin: 0 53px 0 0;
+			}
+		}
+	}
+	.candidates-list {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		li {
+			&:not(:last-child) {
+				margin-right: 4px;
+			}
+			a {
+				color: $black;
+				display: flex;
+				font-size: 30px;
+				font-weight: 700;
+				overflow: hidden;
+				border-radius: 50%;
+				@include size(41px);
+				background: $gallery;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid $gallery;
+				img {
+					display: block;
+					@include size(100%, auto);
+				}
+			}
+		}
+	}
+	.insta-bosex {
+		gap: 12px;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		.insta-item {
+			overflow: hidden;
+		}
+		a {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			border-radius: 10px;
+			padding-bottom: 70%;
+			transition: all ease-in-out 0.3s;
+			img {
+				top: 0;
+				left: 0;
+				z-index: 1;
+				object-fit: cover;
+				position: absolute;
+				@include size(100%);
+				transition: all ease-in-out 0.3s;
+			}
+			.plus {
+				top: 0;
+				left: 0;
+				z-index: 2;
+				opacity: 0;
+				color: $white;
+				display: flex;
+				font-size: 30px;
+				position: absolute;
+				@include size(100%);
+				align-items: center;
+				justify-content: center;
+				background: $purple-heart;
+				transition: all ease-in-out 0.3s;
+			}
+			&:hover {
+				.plus {
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+}

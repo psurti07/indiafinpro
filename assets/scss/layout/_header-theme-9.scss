@@ -1,0 +1,133 @@
+.header-theme-9 {
+    .sticky-header & {
+        background: #262586;
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $dark-yellow;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $dark-yellow;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $dark-blue;
+        }
+    }
+
+    .navigation {
+        > li {
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $white;
+                    }
+
+                    &:hover {
+                        color: $dark-yellow;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $dark-yellow;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $dark-yellow;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $dark-yellow;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                &.active {
+                    > a {
+                        color: $dark-yellow;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $dark-yellow;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $dark-yellow;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-9 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $dark-yellow;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $dark-yellow;
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $dark-yellow;
+                }
+            }
+        }
+    }
+}

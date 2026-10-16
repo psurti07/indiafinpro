@@ -1,0 +1,369 @@
+/* Footer Styles */
+.footer {
+    font-size: 14px;
+    overflow: hidden;
+    font-family: $headings-font-family;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        font-size: 16px;
+    }
+}
+
+/* Primary Footer Styles */
+.pri-footer {
+    overflow: hidden;
+    line-height: 1.583;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-up(xxxl) {
+        line-height: 1.875;
+    }
+
+    .footer-info {
+        @include media-breakpoint-up(lg) {
+            max-width: 448px;
+        }
+    }
+
+    .logo {
+        width: 165px;
+        display: block;
+        margin: 0 0 23px;
+
+        @include media-breakpoint-up(lg) {
+            width: 175px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 200px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 210px;
+            margin-left: 6px;
+        }
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    h5 {
+        padding: 12px 0 0;
+        margin: 0 0 20px;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 0 35px;
+        }
+    }
+
+    .number {
+        color: $white;
+        font-weight: 600;
+        border-bottom: 3px solid $dark-yellow;
+    }
+}
+
+/* App Buttons Styles */
+.app-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 350px;
+
+    @include media-breakpoint-up(lg) {
+        max-width: none;
+    }
+    
+    li {
+        width: 50%;
+        padding: 0 5px 10px;
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+/* Gallery List Styles */
+.gallery-list {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2px 0 0;
+    margin: -5px;
+    list-style: none;
+    max-width: 550px;
+
+    @include media-breakpoint-up(xl) {
+        margin: -10px -9px;
+    }
+
+    li {
+        width: 33.333%;
+        padding: 5px;
+
+        @include media-breakpoint-up(xl) {
+            padding: 10px 9px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 2px 0 0;
+    margin: 0 0 10px;
+    line-height: 1.5;
+    overflow: hidden;
+
+    @include media-breakpoint-up(xl) {
+        margin: 0 0 16px;
+    }
+    
+    @include media-breakpoint-up(xxl) {
+        font-size: 16px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        font-size: 20px;
+    }
+
+    li {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 20px;
+
+        @include media-breakpoint-up(xxxl) {
+            margin: 0 0 26px;
+        }
+
+        i {
+            font-size: 22px;
+            line-height: 1;
+            margin: 2px 15px 0 0;
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 28px;
+                margin: 0 20px 0 0;
+            }
+        }
+
+        a {
+            color: $white;
+            text-decoration: underline;
+            font-weight: 600;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/* Social Box Styles */
+.social-box {
+    overflow: hidden;
+
+    .title {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0 0 15px;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 20px;
+        }
+    }
+}
+
+/* Social Networks Styles */
+.social-networks {
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
+    line-height: 1;
+
+    @include media-breakpoint-up(xl) {
+        margin: 0 -7px;
+        font-size: 24px;
+    }
+
+    li {
+        padding: 0 5px;
+
+        @include media-breakpoint-up(xl) {
+            padding: 0 7px;
+        }
+
+        a {
+            width: 34px;
+            height: 34px;
+            border-radius: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            background: rgba(255,255,255,0.3);
+
+            @include media-breakpoint-up(xl) {
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover {
+                background: $primary;
+            }
+        }
+    }
+
+    &.no-bg {
+        @include media-breakpoint-up(xl) {
+            font-size: 20px;
+        }
+
+        li {
+            position: relative;
+
+            &:before {
+                width: 2px;
+                height: 16px;
+                background: rgba(255,255,255,0.2);
+                position: absolute;
+                left: -1px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                display: none;
+            }
+
+            + li {
+                &:before {
+                    display: block;
+                }
+            }
+
+            a {
+                background: transparent;
+
+                &:hover {
+                    color: $dark-yellow;
+                }
+            }
+        }
+    }
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 6px 0;
+
+        a {
+            color: currentColor;
+
+            &:hover {
+                color: $dark-yellow;
+            }
+        }
+    }
+}
+
+.pri-footer-top {
+    border-bottom: 3px solid #acacac;
+}
+
+.form-subscribe {
+    overflow: hidden;
+
+    .form-control {
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 10px 30px;
+        color: $black;
+
+        &::placeholder {
+            color: $black;
+        }
+    }
+}
+
+.footer-buttons {
+    .btn-outline-lt-yellow,
+    .btn-outline-orange {
+        border: 2px solid $lt-yellow;
+        font-size: 16px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-right: 5px;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 9px;
+            padding-bottom: 9px;
+        }
+    }
+
+    .btn-outline-orange {
+        border-color: $orange;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+/* Secondary Footer Styles */
+.sec-footer {
+    font-size: 14px;
+    font-weight: 500;
+
+    @include media-breakpoint-up(md) {
+        font-size: 16px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+}

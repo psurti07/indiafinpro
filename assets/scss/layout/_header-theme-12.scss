@@ -1,0 +1,153 @@
+.header-theme-12 {
+	background: transparent;
+
+	.btn {
+		color: $white;
+		background: $light-green;
+
+		&:hover:before {
+			opacity: 0.5;
+			background: $teal;
+		}
+	}
+
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $light-green;
+
+			.nav-active & {
+				background: $white;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $light-green;
+			}
+		}
+	}
+
+	.nav-drop {
+		@include media-breakpoint-down(lg) {
+			background: $meteorite;
+		}
+	}
+
+	.navigation {
+		> li {
+			> a {
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $black;
+					}
+
+					&:hover {
+						color: $light-green;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $light-green;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $light-green;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $light-green;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			li {
+				&.active {
+					> a {
+						color: $light-green;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $light-green;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				&:hover {
+					background: $light-green;
+				}
+			}
+		}
+	}
+}
+
+.sticky-header { 
+	.header-theme-12 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $light-green;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $light-green;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $light-green;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $light-green;
+					}
+				}
+			}
+
+		}
+	}
+}

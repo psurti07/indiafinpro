@@ -1,0 +1,262 @@
+.visal-theme-13 {
+	background-color: #f2ecdc;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+	font-family: $font-family-DMSans;
+
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	.container {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.visual-textbox {
+		margin: 0;
+		max-width: inherit;
+
+		@include media-breakpoint-up(xxl) {
+			padding-top: 76px;
+		}
+
+		h1, .h1 {
+			font-weight: 800;
+			line-height: 1.2;
+			padding-bottom: 0;
+			font-family: $font-family-DMSans;
+
+			@include media-breakpoint-up(xxl) {
+				font-size: 60px;
+			}
+
+			@include media-breakpoint-up(xxxl) {
+				font-size: 70px;
+				margin: 0 0 30px;
+			}
+
+			&:after {
+				display: none;
+			}
+			span {
+				color: $rain-forst;
+			}
+		}
+
+		p {
+			color: $tundora;
+
+			@include media-breakpoint-up(xxxl) {
+				font-size: 22px;
+			}
+		}
+
+		h1, .h1, p {
+			@include media-breakpoint-up(lg) {
+				max-width: 90%;
+			}
+			@include media-breakpoint-up(xxl) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.image-holder {
+		overflow: hidden;
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.form-search {
+		overflow: hidden;
+		margin-bottom: 20px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 40px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			padding: 3px;
+			background: $white;
+			border-radius: 40px;
+			max-width: inherit;
+			box-shadow: 0 3px 51px 0 rgba(0, 0, 0, 0.14);
+		}
+		@include media-breakpoint-up(xxl) {
+			margin-bottom: 85px;
+		}
+	
+		.fields-holder {
+			padding: 13px 0;
+			
+			@include media-breakpoint-down(md) {
+				padding: 0;
+				background: transparent !important;
+			}
+	
+			@include media-breakpoint-up(md) {
+				border-radius: 100px;
+				margin: 0 0 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin: 0;
+				flex-grow: 1;
+				min-width: 0;
+			}
+		}
+		
+		.form-group {
+			border-radius: 35px;
+			padding: 8px 20px 8px 55px;
+			@include media-breakpoint-up(md) {
+				width: 100%;
+				border-radius: 0;
+				padding: 0 25px 0 55px;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				width: 38%;
+			}
+
+			&:first-child {
+				@include media-breakpoint-up(xxl) {
+					width: 63%;
+				}
+			}
+	
+			+ .form-group {
+				@include media-breakpoint-up(md) {
+					border-left: 1px solid #666;
+				}
+			}
+
+			.icon {
+				@include media-breakpoint-up(xxl) {
+					left: 15px;
+				}
+
+				@include media-breakpoint-up(xxxl) {
+					left: 15px;
+				}
+			}
+		}
+		
+		label {
+			color: $black;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.form-control {
+			padding: 6px 0;
+			font-size: 14px;
+	
+			&::placeholder {
+				color: #666;
+			}
+		}
+	
+		.btn {
+			color: $white;
+			display: flex;
+			font-size: 15px;
+			align-items: center;
+			border-radius: 35px;
+			padding: 13px 20px;
+			justify-content: center;
+			background: $rain-forst;
+			@include media-breakpoint-up(lg) {
+				min-width: 138px;
+				border-radius: 38px;
+			}
+			@include media-breakpoint-up(xl) {
+				line-height: 1;
+				padding: 30px 20px;
+			}
+
+			&:before {
+				border-radius: 10px;
+				background: darken($rain-forst, 10%);
+				@include media-breakpoint-up(lg) {
+					border-radius: 15px;
+				}
+				@include media-breakpoint-up(xl) {
+					border-radius: 20px;
+				}
+				@include media-breakpoint-up(xxl) {
+					border-radius: 30px;
+				}
+			}
+		}
+	}
+	.searches-bar {
+		display: flex;
+		color: $black;
+		flex-wrap: wrap;
+		margin: 0 0 20px;
+		align-items: center;
+		font: 400 14px/1 $font-family-DMSans;
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+			margin: 0 0 40px;
+		}
+		@include media-breakpoint-up(lg) {
+			margin: 0 0 50px;
+		}
+		@include media-breakpoint-up(xl) {
+			margin: 0 0 80px;
+		}
+		.searches-title {
+			display: block;
+			font-weight: 700;
+		}
+		p {
+			a {
+				color: $black;
+			}
+		}
+	}
+
+	.users-box {
+		display: flex;
+		align-items: center;
+        position: static;
+        min-width: inherit;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+
+        &:after {
+            display: none;
+        }
+
+        .title {
+            color: $black;
+            font-size: 14px;
+            font-weight: 600;
+        	margin: 0 36px 0 0;
+        }
+
+        .users-list {
+            li {
+                width: 41px;
+                height: 41px;
+                color: $black;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 0 0 -4px;
+                background: $alto;
+                border: 1px solid $white;
+            }
+        }
+    }
+}

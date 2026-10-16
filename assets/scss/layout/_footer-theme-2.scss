@@ -1,0 +1,137 @@
+/* Footer Theme 3 Styles */
+.footer-theme-2 {
+    font-family: $font-family-epilogue;
+    position: relative;
+    overflow: visible;
+    background: $dark-blue url('../images/bg-visual-blue.jpg') no-repeat;
+    background-size: cover;
+    margin-top: -80px;
+    padding-top: 80px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: -170px;
+        padding-top: 170px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: -240px;
+        padding-top: 240px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: -340px;
+        padding-top: 340px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        margin-top: -375px;
+        padding-top: 375px;
+    }
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        border-style: solid;
+        border-width: 0 100vw 80px 0;
+        border-color: transparent $white transparent transparent;
+
+        @include media-breakpoint-up(md) {
+            border-width: 0 100vw 170px 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            border-width: 0 100vw 240px 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            border-width: 0 100vw 340px 0;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            border-width: 0 100vw 375px 0;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h5 {
+        color: $white;
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 7px;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 20px;
+        }
+
+        &:after {
+            width: 50px;
+            height: 3px;
+            content: '';
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            background: $dark-yellow;
+        }
+    }
+
+    .pri-footer {
+        overflow: visible;
+
+        &.bg-dark-blue {
+            background: none !important;
+        }
+
+        .logo {
+            @include media-breakpoint-up(xl) {
+                width: 175px;
+                margin-bottom: 55px;
+            }
+        }
+
+        .footer-info {
+            p {
+                @include media-breakpoint-up(xl) {
+                    margin: 0 0 30px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .sec-footer {
+        font-weight: 400;
+
+        @include media-breakpoint-up(md) {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 16px;
+        }
+
+        &.bg-dark-blue {
+            background: none !important;
+        }
+
+        p {
+            .site-link {
+                color: $white;
+                font-weight: 600;
+                border-bottom: 1px solid rgba(255,255,255,0.35);
+
+                &:hover {
+                    color: $dark-yellow;
+                }
+            }
+        }
+    }
+}

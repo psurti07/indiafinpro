@@ -1,0 +1,150 @@
+/* Footer Theme 14 Styles */
+.footer-theme-14 {
+	padding: 40px 0;
+	font-family: 'DM Sans', sans-serif;
+	position: relative;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-breakpoint-up(lg) {
+		padding: 90px 0 44px;
+	}
+
+	.wrap_footer {
+		padding: 0 0 29px;
+		margin: 0 0 41px;
+		border-bottom: 1px solid #134136;
+	}
+
+	.wrap-holder {
+		max-width: 488px;
+		margin: 0 auto;
+		font-size: 16px;
+		line-height: 24px;
+		color: #c9c9c9;
+		font-weight: 400;
+		text-align: center;
+
+		p {
+			margin: 0 0 26px;
+
+			a {
+				font-size: 18px;
+				line-height: 22px;
+				color: #23b762;
+				font-weight: 700;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.footer-logo {
+		margin: 0 0 32px;
+
+		@include media-breakpoint-up(md) {
+			text-align: center;
+		}
+
+		img {
+			display: inline-block;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+
+	.bottom-footer {
+		max-width: 812px;
+		margin: 0 auto;
+	}
+
+	.title-subs {
+		margin: 0 0 25px;
+		display: block;
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+	}
+
+	.form-newsletter {
+		margin: 0 0 44px;
+		.form-control {
+			background: rgba(255, 255, 255, 0.05);
+			height: 60px;
+			font-size: 16px;
+			color: #999;
+			padding-top: 0;
+			padding-bottom: 0;
+
+			&::placeholder {
+				color: #999;
+			}
+		}
+
+		.btn {
+			top: 0;
+			right: 0;
+			height: 60px;
+			position: absolute;
+		}
+	}
+
+	.copyright {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 700;
+		color: #fff;
+
+		a {
+			color: #fff;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.social_links {
+		padding: 0;
+		margin: 0 -5px 26px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: center;
+	
+		li {
+			padding: 0 5px;
+			margin: 0 0 10px;
+	
+			a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 46px;
+				height: 46px;
+				border: 1px solid #fff;
+				border-radius: 100%;
+	
+				&:hover {
+					background: #20ca6f;
+				}
+	
+				.icon {
+					font-size: 15px;
+					color: #fff;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
