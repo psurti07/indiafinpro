@@ -8142,6 +8142,9 @@ textarea.form-control.form-control-lg {
 .trending-categories-slider .slick-slide {
   padding: 0 10px 20px;
 }
+.lending-bank-slider .slick-slide {
+  padding: 0 5px 5px;
+}
 
 .trending-categories-box {
   overflow: hidden;
@@ -12190,7 +12193,7 @@ textarea.form-control.form-control-lg {
   padding: 0;
   margin: 0;
   border-radius: 25px;
-  background: linear-gradient(180deg, #4D0690 0%, #5C3086 51.52%, #7F56A7 100%);;
+  background: rgba(5, 11, 31, 1);
   padding: 45px;
   border: 1px solid #E1E5EA;
 }
@@ -12603,7 +12606,7 @@ textarea.form-control.form-control-lg {
   display: flex;
   align-items: center;
   width: 100%;
-  background: #eff6f3;
+  background: rgba(246, 249, 255, 1) !important;
   border-radius: 50px;
   font-size: 14px;
   line-height: 26px;
@@ -12643,7 +12646,7 @@ textarea.form-control.form-control-lg {
   justify-content: center;
   border-radius: 100%;
   position: relative;
-  background: #20ca6f;
+  background: #0256b9;
   margin: 0 10px 0 0;
   transition: 0.3s;
 }
@@ -28088,13 +28091,14 @@ textarea.form-control.form-control-lg {
 }
 
 .top_companies_block .detail_box.candidate {
-  background: linear-gradient(165deg, #4D0690 7.74%, #8869A6 50%, #6A3796 92.26%);
+  background: rgba(25, 83, 179, 1);
   padding: 10px 15px 0;
+  color: #fff;
 }
 
 @media (min-width: 1200px) {
   .top_companies_block .detail_box.candidate {
-    padding: 10px 29px 0 55px;
+    padding: 10px 29px 0 10px;
   }
 }
 
@@ -49963,6 +49967,14 @@ textarea.form-control.form-control-lg {
   border: 1px solid #E1E5EA !important;
   border-radius: 22px !important;
   padding: 12px;
+  background: #fff;
+}
+
+.lending-bank-slider .categories-image {
+    border: 1px solid #E1E5EA !important;
+    border-radius: 16px !important;
+    padding: 12px;
+    background: #fff;
 }
 
 .product-section .text-hold .tag-list span {
@@ -50047,7 +50059,7 @@ textarea.form-control.form-control-lg {
 .contact-support .contact-box .icon {
   align-items: center;
   border-radius: 50%;
-  background: #D0F7D6;
+  background: rgba(11, 95, 208, 1);
   justify-content: center;
   width: 44px;
   height: 44px;

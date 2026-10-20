@@ -117,7 +117,7 @@ class Digital extends CI_Controller
 	{
 		if (isset($_REQUEST['otpmobile']) && isset($_REQUEST['loanamount'])) {
 			$mobile = $_REQUEST['otpmobile'];
-			$otpcode = $_REQUEST['otpcode'];
+			$otpcode = implode("",$_REQUEST['otpcode']);
 
 			$this->session->set_tempdata('usermobile', $mobile, 3600);
 			$this->session->set_tempdata('userloanamount', $_REQUEST['loanamount'], 3600);

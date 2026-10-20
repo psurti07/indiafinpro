@@ -17,8 +17,6 @@ Class Site_Info_Model extends CI_Model {
 		$query = $this->db->where('productslug', $slug)
 				->get('products')
 				->row();
-
-				
 		return $query;
 	}
 

@@ -14,7 +14,7 @@ $this->load->view('includes/header');
                         </h1>
                         <p class="text-light">Get your business loan approved quickly with minimal paperwork,
                             <br>transparent terms and a simple 100% online process.</p>
-
+                    
                         <div>
                             <a href="<?php echo site_url('onlineprocess/applynow'); ?>"
                                 class="btn btn-green btn-sm"><span class="btn-text">Apply Now <img
@@ -274,7 +274,7 @@ $this->load->view('includes/header');
         </div>
     </section>
 
-    <section class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60"
+    <section class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky"
         id="testimonial">
         <div class="container">
             <div class="row">
@@ -283,110 +283,121 @@ $this->load->view('includes/header');
                         <span
                             class="text-color-blue text-uppercase text-outlined text-top mb-0 d-block">TESTIMONIALS</span>
                         <h2>Hear from <span class="text-color-blue">Our Customers</span></h2>
-                        
+                        <p class="text-center">Hear what our clients have to say about us.</p>
                     </header>
                 </div>
             </div>
             <div class="row">
-                
+               
                 <div class="col-xl-12 col-12 m-auto">
                     <div class="client_testimonials">
-                        <?php $testimoniallist = array('testimonials-1.png', 'testimonials-2.png', 'testimonials-3.png', 'testimonials-1.png', 'testimonials-2.png', 'testimonials-3.png') ?>
                         <div class="client_testimonials_slider">
                             <div>
-                                <div class="">
-                                    <p class="card-position">Rohan Bedi</p>
-                                    <div class="rates-review">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                <div class="bg-white p-md-15" style="border-radius:15px">
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <p class="card-position">Rohan Bedi</p>
-                                    <div class="rates-review">
+                                    <hr>
+                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-white p-md-15" style="border-radius:15px">
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <p class="card-position">Rohan Bedi</p>
-                                    <div class="rates-review">
+                                    <hr>
+                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-white p-md-15" style="border-radius:15px">
                                     <div class="card-comment">
                                         <p>indiafinproo made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <p class="card-position">Rohan Bedi</p>
-                                    <div class="rates-review">
+                                    <hr>
+                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-white p-md-15" style="border-radius:15px">
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <p class="card-position">Rohan Bedi</p>
-                                    <div class="rates-review">
+                                    <hr>
+                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                    <div class="card-comment mb-0">
+                                        <p>indiafinpro made the application process easier to understand. The guidance
+                                            on documents and next steps was helpful.”</p>
+                                    </div>
+                                    </hr>
+                                    <p class="card-position">Rohan Bedi</p>
+                                    <div class="rates-review mb-0">
+                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bg-white p-md-15" style="border-radius:15px">
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <p class="card-position">Rohan Bedi</p>
-                                    <div class="rates-review">
+                                    <hr>
+                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    <div class="card-comment">
-                                        <p>indiafinpro made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -397,40 +408,14 @@ $this->load->view('includes/header');
         </div>
     </section>
 
-
-
-    <section class="section section-theme-5 pt-60 pt-md-60 pt-xl-100 partner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7 col-12 m-auto">
-                    <header class="section-header d-flex flex-column text-center mb-40">
-                        <h2>Meet Our NBFC Partners</h2>
-                        <p>We partner with the best to serve you better.
-                        <p>
-                    </header>
-                </div>
-            </div>
-
-            <div class="trending-categories-slider">
-                <?php foreach ($banklist as $row) { ?>
-                <div class="wrap text-center">
-                    <div class="justify-content-center categories-image">
-                        <img src="<?php echo base_url('assets/images/bank/' . $row->bank_image); ?>"
-                            alt="<?= $row->bank_name ?>" class="m-auto img-fluid">
-                    </div>
-                </div>
-                <?php } ?>
-            </div>
-        </div>
-    </section>
     <section
-        class="section section-theme-1 bg-light-sky section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-125 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-125 ">
+        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-125 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-125 ">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
 
                     <p class="mb-10 mb-lg-15 title-text text-success text-uppercase">FAQ</p>
-                    <h2 class="mb-15">Frequently Asked Questions</h2>
+                    <h2 class="mb-15">Frequently Asked <span class="text-color-blue">Questions</span></h2>
                     <p>Got questions? We’ve got answers. Here’s everything you need to know about applying for a loan
                         with indiafinpro.</p>
 
@@ -578,9 +563,36 @@ $this->load->view('includes/header');
             </div>
         </div>
     </section>
+
+
+    <section class="section section-theme-5 pt-60 pt-md-60 pt-xl-100 partner-section  bg-light-sky">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-12 m-auto">
+                    <header class="section-header d-flex flex-column text-center mb-40">
+                        <h2>Meet Our <span class="text-color-blue">NBFC Partners</span></h2>
+                        <p>We partner with the best to serve you better.
+                        <p>
+                    </header>
+                </div>
+            </div>
+
+            <div class="trending-categories-slider">
+                <?php foreach ($banklist as $row) { ?>
+                <div class="wrap text-center">
+                    <div class="justify-content-center categories-image">
+                        <img src="<?php echo base_url('assets/images/bank/' . $row->bank_image); ?>"
+                            alt="<?= $row->bank_name ?>" class="m-auto img-fluid">
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+    </section>
+    
     <section
         class="section section-contact section-theme-1 pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-600 contact-section"
-        id="contactus">
+        id="contactus" style="background:rgba(234, 242, 255, 1)">
         <div class="container">
 
             <div class="row">
@@ -588,7 +600,7 @@ $this->load->view('includes/header');
                     <header class="section-header text-center text-lg-center">
                         <span class="text-success text-uppercase text-outlined text-top mb-10 d-block">Drop Us a
                             Message</span>
-                        <h2>We'd Love To Help You</h2>
+                        <h2>We'd Love To <span class="text-color-blue">Help You</span></h2>
                         <p class="text-center">Fill in your details and our team will get back to you shortly.</p>
                     </header>
                 </div>
@@ -656,7 +668,7 @@ $this->load->view('includes/header');
                         </ul>
                     </div>
                     <div class="col-12 col-sm-10 col-md-6 m-auto mb-40 mb-md-0">
-                        <?php echo form_open('infopage/contactsubmission', array('id' => 'contactForm', 'class' => 'contac-form', 'novalidate' => 'novalidate')); ?>
+                        <?php echo form_open('infopage/contactsubmission', array('id' => 'contactForm', 'class' => 'contac-form customefrm', 'novalidate' => 'novalidate')); ?>
                         <div class="row">
                             <div class="form-group col-6 mb-15 mb-md-20 mb-lg-25">
                                 <input class="form-control" type="text" name="fullname" placeholder="Your Name" required

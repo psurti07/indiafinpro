@@ -1150,3 +1150,13 @@ a {
    height: 48px;
    align-items: center;
 }
+.customefrm{
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+
+}
+.frmtext{
+  font-size: 14px;
+  font-weight: 700;
+}

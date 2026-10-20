@@ -1,5 +1,5 @@
 <?php
-$this->load->view('includes/header-offer.php');
+$this->load->view('includes/header-apply.php');
 //$today = date("Y-m-d", strtotime($userdetails['rec_date']));
 //$last30 = date('Y-m-d', strtotime('-30 days'));
 //if ($today <= $last30) {
@@ -9,35 +9,21 @@ $this->load->view('includes/header-offer.php');
 //}
 $eligibilityamtindia = formatePriceIndia($eligibilityamt);
 ?>
-
-<main class="main">
-    <section class="section section-theme-1 packages-block pt-40 bg-light section-theme-12">
+<section class="visual-block visual-theme-5 bg-dark hero-section text-black pt-60 pt-md-60 pt-xl-100">
         <div class="container">
-            <div class="loan-offer-card how-we-help-block">
-                <div class="row align-items-center mb-30">
-                    <div class="col-12 col-md-8 col-lg-8">
-
-                        <div class="subhead mb-0 p-30">
-
-                            <h5 class="mb-10 text-white"><?php echo $userdetails['loanname']; ?></h5>
-                            <p class="text-white">Your <strong class="text-success">Rs.
-                                    <?php echo $eligibilityamtindia; ?> </strong> pre-approved loan is waiting.
-                                Purchase
-                                a subscription to proceed.</p>
-                            <span class='px-10 h6 rounded py-5 d-inline-block offer-valid-content'><i
-                                    class="fa-regular fa-clock me-10"></i>Valid
-                                till 12 AM tonight</span>
-                        </div>
-
-
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+                    
+                    <div class="visual-textbox pt-0">
+                        <h2 class="text-light">Your Loan Search Starts Here </h2>
+                        <p class="text-light">Access Options Up to <span style="background: linear-gradient(167.62deg, #2052B6 9%, #F4DECA 428%); padding: 9px; border-radius: 22px;"> ₹10 Lakhs*</span></p>
+                        <p class="text-light">Get your business loan approved quickly with minimal paperwork, transparent terms and a simple 100% online process.</p>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <img src="<?php echo base_url('assets/images/img/subscriber.png'); ?>" alt="image" class="">
+                    <div class="banner__img-two">
+                        <img src="<?= base_url('assets/images/image_30.png'); ?>" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-8 mb-15 mb-md-30">
+                <div class="col-12 col-md-7 col-lg-7 mb-15 mb-md-30">
                     <div class="block-holder form-condidates bg-white shadow p-0 border">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6 p-0">
@@ -194,9 +180,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
 
 
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4 mb-15 mb-md-30">
+                        <div class="col-12 col-md-12 mb-15 mb-md-30">
                     <div class="block-holder form-condidates bg-white shadow p-30 border">
                         <span class="text-uppercase fw-normal sub-title mb-5 d-block text-gray-alt h6">Desired
                             Loan
@@ -295,6 +279,9 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                         </div>
                     </div>
                 </div>
+                    </div>
+                </div>
+                
     </section>
     <section class="pb-4">
         <div class="container">
@@ -319,35 +306,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
             </div>
         </div>
     </section>
-    <!--<section class="section section-theme-10 latest-candidates-block bg-light-sky pt-30 pt-md-40 pt-lg-50 pt-xxl-50 pb-30 pb-md-50 pb-lg-60 pb-xxl-60">
-    <div class="container">
-      <div class="row mb-30 mb-md-40">
-        <div class="col-12">
-          <h4 class="text-center">Our Customers Testimonials</h4>
-          <p class="text-center">Here Is What Our Clients Have To Say About Us</p>
-        </div>
-      </div>
-
-      <div class="top_companies_holder">
-        <?php $testimoniallist = array('1.png', '2.png', '3.png', '4.png', '5.png', '6.png') ?>
-        <div class="companies-slider">
-          <?php foreach ($testimoniallist as $row) { ?>
-            <div class="slick-slide">
-              <article>
-                <div class="wrap">
-                  <div class="">
-                    <img src="<?php echo base_url() ?>assets/images/testimonial/<?php echo $row ?>" alt="customer img">
-                  </div>
-                </div>
-              </article>
-            </div>
-          <?php } ?>
-        </div>
-      </div>
-    </div>
-  </section>-->
-</main>
-
+    
 <script type="text/javascript">
 $(document).ready(function() {
     var windowWidth = $(window).width();

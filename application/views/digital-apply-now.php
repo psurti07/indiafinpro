@@ -8,23 +8,27 @@ $this->load->view('includes/header-apply.php');
                 <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-2">
                     
                     <div class="visual-textbox pt-0">
-                        <h2 class="text-light">Personal loans upto ₹1,00,000 </h2>
+                        <h2 class="text-light">Your Loan Search Starts Here </h2>
+                        <p class="text-light">Access Options Up to <span style="background: linear-gradient(167.62deg, #2052B6 9%, #F4DECA 428%); padding: 9px; border-radius: 22px;"> ₹10 Lakhs*</span></p>
+                        <p class="text-light">Get your business loan approved quickly with minimal paperwork, transparent terms and a simple 100% online process.</p>
                     </div>
                     <div class="banner__img-two">
                         <img src="<?= base_url('assets/images/image_30.png'); ?>" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 col-xl-5 order-md-2 order-1">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6 order-md-2 order-1">
                     <div class="account-box">
                         <?php if ($processstep == 'step1') { ?>
                         <div class="account-box-frame text-dark bg-white shadow">
-                            <div class="section-header text-center mb-0">
-                                <span class="text-success text-uppercase text-outlined text-top mb-15 d-block">Start
-                                    Your Loan</span>
-                                <h5 class="text-black">Explore Personal Loan Options up to  <div class="range"
+                            <div class="section-header mb-0">
+                                <span class="text-dark text-left fw-bold" style="font-size:14px">Loan Application</span>
+                                <span class="text-dark text-right fw-bold" style="float:right;font-size:14px;margin-top: 12px;">Step 1 to 4</span>
+
+                                <hr>
+                                <h5 class="text-black text-center">Apply For <div class="range"
                                         style="display: inline-block;">
                                         <div class="">
-                                            <span class="text-success fs-5">₹10 Lakhs</span>
+                                            <span class="text-success fs-5 text-color-blue">₹10 Lakhs</span> Loan in Minutes!  
                                         </div>
                                     </div></h5>
 
@@ -34,18 +38,19 @@ $this->load->view('includes/header-apply.php');
                                 <div class="col-12 mb-15">
                                     <div class="form-group">
                                         <div class="range">
-                                            <div class="range__value text-center bg-light">
-                                                <span class="fs-3"></span>
-                                            </div>
-                                            <div class="d-flex justify-content-between required-amount">
-                                                <h6 class="text-uppercase mb-0">Enter Required Amount</h6>
-                                                <h6 class="text-uppercase mb-0">₹1L – ₹10L</h6>
+                                            
+                                            <div class="d-flex justify-content-between required-amount mt-20">
+                                                <h6 class="text-uppercase mb-0 frmtext">Enter Required Amount</h6>
+                                                <h6 class="text-uppercase mb-0">
+                                                    <div class="range__value">
+                                                <span class="fs-4 text-color-blue fw-bold"></span>
+                                            </div></h6>
                                             </div>
                                             <div class="range__slider">
                                                 <input type="range" name="loanamount" step="10000">
                                             </div>
                                             <div class="d-flex justify-content-between required-price mb-10">
-                                                <h6 class="text-uppercase mb-0">₹1,00,000</h6>
+                                                <h6 class="text-uppercase mb-0">₹10,000</h6>
                                                 <h6 class="text-uppercase mb-0">₹10,00,000</h6>
                                             </div>
                                         </div>
@@ -53,7 +58,7 @@ $this->load->view('includes/header-apply.php');
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group error">
-                                        <label class="text-uppercase h6 mb-10 text-gray-alt">Mobile number</label>
+                                        <label class="text-uppercase mb-10 frmtext">Mobile number</label>
                                         <div class="input-group mb-15">
                                             <span class="input-group-text text-dark fw-bold rounded-0 py-0 px-15"
                                                 id="basic-addon1">+91</span>
@@ -72,7 +77,7 @@ $this->load->view('includes/header-apply.php');
                                                 id="tandc" class="custom-control-input mb-0 mt-5" value="1" checked
                                                 required>
                                             <label class="custom-control-label" for="tandc"><small
-                                                    class="ms-10 d-block h6 fw-normal">By
+                                                    class="ms-10 d-block fw-normal" style="font-size:12px">By
                                                     submitting the
                                                     form and proceeding, you agree to the <a
                                                         href="<?= base_url('terms-conditions') ?>" target="_blank"
@@ -94,7 +99,7 @@ $this->load->view('includes/header-apply.php');
                                             <input type="checkbox" name="promotion" id="promotion"
                                                 class="custom-control-input mb-0 mt-5" value="1" checked required>
                                             <label class="custom-control-label" for="promotion"><small
-                                                    class="ms-10 d-block h6 fw-normal">
+                                                    class="ms-10 d-block fw-normal" style="font-size:12px">
                                                     I
                                                     agree to receive
                                                     promotional & informational communications from indiafinproo
@@ -107,11 +112,22 @@ $this->load->view('includes/header-apply.php');
                                     </div>
                                 </div>
                                 <div class="text-danger mt-3 mb-3" id="mobilenoError1"></div>
-                                <div class="col-12">
+                                <div class="col-12 mb-3">
                                     <button type="submit" id="formsubmit1"
                                         class="btn btn-green btn-sm text-uppercase"><span class="btn-text">Start
                                             Process <i
                                         class="fa-solid fa-arrow-right"></i></span></button>
+                                </div>
+                                <h6 class="text-center mt-md-20 mb-md-20">Our NBFC Partners</h6>
+                                <div class="lending-bank-slider">
+                                    <?php foreach ($banklist as $row) { ?>
+                                    <div class="wrap text-center">
+                                        <div class="justify-content-center categories-image m-1">
+                                            <img src="<?php echo base_url('assets/images/bank/' . $row->bank_image); ?>"
+                                                alt="<?= $row->bank_name ?>" class="m-auto img-fluid">
+                                        </div>
+                                    </div>
+                                    <?php } ?>
                                 </div>
                                
                                 </div>
@@ -123,7 +139,7 @@ $this->load->view('includes/header-apply.php');
                         <div class="account-box-frame text-dark bg-white card shadow-sm border">
                             <div class="">
                                 <h5 class="mb-10 text-start fw-bold">Verify your mobile</h5>
-                                <h6 class="fw-normal">We've sent a 6-digit OTP to
+                                <h6 class="fw-normal">We've sent a 4-digit OTP to
                                     <strong><?php echo $userdetails['mobile']; ?></strong>
                                 </h6>
 
@@ -136,8 +152,8 @@ $this->load->view('includes/header-apply.php');
                                     value="<?php echo $userdetails['loanamount']; ?>">
                                 <div class="col-12 mb-15 mb-md-20">
                                     <div class="form-group error">
-                                        <label class="text-uppercase h6 mb-10 text-gray-alt">Enter OTP</label>
-                                        <div class="input-field text-start">
+                                        <label class="text-uppercase mb-10 frmtext">Enter OTP</label>
+                                        <div class="input-field text-center">
                                             <input type="number" maxlength="1" inputmode="numeric" pattern="[0-9]*"
                                                 id="otpcode" name="otpcode[]" class="me-md-0 me-2 otp-input">
                                             <input type="number" maxlength="1" inputmode="numeric" pattern="[0-9]*"
@@ -179,6 +195,17 @@ $this->load->view('includes/header-apply.php');
                                             class="btn-text">Verify
                                             OTP <i class="fa-solid fa-arrow-right"></i></span></button>
                                 </div>
+                                <h6 class="text-center mt-md-20 mb-md-20">Our NBFC Partners</h6>
+                                <div class="lending-bank-slider">
+                                    <?php foreach ($banklist as $row) { ?>
+                                    <div class="wrap text-center">
+                                        <div class="justify-content-center categories-image m-1">
+                                            <img src="<?php echo base_url('assets/images/bank/' . $row->bank_image); ?>"
+                                                alt="<?= $row->bank_name ?>" class="m-auto img-fluid">
+                                        </div>
+                                    </div>
+                                    <?php } ?>
+                                </div>
                                 <div class="col-12">
                                     <div class="card otp-velidation-text shadow-none bg-light border mt-15">
                                         <div class="card-body p-10 ">
@@ -196,6 +223,7 @@ $this->load->view('includes/header-apply.php');
                                         </div>
                                     </div>
                                 </div>
+                                
 
                             </div>
                             <?php echo form_close(); ?>
@@ -221,21 +249,7 @@ $this->load->view('includes/header-apply.php');
                                 <input type="hidden" id="usermobile" name="usermobile"
                                     value="<?php echo $userdetails['mobile']; ?>">
 
-                                <!-- <div class="size-details">
-                                    <ul class="nav form-tabs mb-15 mb-md-20" id="mylist">
-                                        <li data-value="1">
-                                            <button class="nav-link active-size active" data-bs-toggle="tab"
-                                                data-bs-target="#nav-tab01" type="button">Salaried</button>
-                                        </li>
-                                        <li data-value="2">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-tab02"
-                                                type="button">Self-Employed</button>
-                                        </li>
-                                    </ul>
-                                    <input type="hidden" id="usertype" name="usertype" value="1">
-                                </div>   -->
-
-                                <label class="text-uppercase h6 mb-10 text-gray-alt">Employment type</label>
+                                <label class="text-uppercase mb-10 frmtext">Employment type</label>
                                 <div class="col-md-6 col-lg-6 col-sm-6 col-12 mb-md-0 mb-10">
                                     <fieldset class="picker1">
                                         <label for="personalloan" class="w-100">
@@ -283,7 +297,7 @@ $this->load->view('includes/header-apply.php');
                                 </div>
                                 <div class="col-12 mb-15 mb-md-20 mt-20">
                                     <div class="form-group">
-                                        <label class="text-uppercase h6 mb-10 text-gray-alt">Full name</label>
+                                        <label class="text-uppercase mb-10 frmtext">Full name</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text text-dark fw-bold rounded-0 py-0 px-20"
                                                 id="basic-addon1"> <i class="fa-regular fa-user"></i></span>
@@ -296,7 +310,7 @@ $this->load->view('includes/header-apply.php');
                                 </div>
                                 <div class="col-12 mb-15 mb-md-20">
                                     <div class="form-group">
-                                        <label class="text-uppercase h6 mb-10 text-gray-alt">Email address</label>
+                                        <label class="text-uppercase mb-10 frmtext">Email address</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text text-dark fw-bold rounded-0 py-0 px-20"
                                                 id="basic-addon1"> <i class="fa-regular fa-envelope"></i></span>
@@ -312,7 +326,36 @@ $this->load->view('includes/header-apply.php');
                                                 class="fa-solid fa-arrow-right"></i></span></button>
                                 </div>
                             </div>
+                            
                             <?php echo form_close(); ?>
+                            <h6 class="text-center mt-md-20 mb-md-20">Our NBFC Partners</h6>
+                                <div class="lending-bank-slider">
+                                    <?php foreach ($banklist as $row) { ?>
+                                    <div class="wrap text-center">
+                                        <div class="justify-content-center categories-image m-1">
+                                            <img src="<?php echo base_url('assets/images/bank/' . $row->bank_image); ?>"
+                                                alt="<?= $row->bank_name ?>" class="m-auto img-fluid">
+                                        </div>
+                                    </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card otp-velidation-text shadow-none bg-light border mt-15">
+                                        <div class="card-body p-10 ">
+                                            <div class="d-flex align-items-center">
+
+                                                <i class="fa-solid fa-shield text-success"></i>
+
+                                                <div class="ms-10">
+                                                    <p class="mb-0 fw-light h6 lh-2">indiafinprooo will never
+                                                        call you for your
+                                                        OTP. Treat your OTP like a password — do not share it with
+                                                        anyone. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                         <?php } ?>
                     </div>
@@ -320,32 +363,182 @@ $this->load->view('includes/header-apply.php');
             </div>
         </div>
     </section>
- <section class="section section-theme-5 pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 partner-section">
+
+    
+    <section
+        class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-12 m-auto">
-                    <header class="section-header d-flex flex-column text-center mb-40">
-                        <h2>Meet Our NBFC Partners</h2>
-                        <p>We partner with the best to serve you better.
-                        <p>
+
+                    <header class="section-header text-center text-lg-center">
+                        <span class="text-uppercase text-outlined text-top mb-15 d-block text-color-blue">Our
+                            Process</span>
+                        <h2>How It <span class="text-color-blue">Works !</span></h2>
+
                     </header>
+
+
+
                 </div>
             </div>
 
-            <div class="trending-categories-slider">
-                <?php foreach ($banklist as $row) { ?>
-                <div class="wrap text-center">
-                    <div class="justify-content-center categories-image">
-                        <img src="<?php echo base_url('assets/images/bank/' . $row->bank_image); ?>"
-                            alt="<?= $row->bank_name ?>" class="m-auto img-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-12">
+                    <div class="row process-boxes">
+                        <div class="col-md-6 col-sm-6 mb-10">
+
+                            <div class="categories-item">
+                               
+                                    <div class="categories-image">
+                                        <span class="icon">
+                                            <img src="<?php echo base_url('assets/images/icons/s1.png'); ?>" alt="icon" style="max-width: unset;">
+                                        </span>
+                                    </div>
+                               
+                                <div class="text-start ms-20">
+                                    <p class="mb-0">Start by entering your mobile number and bank-registered name.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-10">
+
+                            <div class="categories-item">
+                               
+                                    <div class="categories-image">
+                                        <span class="icon">
+                                            <img src="<?php echo base_url('assets/images/icons/s2.png'); ?>" alt="icon" style="max-width: unset;">
+                                        </span>
+                                    </div>
+                                
+                                <div class="text-start ms-20">
+                                    <p class="mb-0">Fill in the required information to let our automated system assess your eligibility and show your pre-approved loan offer(s). This is not the final offer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-10">
+
+                            <div class="categories-item">
+                                <div>
+                                    <div class="categories-image">
+                                        <span class="icon">
+                                            <img src="<?php echo base_url('assets/images/icons/s3.png'); ?>" alt="icon" style="max-width: unset;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-start ms-20">
+                                    <p class="mb-0">Subscribe to unlock access to your displayed pre-approved loan offer(s).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-10">
+
+                            <div class="categories-item">
+                                <div>
+                                    <div class="categories-image">
+                                        <span class="icon">
+                                            <img src="<?php echo base_url('assets/images/icons/s4.png'); ?>" alt="icon" style="max-width: unset;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-start ms-20">
+                                    <p class="mb-0">Within 24-48 hours, our login team will reach out for verification and guide you through the document submission process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-10">
+
+                            <div class="categories-item">
+                                <div>
+                                    <div class="categories-image">
+                                        <span class="icon">
+                                            <img src="<?php echo base_url('assets/images/icons/s5.png'); ?>" alt="icon" style="max-width: unset;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-start ms-20">
+                                    <p class="mb-0">Your documents and profile will be verified by the NBFC in accordance with its terms and conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 mb-10">
+
+                            <div class="categories-item">
+                                <div>
+                                    <div class="categories-image">
+                                        <span class="icon">
+                                            <img src="<?php echo base_url('assets/images/icons/s6.png'); ?>" alt="icon" style="max-width: unset;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-start ms-20">
+                                    <p class="mb-0">The NBFC will determine loan sanction, approval, and disbursement in accordance with its rules and regulations.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <?php } ?>
+
             </div>
         </div>
     </section>
 
-    <section class="top_companies_block section-theme-7 pt-0">
+    
+    <section class="section section-theme-12 how-we-help-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 txt-col mb-20 text-center">
+
+                    <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">Why Apply With Us</p>
+                    <h2 class="mb-15">Benefits & Features</h2>
+                    
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 img-col">
+                    <div class="row gap-25">
+                        <div class="col-md-3 commmon-box">
+                            <div class="text-start mb-10">
+
+                                <div class="icon">
+                                    <img src="<?php echo base_url('assets/images/icons/icon_1.png'); ?>" alt="icon" class="icon-img">
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <h6 class="fs-6">Interest rate starting at 11%</h6>
+                                <p class="mt-10">Benefit from low interest rates, ensuring affordability and savings.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 commmon-box">
+                            <div class="text-start mb-10">
+                                <div class="icon">
+                                    <img src="<?php echo base_url('assets/images/icons/icon_2.png'); ?>"
+                                        alt="icon" class="icon-img">
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <h6 class="fs-6">100% Digital Process</h6>
+                                <p class="mt-10">Effortlessly manage your loan with our paperless digital process.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 commmon-box">
+                            <div class="text-start mb-10">
+                                <div class="icon">
+                                    <img src="<?php echo base_url('assets/images/icons/icon_3.png'); ?>" alt="icon" class="icon-img">
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <h6 class="fs-6">Flexible Tenure upto 60 Months</h6>
+                                <p class="mt-10">Tailored repayment options up to 60 months for your convenience.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top_companies_block section-theme-7 pt-0 pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky">
         <div class="container">
             <header>
                 <h4 class="text-center">NBFC Personal Loan Criteria</h4>
@@ -355,13 +548,16 @@ $this->load->view('includes/header-apply.php');
                 <div class="left_align">
                     <div class="detail_box candidate">
                         <div class="p-20">
-                            <strong class="h5 text-light">Salaried Employees</strong>
-                            <ul class="list-unstyled list text-light mt-10">
+                            <strong class="h5">For Salaried</strong>
+                            <hr>
+                            <ul class="list-unstyled list mt-10">
                                 <li><img src="<?= base_url('assets/img/icons/check.svg') ?>" alt=""> Minimum Age - 21
                                     Years
                                 </li>
+                                <hr>
                                 <li><img src="<?= base_url('assets/img/icons/check.svg') ?>" alt=""> Minimum Salary -
                                     Rs. 15,000/month</li>
+                                <hr>
                                 <li><img src="<?= base_url('assets/img/icons/check.svg') ?>" alt=""> 1 Year Job
                                     Stability</li>
                             </ul>
@@ -372,12 +568,15 @@ $this->load->view('includes/header-apply.php');
                 <div class="right_align">
                     <div class="detail_box candidate">
                         <div class="p-20">
-                            <strong class="h5 text-light">Self-employed Individuals</strong>
-                            <ul class="list-unstyled list text-light mt-10">
+                            <strong class="h5">For Self-Employed</strong>
+                            <hr>
+                            <ul class="list-unstyled list mt-10">
                                 <li><img src="<?= base_url('assets/img/icons/check.svg') ?>" alt=""> Minimum Age - 21
                                     Years</li>
+                                <hr>
                                 <li><img src="<?= base_url('assets/img/icons/check.svg') ?>" alt=""> Income Tax Return
                                     of Minimum 1 Year</li>
+                                <hr>
                                 <li><img src="<?= base_url('assets/img/icons/check.svg') ?>" alt=""> 1 Year Business
                                     Stability</li>
                             </ul>
@@ -388,79 +587,154 @@ $this->load->view('includes/header-apply.php');
             </div>
         </div>
     </section>
-    <section
-        class="section section-theme-12 how-we-help-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60">
+     <section
+        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-125 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-125 ">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-5 txt-col mb-20">
-                    <h2 class="mb-15">Why Thousands <br> Trust  <span class="text-success"> indiafinprooo </span></h2>
-                    <p>At indiafinprooooo, we are defined by our commitment to
-                        quality, customer-focused methodology, and the goal of
-                        empowering all our diverse financial clients.</p>
-                    <ul class="list-unstyled help-list">
-                        <li><img src="<?php echo base_url('assets/images/icons/list-img.png'); ?>" alt="image">
-                            Effective Collaboration With Top NBFCs</li>
-                        <li><img src="<?php echo base_url('assets/images/icons/list-img.png'); ?>" alt="image">Expert
-                            Financial Consultation</li>
-                        <li><img src="<?php echo base_url('assets/images/icons/list-img.png'); ?>" alt="image">
-                            Easy Application Process</li>
-                        <li><img src="<?php echo base_url('assets/images/icons/list-img.png'); ?>" alt="image">
-                            Impeccable Subscription Benefits</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-12 col-lg-7 img-col">
-                    <div class="two-columns">
-                        <div class="column bg-white">
-                            <div class="text-start mb-10">
+                <div class="col-md-4">
 
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/network.png'); ?>" alt="icon">
+                    <p class="mb-10 mb-lg-15 title-text text-success text-uppercase">FAQ</p>
+                    <h2 class="mb-15">Frequently Asked <span class="text-color-blue">Questions</span></h2>
+                    <p>Got questions? We’ve got answers. Here’s everything you need to know about applying for a loan
+                        with indiafinpro.</p>
+
+                </div>
+                <div class="col-md-8">
+                    <div class="accordion" id="faq-accordion-2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span class="bullet"></span>
+                                    <span class="title">What purposes can a personal loan be used for?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>A personal loan can be used for any personal expenses, including paying-off
+                                        unexpected bills, debt consolidation, wedding expenses, higher education, home
+                                        renovation, travel, shopping, covering a business cost, etc.</p>
                                 </div>
-                            </div>
-                            <div class="text-start">
-                                <h6>Trusted NBFC Network</h6>
-                                <p class="mt-10">Enjoy the highly customised financial
-                                    services made possible by our industry
-                                    connections.</p>
                             </div>
                         </div>
-                        <div class="column bg-white">
-                            <div class="text-start mb-10">
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/consultation.png'); ?>"
-                                        alt="icon">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="bullet"></span>
+                                    <span class="title">Do I have to pledge any assets to avail a personal loan?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>A personal loan is an unsecured type of credit, which means you do not have to
+                                        pledge any assets as collateral.</p>
                                 </div>
-                            </div>
-                            <div class="text-start">
-                                <h6>Consultation That Cares</h6>
-                                <p class="mt-10">Get one-on-one guidance from certified
-                                    financial experts, whenever you need it.</p>
                             </div>
                         </div>
-                        <div class="column bg-white">
-                            <div class="text-start mb-10">
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/client.png'); ?>" alt="icon">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="bullet"></span>
+                                    <span class="title">How do I know if I am eligible for a personal loan?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>
+                                        Here are the common eligibility criteria for a personal loan:<br>
+                                        <strong>Salaried Professionals</strong><br>
+                                    <ul>
+                                        <li>Minimum Age: 21 years</li>
+                                        <li>Minimum Monthly Income: Rs. 15,000 (should reflect in the bank)s</li>
+                                        <li>Minimum Job Stability: 1 Year</li>
+                                    </ul>
+                                    <strong>Self-employed Individuals</strong><br>
+                                    <ul>
+                                        <li>Minimum Age: 21 years</li>
+                                        <li>Minimum ITR: 1 Year</li>
+                                        <li>Minimum Business Stability: 1 Year</li>
+                                    </ul>
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="text-start">
-                                <h6>Client-First Approach</h6>
-                                <p class="mt-10">Our team works as an extension of you —
-                                    every recommendation is built around your
-                                    goals.</p>
                             </div>
                         </div>
-                        <div class="column bg-white">
-                            <div class="text-start mb-10">
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/journey.png'); ?>" alt="icon">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="bullet"></span>
+                                    <span class="title">What are the documents required for applying for a personal
+                                        loan?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>
+                                        When applying for a personal loan, the following general documents are needed:
+                                        <br>
+                                        <strong>For Salaried:</strong> <br>
+                                    <ul>
+                                        <li>Aadhaar Card</li>
+                                        <li>PAN Card</li>
+                                        <li>Residence Proof</li>
+                                        <li>Bank Statement</li>
+                                        <li>Income Proof</li>
+                                    </ul>
+                                    <strong>For Self-Employed:</strong> <br>
+                                    <ul>
+                                        <li>Aadhaar Card</li>
+                                        <li>PAN Card</li>
+                                        <li>Residence Proof</li>
+                                        <li>Bank Statement</li>
+                                        <li>Income Computation</li>
+                                        <li>Profit & Loss Account Statement</li>
+                                        <li>Balance Sheet</li>
+                                        <li>Service Tax Registration, License, Registration Certificate</li>
+                                        <li>Clearance Certificate/IT Assessment</li>
+                                        <li>Income Tax Returns</li>
+                                    </ul>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="text-start">
-                                <h6>Fully Online Journey</h6>
-                                <p class="mt-10">From application to disbursal, everything
-                                    happens digitally with zero paperwork
-                                    stress.</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span class="bullet"></span>
+                                    <span class="title">Can I get tax benefits on personal loans?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>Personal loans do not have any direct tax benefits. However, if you use the funds
+                                        to renovate your house or to incur business expenses, you may get tax benefits
+                                        under the Income Tax Act of India.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <span class="bullet"></span>
+                                    <span class="title">Why is having a good credit score so important?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#faq-accordion-2">
+                                <div class="accordion-body">
+                                    <p>Your credit score represents your creditworthiness and repayment ability. Your
+                                        chances of obtaining a loan with favourable terms and a low interest rate are
+                                        very high if your credit score is high.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

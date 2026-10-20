@@ -110,9 +110,7 @@
 	                <div class="col-12 col-md-6 text-sm-start text-center">
 	                    <p class="small"><?php echo date('Y') . ' &copy; ' . COMPANY_NAME; ?>. All rights reserved.</p>
 	                </div>
-					<div class="col-12 col-md-6 text-sm-end text-center">
-	                    <p class="small"> Crafted with care in Surat, India.</p>
-	                </div>
+					
 	            </div>
 	        </div>
 	    </div>

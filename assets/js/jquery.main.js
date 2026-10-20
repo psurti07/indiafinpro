@@ -534,6 +534,54 @@ function initSlickCarousel() {
 		],
 	});
 
+	jQuery('.lending-bank-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		rows: 0,
+		arrows: false,
+		dots: false,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 1375,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
+
 	jQuery('.trending-categories-slider_1').slick({
 		slidesToScroll: 1,
 		slidesToShow: 3,

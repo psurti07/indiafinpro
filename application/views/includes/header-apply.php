@@ -61,12 +61,12 @@
 
     <?php echo link_tag('assets/css/vendors.css'); ?>
     <?php echo link_tag('assets/css/bootstrap.css'); ?>
-    <?php echo link_tag('assets/css/main.css'); ?>
-    <?php echo link_tag('assets/css/custom.css'); ?>
     <?php echo link_tag('assets/css/plugins/form-validation.css'); ?>
     <?php echo link_tag('assets/css/plugins/toastr.css'); ?>
     <?php echo link_tag('assets/css/plugins/fontawesome.css'); ?>
-    <?php echo link_tag('assets/css/jobplugin.css'); ?>
+    <?php //echo link_tag('assets/css/jobplugin.css'); ?>
+    <?php echo link_tag('assets/css/main.css'); ?>
+    <?php echo link_tag('assets/css/custom.css'); ?>
     <?php echo link_tag('assets/css/plugins/theme-color.css'); ?>
 
     <script src="<?= base_url('assets/js/plugins/jquery-3-6-0.min.js'); ?>"></script>

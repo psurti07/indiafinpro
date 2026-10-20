@@ -1,5 +1,5 @@
 <?php
-$this->load->view('includes/header-offer.php');
+$this->load->view('includes/header-apply.php');
 $today = date("Y-m-d", strtotime($userdetails['rec_date']));
 $last30 = date('Y-m-d', strtotime('-30 days'));
 if ($today <= $last30) {
@@ -10,11 +10,21 @@ if ($today <= $last30) {
 $eligibilityamtindia = formatePriceIndia($eligibilityamt);
 ?>
 
-<main class="main d-flex flex-column min-vh-100">
-    <section class="section section-theme-1 packages-block pt-40 bg-light">
+    <section class="visual-block visual-theme-5 bg-dark hero-section text-black pt-60 pt-md-60 pt-xl-100">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-8 mb-15 mb-md-30">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+                    
+                    <div class="visual-textbox pt-0">
+                        <h2 class="text-light">Your Loan Search Starts Here </h2>
+                        <p class="text-light">Access Options Up to <span style="background: linear-gradient(167.62deg, #2052B6 9%, #F4DECA 428%); padding: 9px; border-radius: 22px;"> ₹10 Lakhs*</span></p>
+                        <p class="text-light">Get your business loan approved quickly with minimal paperwork, transparent terms and a simple 100% online process.</p>
+                    </div>
+                    <div class="banner__img-two">
+                        <img src="<?= base_url('assets/images/image_30.png'); ?>" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-7 mb-15 mb-md-30">
                     <div class="block-holder form-condidates bg-white shadow">
                         <div class="d-flex">
                           <div>
@@ -24,7 +34,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                         class="">
                                 </span>
                             </div>
-</div>
+                        </div>
                             <div class="subhead ms-15">
                                 <h5 class="mb-5 text-dark"><?php echo $userdetails['loanname']; ?></h5>
                                 <!-- <p class="mb-0">Pre-Approved Offer : Congratulations! You're Eligible For <strong
@@ -192,10 +202,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                             </div>
                         </div>
                         <?php echo form_close(); ?>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+                        <div class="col-12">
                     <div class="card bg-white shadow border-0 p-25 mt-md-0 mt-5">
                         <span class="text-uppercase fw-boldsub-title mb-5 d-block text-gray-alt">Desired Loan
                             Amount</span>
@@ -293,6 +300,11 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                         </div>
                     </div>
                 </div>
+                    </div>
+                    
+                </div>
+
+                
             </div>
         </div>
     </section>
@@ -393,7 +405,6 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
             </div>
         </div>
     </div>
-</main>
 
 <script type="text/javascript">
 $(document).ready(function() {
