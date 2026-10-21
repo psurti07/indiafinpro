@@ -952,22 +952,33 @@ a {
   padding-bottom: 17px;
   background: #0B5FD0;
 }
-.text-color-blue{
-  color:#0256B9 !important;
+
+.text-color-blue {
+  color: #0256B9 !important;
 }
-.commmon-box{
-  background: rgba(246, 249, 255, 1);
+
+.commmon-box {
+  /* background: rgba(246, 249, 255, 1); */
   border: 1px solid rgba(227, 232, 240, 1);
   padding: 30px;
   border-radius: 25px;
   margin-left: 3px;
-  min-width: 380px;
+  /* min-width: 380px; */
+}
+.commmon-box:hover{
+ background: #0B5FD0 !important;
+}
+.commmon-box:hover,
+.commmon-box:hover h6,
+.commmon-box:hover p {
+  background: #0B5FD0;
+  color: #fff;
 }
 
-.icon-img{
+.icon-img {
   background: #0b5fd0;
-    padding: 5px;
-    border-radius: 10px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 @media (max-width: 767.98px) {
@@ -985,7 +996,7 @@ a {
 }
 
 .btn.btn-green:hover {
-  box-shadow: 0px 8px 20px -8px #00B04A;
+    box-shadow: 0px 8px 20px -8px #0b5fd0;
 }
 
 .btn.btn-brown:hover:before,
@@ -2779,7 +2790,6 @@ textarea.form-control.form-control-lg {
   line-height: 1.5;
   color: #ccc;
   font-weight: 500;
-  max-width: 620px;
   margin: 0 auto 40px;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
@@ -8140,8 +8150,9 @@ textarea.form-control.form-control-lg {
 }
 
 .trending-categories-slider .slick-slide {
-  padding: 0 10px 20px;
+  padding: 0 10px;
 }
+
 .lending-bank-slider .slick-slide {
   padding: 0 5px 5px;
 }
@@ -9465,7 +9476,7 @@ textarea.form-control.form-control-lg {
 .header-theme-1 .nav-opener span,
 .header-theme-1 .nav-opener:after,
 .header-theme-1 .nav-opener:before {
-  background: #20ca6f;
+    background: #fff;
 }
 
 .header-theme-1 .nav-close:hover span,
@@ -9479,7 +9490,7 @@ textarea.form-control.form-control-lg {
 
 @media (max-width: 991.98px) {
   .header-theme-1 .nav-drop {
-    background: #203818;
+    background: #000;
   }
 }
 
@@ -9487,6 +9498,7 @@ textarea.form-control.form-control-lg {
   .header-theme-1 .navigation>li>a:not(.btn) {
     color: #0C121A !important;
   }
+
   .header-menu .navigation>li>a:not(.btn) {
     color: #fff !important;
   }
@@ -12180,6 +12192,9 @@ textarea.form-control.form-control-lg {
   .subvisual-theme-1.block-404 .image-404 {
     margin: 0;
   }
+  .form-right-main {
+    padding: 0;
+}
 }
 
 .subvisual-theme-1.block-404 .image-404 img {
@@ -12192,8 +12207,8 @@ textarea.form-control.form-control-lg {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-radius: 25px;
-  background: rgba(5, 11, 31, 1);
+    border-radius: 25px 0 0 25px;
+  background: #050B1F;
   padding: 45px;
   border: 1px solid #E1E5EA;
 }
@@ -12401,9 +12416,7 @@ textarea.form-control.form-control-lg {
   background: #21ca6f;
 }
 
-.account-box .contac-form {
-  margin: 0 0 25px;
-}
+ 
 
 @media (min-width: 992px) {
   .account-box .contac-form {
@@ -12592,29 +12605,30 @@ textarea.form-control.form-control-lg {
 
 @media (min-width: 768px) {
   .section-faqs .accordion .accordion-header {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
   }
 }
 
 @media (min-width: 992px) {
   .section-faqs .accordion .accordion-header {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
   }
 }
 
 .section-faqs .accordion .accordion-button {
   display: flex;
   align-items: center;
-  width: 100%;
-  background: rgba(246, 249, 255, 1) !important;
-  border-radius: 50px;
+  width: 100%; 
+  border-radius: 24px;
   font-size: 14px;
   line-height: 26px;
   color: #000;
   border: 0;
-  padding: 7px;
+  padding: 14px;
   font-weight: 500;
   text-align: left;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -12653,7 +12667,7 @@ textarea.form-control.form-control-lg {
 
 @media (min-width: 768px) {
   .section-faqs .accordion .accordion-button .bullet {
-    margin: 0 15px 0 0;
+    margin:0 !important;
   }
 }
 
@@ -12714,10 +12728,10 @@ textarea.form-control.form-control-lg {
 
 .section-faqs .accordion .accordion-body {
   line-height: 1.9;
-  padding: 5px 10px 15px;
+  padding: 5px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .section-faqs .accordion .accordion-body {
     padding: 10px 20px 15px 45px;
   }
@@ -12733,7 +12747,7 @@ textarea.form-control.form-control-lg {
   .section-faqs .accordion .accordion-body {
     padding: 15px 40px 15px 60px;
   }
-}
+} */
 
 .section-faqs .textbox {
   max-width: 950px;
@@ -14972,10 +14986,11 @@ textarea.form-control.form-control-lg {
 .footer-theme-1 {
   position: relative;
   overflow: visible;
+      background: #0A1530;
 }
 
-.footer-theme-1 h5 {
-  color: #0C121A;
+.footer-theme-1 h6 {
+  color: #fff;
   position: relative;
   padding-top: 0;
   padding-bottom: 7px;
@@ -14990,6 +15005,7 @@ textarea.form-control.form-control-lg {
 .footer-theme-1 .pri-footer {
   position: relative;
   overflow: visible;
+  
 }
 
 .footer-theme-1 .pri-footer.bg-dark-green {
@@ -22733,8 +22749,9 @@ textarea.form-control.form-control-lg {
     font-weight: 800;
     line-height: 50.4px;
     padding-bottom: 0;
-    font-size: 48px;
+    font-size: 24px;
     letter-spacing: -1.2px;
+    line-height: 26px;
   }
 
 }
@@ -27468,18 +27485,7 @@ textarea.form-control.form-control-lg {
   position: relative;
   padding-left: 30px;
 }
-
-.section-theme-7 .list li:before {
-  top: 5px;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: url("../images/icons/tick-green.svg") no-repeat;
-  background-size: contain;
-}
-
+ 
 .section-theme-7 .download-btns {
   display: flex;
   max-width: 315px;
@@ -28065,7 +28071,6 @@ textarea.form-control.form-control-lg {
   padding: 10px 15px 0;
   color: #000;
   border-radius: 15px;
-  display: flex;
   margin: 0 0 30px;
 }
 
@@ -28091,11 +28096,20 @@ textarea.form-control.form-control-lg {
 }
 
 .top_companies_block .detail_box.candidate {
-  background: rgba(25, 83, 179, 1);
+  background: #F6F9FF;
   padding: 10px 15px 0;
   color: #fff;
 }
+.top_companies_block .detail_box.candidate:hover{
+  background-color: #1953B3;
 
+}
+
+.top_companies_block .detail_box.candidate:hover h5,
+.top_companies_block .detail_box.candidate:hover span,
+.top_companies_block .detail_box.candidate:hover svg{
+  color: #fff  !important;
+}
 @media (min-width: 1200px) {
   .top_companies_block .detail_box.candidate {
     padding: 10px 29px 0 10px;
@@ -29858,7 +29872,7 @@ textarea.form-control.form-control-lg {
 
 .categories-list {
   list-style: none;
-  padding: 36px;
+  padding: 10px;
   margin: -7px;
   display: flex;
   flex-flow: row wrap;
@@ -29866,9 +29880,10 @@ textarea.form-control.form-control-lg {
   position: relative;
   z-index: 1;
   background: #F4EFF8;
-    border-radius: 32px;
+  border-radius: 32px;
 }
-.header-theme-19{
+
+.header-theme-19 {
   background: #fff;
 }
 
@@ -29910,8 +29925,8 @@ textarea.form-control.form-control-lg {
 }
 
 .packages-block .categories-image {
-  width: 60px;
-  height: 60px;
+  /* width: 60px;
+  height: 60px; */
   background: #00B04A;
   border-radius: 16px;
   overflow: hidden;
@@ -29920,7 +29935,7 @@ textarea.form-control.form-control-lg {
   justify-content: center;
   margin: 0;
 }
- 
+
 
 
 .categories-item .title {
@@ -29930,7 +29945,17 @@ textarea.form-control.form-control-lg {
 }
 
 .categories-item:hover {
-  color: #fe7420;
+  background: #0B5FD0;
+}
+
+.categories-list .categories-item:hover .categories-image {
+  background-color: #46C768;
+  color: #fff;
+}
+
+
+.categories-list .categories-item:hover .content-text p {
+  color: #fff;
 }
 
 .explore-jobs-block {
@@ -49971,10 +49996,10 @@ textarea.form-control.form-control-lg {
 }
 
 .lending-bank-slider .categories-image {
-    border: 1px solid #E1E5EA !important;
-    border-radius: 16px !important;
-    padding: 12px;
-    background: #fff;
+  border: 1px solid #E1E5EA !important;
+  border-radius: 16px !important;
+  padding: 12px;
+  background: #fff;
 }
 
 .product-section .text-hold .tag-list span {
@@ -50115,12 +50140,10 @@ textarea.form-control.form-control-lg {
   left: 0;
 }
 
-.about-section .section-header h2 span {
-  border-bottom: 3px solid #0256B9;
-}
+
 .bg-light-sky {
-    --bs-bg-opacity: 1;
-    background-color: rgba(246, 249, 255, 1) !important;
+  --bs-bg-opacity: 1;
+  background-color: rgba(246, 249, 255, 1) !important;
 }
 
 @media screen and (min-width:992px) {
@@ -50182,10 +50205,10 @@ textarea.form-control.form-control-lg {
   }
 }
 
-#submitForm3 .salaried-img {
+  .salaried-img {
   width: 38px;
   height: 38px;
-  background: #00B04A;
+  background: #1953B3;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -50233,16 +50256,16 @@ textarea.form-control.form-control-lg {
 }
 
 .packages-block .picker1 label input:checked~.plan-details .fa-calendar-days {
-  color: #B9DCD0 !important;
+  color: #dedede;
 }
 
 .offer-valid-content {
   background: rgba(255, 87, 34, 0.15);
   border: 1px solid rgba(255, 87, 34, 0.30);
-    color: #FFCFB8 !important;
+  color: #FFCFB8 !important;
 }
 
- 
+
 
 .loan-offer-card {
   position: relative;
@@ -50251,36 +50274,38 @@ textarea.form-control.form-control-lg {
   border-radius: 24px;
 }
 
-.packages-block .features-list .feature-img{
+.packages-block .features-list .feature-img {
   background-color: #00BC7B26;
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    text-align: center;
-} 
-
-.subscription-card{
- border-radius: 24px; 
- 
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.packages-block .counter-box  .icon-wrap{
-      align-items: center;
-    border-radius: 12px;
-    background: #F0FDF4;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    margin: auto;
+.subscription-card {
+  border-radius: 24px;
+
 }
 
-.bg-dark{
+.packages-block .counter-box .icon-wrap {
+  align-items: center;
+  border-radius: 12px;
+  background: #F0FDF4;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  margin: auto;
+}
+
+.bg-dark {
   background: linear-gradient(180deg, #000000 0%, #050B1F 46.87%, #0256B9 100%);
 }
+
 .rates-review {
-    margin-bottom: 23px;
+  margin-bottom: 23px;
 }
+
 .rates-review img {
-    display: inline-block;
+  display: inline-block;
 }

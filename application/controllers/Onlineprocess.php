@@ -279,6 +279,8 @@ class Onlineprocess extends CI_Controller
 		$this->load->model('Site_Info_Model');
 		$meta = $this->Site_Info_Model->getmetakeywords('personal-subscription-plan');
 
+		$banklist = $this->Site_Info_Model->getbanklist(8);
+
 		$applyid = stringCrypt($key, 'decrypt');
 		$this->session->set_tempdata('applyid', $applyid, 3600);
 		$this->session->set_tempdata('companyemail', COMPANY_EMAIL, 3600);
@@ -307,7 +309,7 @@ class Onlineprocess extends CI_Controller
 				'cardtype' => $userdata->cardtype
 			);
 
-			$this->load->view('digital-eligibility', ['meta' => $meta, 'userdetails' => $data]);
+			$this->load->view('digital-eligibility', ['meta' => $meta, 'banklist' => $banklist, 'userdetails' => $data]);
 		}
 	}
 
@@ -315,6 +317,8 @@ class Onlineprocess extends CI_Controller
 	{
 		$this->load->model('Site_Info_Model');
 		$meta = $this->Site_Info_Model->getmetakeywords('personal-subscription-plan');
+
+		$banklist = $this->Site_Info_Model->getbanklist(8);
 
 		$applyid = stringCrypt($key, 'decrypt');
 		$this->session->set_tempdata('applyid', $applyid, 3600);
@@ -366,7 +370,7 @@ class Onlineprocess extends CI_Controller
 				$this->cache->file->save($roicachefile, $cache_data, 2592000);
 			}
 
-			$this->load->view('digital-pre-approval', ['meta' => $meta, 'userdetails' => $data, 'roipackages' => $roipackages]);
+			$this->load->view('digital-pre-approval', ['meta' => $meta, 'banklist' => $banklist, 'userdetails' => $data, 'roipackages' => $roipackages]);
 		}
 	}
 
@@ -375,6 +379,8 @@ class Onlineprocess extends CI_Controller
 		$roipackages = array();
 		$this->load->model('Site_Info_Model');
 		$meta = $this->Site_Info_Model->getmetakeywords('personal-subscription-plan');
+
+		$banklist = $this->Site_Info_Model->getbanklist(8);
 
 		$applyid = stringCrypt($key, 'decrypt');
 		$this->session->set_tempdata('applyid', $applyid, 3600);
@@ -452,7 +458,7 @@ class Onlineprocess extends CI_Controller
 				$this->cache->file->save($roicachefile, $cache_data, 2592000);
 			}
 
-			$this->load->view('digital-subscription-plan', ['meta' => $meta, 'userdetails' => $data, 'productdata' => $productdata, 'roipackages' => $roipackages]);
+			$this->load->view('digital-subscription-plan', ['meta' => $meta, 'banklist' => $banklist, 'userdetails' => $data, 'productdata' => $productdata, 'roipackages' => $roipackages]);
 		}
 	}
 

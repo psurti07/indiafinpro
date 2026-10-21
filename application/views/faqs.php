@@ -2,13 +2,13 @@
 $this->load->view('includes/header-apply');
 ?>
 
-<div class="subvisual-block subvisual-theme-1 bg-dark-green d-flex pt-60 pt-md-90 pt-lg-150 pb-30 text-white">
-  <div class="pattern-image"><img src="<?php echo base_url('assets/images/img/pages-2.jpg'); ?>" width="1920" height="570" alt="Pattern"></div>
+<div class="subvisual-block subvisual-theme-1 bg-light-sky d-flex pt-60 pt-md-90 pt-lg-150 pb-30 text-white">
+ 
   <div class="container position-relative text-center">
     <div class="row">
       <div class="col-12">
         <div class="subvisual-textbox text-dark">
-          <h1 class>Frequently Asked Questions</h1>
+          <h3>Frequently Asked Questions</h3>
           <p>Here are answers to some of the most Frequently Asked Questions (FAQs)</p>
         </div>
       </div>
@@ -24,7 +24,7 @@ $this->load->view('includes/header-apply');
           <div class="accordion" id="faq-accordion-1">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <button class="accordion-button collapsed bg-light-sky" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   <span class="bullet"></span>
                   <span class="title">What purposes can a personal loan be used for?</span>
                 </button>
@@ -37,7 +37,7 @@ $this->load->view('includes/header-apply');
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed bg-light-sky" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <span class="bullet"></span>
                   <span class="title">Do I have to pledge any assets to avail a personal loan?</span>
                 </button>
@@ -50,7 +50,7 @@ $this->load->view('includes/header-apply');
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="accordion-button collapsed bg-light-sky" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <span class="bullet"></span>
                   <span class="title">How do I know if I am eligible for a personal loan?</span>
                 </button>
@@ -81,7 +81,7 @@ $this->load->view('includes/header-apply');
           <div class="accordion" id="faq-accordion-2">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="accordion-button collapsed bg-light-sky" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   <span class="bullet"></span>
                   <span class="title">What are the documents required for applying for a personal loan?</span>
                 </button>
@@ -117,7 +117,7 @@ $this->load->view('includes/header-apply');
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <button class="accordion-button collapsed bg-light-sky" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   <span class="bullet"></span>
                   <span class="title">Can I get tax benefits on personal loans?</span>
                 </button>
@@ -130,7 +130,7 @@ $this->load->view('includes/header-apply');
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <button class="accordion-button collapsed bg-light-sky" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                   <span class="bullet"></span>
                   <span class="title">Why is having a good credit score so important?</span>
                 </button>

@@ -86,7 +86,7 @@
   --bs-green-rgb: 32, 202, 111;
   --bs-dark-green-rgb: 32, 56, 24;
   --bs-dark-yellow-rgb: 249, 171, 0;
-  --bs-dark-blue-rgb: 37, 28, 85;
+ --bs-dark-blue-rgb: 10, 21, 48;
   --bs-gray-alt-rgb: 101, 105, 102;
   --bs-lt-yellow-rgb: 213, 254, 104;
    --bs-light-sky-rgb: 244, 247, 252;
@@ -155,10 +155,9 @@ body {
 }
 hr {
   margin: 0.625rem 0;
-  color: inherit;
+  color:#F0E9F8 !important;
   border: 0;
   border-top: 1px solid;
-  opacity: 0.25;
 }
 .h1,
 .h2,
@@ -4448,8 +4447,9 @@ progress {
   background-clip: padding-box;
   border: 1px solid #ccc;
   appearance: none;
-  border-radius: 35px;
+  border-radius: 12px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height:48px;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -4594,7 +4594,7 @@ textarea.form-control-lg {
   background-position: right 30px center;
   background-size: 16px 12px;
   border: 1px solid #ccc;
-  border-radius: 35px;
+  border-radius: 12px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }

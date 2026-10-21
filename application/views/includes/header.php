@@ -131,7 +131,7 @@
                 </strong>
 </div>
                 <div class="header-right">
-                <a class="btn btn-green mobile-btn"
+                <a class="btn btn-green btn-sm mobile-btn"
                     href="<?php echo site_url('onlineprocess/applynow'); ?>"><span class="btn-text">+ Apply
                         Now</span></a>
                 <div class="main-nav ms-10 header-menu">

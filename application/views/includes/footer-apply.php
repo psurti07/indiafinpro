@@ -4,10 +4,10 @@
 	        <div class="container">
 	            <div class="row align-items-center">
 	                <div class="col-12 col-md-6 text-center text-md-start">
-	                    <p class="small mb-0"><?php echo date('Y') . ' &copy; ' . COMPANY_NAME; ?>. All rights reserved.</p>
+	                    <p class="small mb-0 text-white"><?php echo date('Y') . ' &copy; ' . COMPANY_NAME; ?>. All rights reserved.</p>
 	                </div>
 	                <div class="col-12 col-md-6 text-center text-md-end">
-	                    <p class="small mb-0">CIN No: <?php echo COMPANY_CIN; ?> | Call Support: <?php echo COMPANY_MOBILE; ?>
+	                    <p class="small mb-0 text-white">CIN No: <?php echo COMPANY_CIN; ?> | Call Support: <?php echo COMPANY_MOBILE; ?>
 	                    </p>
 	                </div>
 	            </div>

@@ -9,12 +9,16 @@ $this->load->view('includes/header');
                 <div class="me-25">
 
                     <div class="visual-textbox text-center pt-0">
-                        <h1 class="text-light" style="line-height: 1.5;">Unlock business growth <br>with <span
+                        <span class="text-white limited-offer py-5 px-10 rounded-pill mb-3 d-inline-block fa-xs"><i
+                                class="fa fa-bolt me-5"></i><small>100% Online Business Loans</small></span>
+
+                        <h1 class="text-light">Unlock business growth <br>with <span
                                 style="color:#8FB8FF">IndiaFinPro</span>
                         </h1>
                         <p class="text-light">Get your business loan approved quickly with minimal paperwork,
-                            <br>transparent terms and a simple 100% online process.</p>
-                    
+                            <br>transparent terms and a simple 100% online process.
+                        </p>
+
                         <div>
                             <a href="<?php echo site_url('onlineprocess/applynow'); ?>"
                                 class="btn btn-green btn-sm"><span class="btn-text">Apply Now <img
@@ -33,21 +37,16 @@ $this->load->view('includes/header');
 </div>
 
 <main class="main">
-
-
-
     <section
         class="section section-theme-2 featured-joblix-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 about-section"
         id="aboutus">
         <div class="container">
-
             <div class="row align-items-center">
-
                 <div class="col-12 col-lg-6 mt-10 mb-15 mb-md-30 mb-lg-0">
                     <header class="section-header">
                         <span class="text-color-blue text-uppercase text-outlined text-top mb-15 d-block">Helping You
                             Choose the Right Financial Path</span>
-                        <h2 class="mb-10">About <span class="text-color-blue">indiafinpro</span></h2>
+                        <h2 class="mb-10">About <span class="text-color-blue">Us</span></h2>
                         <p class="">Indiafinpro is a trusted financial consultation platform that connects customers
                             with leading NBFC partners across India. Our goal is to simplify the borrowing process by
                             offering expert guidance, transparent solutions, and a seamless digital experience. Through
@@ -56,13 +55,17 @@ $this->load->view('includes/header');
                     </header>
                 </div>
                 <div class="col-12 col-lg-6 mt-10 mb-15 mb-md-30 mb-lg-0 aboutus-cnt">
-                    <div class="row p-md-20"
-                        style="background: linear-gradient(135deg, #0B5FD0 25%, #2F7BFF 75%); border-radius:32px">
-                        <h4 class="text-light">Helping You Achieve Financial Freedom !</h4>
+                    <div class="p-20 content-right">
+
+                        <h6 class="text-light mb-3">Helping You Achieve Financial Freedom !</h6>
                         <ul class="text-light">
-                            <li>We believe every financial journey is unique, which is why we offer customized support
-                                and solutions designed around individual needs.</li>
-                            <li>We make the loan process easy to understand, so you can move forward with confidence.
+                            <li>
+                                We believe every financial journey is unique, which is why we offer customized support
+                                and solutions designed around individual needs.
+                            </li>
+                            <li>
+                                We make the loan process easy to understand, so you can move forward with confidence.
+
                             </li>
                         </ul>
                     </div>
@@ -75,111 +78,119 @@ $this->load->view('includes/header');
         class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 col-12 m-auto">
-
+                <div class="col-xl-12 col-12 m-auto">
                     <header class="section-header text-center text-lg-center">
                         <span class="text-uppercase text-outlined text-top mb-15 d-block text-color-blue">Our
                             Process</span>
-                        <h2>How It <span class="text-color-blue">Works !</span></h2>
-
+                        <h3 class="display-6 fw-bold text-dark mb-0">How It <span class="text-color-blue">Works !</span></h3>
                     </header>
-
-
-
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-lg-12 col-12">
-                    <div class="row process-boxes">
-                        <div class="col-md-6 col-sm-6 mb-10">
+                    <div class="categories-list bg-transparent p-0">
+                        <div class="row g-10">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item">
-                                <div>
-                                    <div class="categories-image">
-                                        <span class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/s1.png'); ?>" alt="icon">
-                                        </span>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                01
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Start by entering your mobile number and bank-registered name.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-start ms-20">
-                                    <p class="mb-0">Start by entering your mobile number and bank-registered name.</p>
+
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                02
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Fill in the required information to let our automated system
+                                            assess
+                                            your eligibility and show your pre-approved loan offer(s). This is not the
+                                            final
+                                            offer.</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 col-sm-6 mb-0">
 
-                        </div>
-                        <div class="col-md-6 col-sm-6 mb-10">
-
-                            <div class="categories-item">
-                                <div>
-                                    <div class="categories-image">
-                                        <span class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/s2.png'); ?>" alt="icon">
-                                        </span>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                03
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20">
-                                    <p class="mb-0">Fill in the required information to let our automated system assess your eligibility and show your pre-approved loan offer(s). This is not the final offer.</p>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Subscribe to unlock access to your displayed pre-approved loan
+                                            offer(s).</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 mb-10">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item">
-                                <div>
-                                    <div class="categories-image">
-                                        <span class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/s3.png'); ?>" alt="icon">
-                                        </span>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                04
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20">
-                                    <p class="mb-0">Subscribe to unlock access to your displayed pre-approved loan offer(s).</p>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Within 24-48 hours, our login team will reach out for
+                                            verification
+                                            and guide you through the document submission process.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 mb-10">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item">
-                                <div>
-                                    <div class="categories-image">
-                                        <span class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/s4.png'); ?>" alt="icon">
-                                        </span>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                05
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20">
-                                    <p class="mb-0">Within 24-48 hours, our login team will reach out for verification and guide you through the document submission process.</p>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Your documents and profile will be verified by the NBFC in
+                                            accordance with its terms and conditions.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 mb-10">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item">
-                                <div>
-                                    <div class="categories-image">
-                                        <span class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/s5.png'); ?>" alt="icon">
-                                        </span>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                06
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20">
-                                    <p class="mb-0">Your documents and profile will be verified by the NBFC in accordance with its terms and conditions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 mb-10">
-
-                            <div class="categories-item">
-                                <div>
-                                    <div class="categories-image">
-                                        <span class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/s6.png'); ?>" alt="icon">
-                                        </span>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">The NBFC will determine loan sanction, approval, and
+                                            disbursement in
+                                            accordance with its rules and regulations.</p>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20">
-                                    <p class="mb-0">The NBFC will determine loan sanction, approval, and disbursement in accordance with its rules and regulations.</p>
                                 </div>
                             </div>
                         </div>
@@ -191,67 +202,89 @@ $this->load->view('includes/header');
     </section>
 
 
-    <section class="section section-theme-12 how-we-help-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 txt-col mb-20">
-
-                    <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">The Difference We Bring</p>
-                    <h2 class="mb-15">Why <span class="text-color-blue">IndiaFinPro</h2>
-                    
-                </div>
-                <div class="col-12 col-md-12 col-lg-12 img-col">
-                    <div class="row gap-25">
-                        <div class="col-md-3 commmon-box">
-                            <div class="text-start mb-10">
-
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/icon_1.png'); ?>" alt="icon" class="icon-img">
-                                </div>
-                            </div>
-                            <div class="text-start">
-                                <h6>Enriching Collaboration</h6>
-                                <p class="mt-10">Explore multiple financial services backed by our leading NBFC network.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 commmon-box">
-                            <div class="text-start mb-10">
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/icon_2.png'); ?>"
-                                        alt="icon" class="icon-img">
-                                </div>
-                            </div>
-                            <div class="text-start">
-                                <h6>100% Online Process</h6>
-                                <p class="mt-10">Enjoy a smooth and hassle-free loan experience without stepping out of your home.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 commmon-box">
-                            <div class="text-start mb-10">
-                                <div class="icon">
-                                    <img src="<?php echo base_url('assets/images/icons/icon_3.png'); ?>" alt="icon" class="icon-img">
-                                </div>
-                            </div>
-                            <div class="text-start">
-                                <h6>Self-Apply Feature</h6>
-                                <p class="mt-10">Enjoy the freedom to make smarter financial decisions with expert support.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section
-        class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60" style="background: rgba(5, 11, 31, 1);">
+    <section class="section   how-we-help-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-12 m-auto">
                     <header class="section-header text-center text-lg-center">
-                        <span class="text-light text-uppercase text-outlined text-top mb-15 d-block">Simplify Your Financial Planning</span>
-                        <h2 class="text-light">Know Your <span style="color:rgba(143, 184, 255, 1)">EMI in Seconds</span> </h2>
+                        <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">The Difference We Bring</p>
+                        <h3 class="display-6 fw-bold text-dark mb-0">Why <span class="text-color-blue">IndiaFinPro</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 img-col">
+                <div class="row g-15">
+                    <div class="col-md-4">
+                        <div class="commmon-box bg-light-sky h-100">
+                            <div class="text-start mb-10">
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-handshake fs-4"></i>
+                                    </div>
+                                    <span class="title-number">01</span>
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <h6>Enriching Collaboration</h6>
+                                <p class="mt-10 mb-0">Explore multiple financial services backed by our leading NBFC
+                                    network.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                   <div class="commmon-box bg-light-sky h-100">
+                            <div class="text-start mb-10">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-laptop fs-4"></i>
+                                    </div>
+                                    <span class="title-number">02</span>
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <h6>100% Online Process</h6>
+                                <p class="mt-10 mb-0">Enjoy a smooth and hassle-free loan experience without stepping
+                                    out
+                                    of
+                                    your home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="commmon-box bg-light-sky h-100">
+                            <div class="text-start mb-10">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-hand-point-up fs-4"></i>
+                                    </div>
+                                    <span class="title-number">03</span>
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <h6>Self-Apply Feature</h6>
+                                <p class="mt-10 mb-0">Enjoy the freedom to make smarter financial decisions with
+                                    expert
+                                    support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60"
+        style="background: rgba(5, 11, 31, 1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-12 m-auto">
+                    <header class="section-header text-center text-lg-center">
+                        <span class="text-light text-uppercase text-outlined text-top mb-15 d-block">Simplify Your
+                            Financial Planning</span>
+                        <h3 class="display-6 fw-bold text-white mb-0">Know Your <span style="color:rgba(143, 184, 255, 1)">EMI in
+                                Seconds</span> </h3>
                     </header>
                 </div>
             </div>
@@ -274,7 +307,8 @@ $this->load->view('includes/header');
         </div>
     </section>
 
-    <section class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky"
+    <section
+        class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky"
         id="testimonial">
         <div class="container">
             <div class="row">
@@ -282,24 +316,28 @@ $this->load->view('includes/header');
                     <header class="section-header text-center text-lg-center">
                         <span
                             class="text-color-blue text-uppercase text-outlined text-top mb-0 d-block">TESTIMONIALS</span>
-                        <h2>Hear from <span class="text-color-blue">Our Customers</span></h2>
+                        <h3 class="display-6 fw-bold text-dark mb-0">Hear from <span class="text-color-blue">Our Customers</span></h3>
                         <p class="text-center">Hear what our clients have to say about us.</p>
                     </header>
                 </div>
             </div>
             <div class="row">
-               
                 <div class="col-xl-12 col-12 m-auto">
                     <div class="client_testimonials">
                         <div class="client_testimonials_slider">
                             <div>
-                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                <div class="bg-white p-25 testimonial-card border">
+                                    <div class="mb-25">
+
+                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                    </div>
+
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
                                     <hr>
-                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
                                     <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -307,17 +345,21 @@ $this->load->view('includes/header');
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div>
-                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                <div class="bg-white p-25 testimonial-card border">
+                                    <div class="mb-25">
+
+                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                    </div>
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
                                     <hr>
-                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
                                     <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -325,17 +367,21 @@ $this->load->view('includes/header');
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div>
-                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                <div class="bg-white p-25 testimonial-card border">
+                                    <div class="mb-25">
+
+                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                    </div>
                                     <div class="card-comment">
                                         <p>indiafinproo made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
                                     <hr>
-                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
                                     <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -343,17 +389,21 @@ $this->load->view('includes/header');
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div>
-                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                <div class="bg-white p-25 testimonial-card border">
+                                    <div class="mb-25">
+
+                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                    </div>
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
                                     <hr>
-                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
                                     <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -361,17 +411,21 @@ $this->load->view('includes/header');
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div>
-                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                <div class="bg-white p-25 testimonial-card border">
+                                    <div class="mb-25">
+
+                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                    </div>
                                     <div class="card-comment mb-0">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
                                     </hr>
-                                    <p class="card-position">Rohan Bedi</p>
+                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
                                     <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -379,17 +433,21 @@ $this->load->view('includes/header');
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div>
-                                <div class="bg-white p-md-15" style="border-radius:15px">
+                                <div class="bg-white p-25 testimonial-card border">
+                                    <div class="mb-25">
+
+                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                    </div>
                                     <div class="card-comment">
                                         <p>indiafinpro made the application process easier to understand. The guidance
                                             on documents and next steps was helpful.”</p>
                                     </div>
                                     <hr>
-                                    <p class="card-position mb-0">Rohan Bedi</p>
+                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
                                     <div class="rates-review mb-0">
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -397,25 +455,24 @@ $this->load->view('includes/header');
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section
-        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-125 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-125 ">
+        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
 
-                    <p class="mb-10 mb-lg-15 title-text text-success text-uppercase">FAQ</p>
-                    <h2 class="mb-15">Frequently Asked <span class="text-color-blue">Questions</span></h2>
+                    <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">FAQ</p>
+                    <h3 class="display-6 fw-bold text-dark mb-15">Frequently Asked <span class="text-color-blue">Questions</span></h3>
                     <p>Got questions? We’ve got answers. Here’s everything you need to know about applying for a loan
                         with indiafinpro.</p>
 
@@ -424,8 +481,9 @@ $this->load->view('includes/header');
                     <div class="accordion" id="faq-accordion-2">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
                                     <span class="bullet"></span>
                                     <span class="title">What purposes can a personal loan be used for?</span>
                                 </button>
@@ -441,8 +499,9 @@ $this->load->view('includes/header');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
                                     <span class="bullet"></span>
                                     <span class="title">Do I have to pledge any assets to avail a personal loan?</span>
                                 </button>
@@ -457,8 +516,9 @@ $this->load->view('includes/header');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
                                     <span class="bullet"></span>
                                     <span class="title">How do I know if I am eligible for a personal loan?</span>
                                 </button>
@@ -486,8 +546,9 @@ $this->load->view('includes/header');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
                                     <span class="bullet"></span>
                                     <span class="title">What are the documents required for applying for a personal
                                         loan?</span>
@@ -526,8 +587,9 @@ $this->load->view('includes/header');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
                                     <span class="bullet"></span>
                                     <span class="title">Can I get tax benefits on personal loans?</span>
                                 </button>
@@ -543,8 +605,9 @@ $this->load->view('includes/header');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
                                     <span class="bullet"></span>
                                     <span class="title">Why is having a good credit score so important?</span>
                                 </button>
@@ -565,12 +628,12 @@ $this->load->view('includes/header');
     </section>
 
 
-    <section class="section section-theme-5 pt-60 pt-md-60 pt-xl-100 partner-section  bg-light-sky">
+    <section class="section section-theme-5 pt-60 pt-md-100 py-xl-100 partner-section bg-light-sky">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-12 m-auto">
                     <header class="section-header d-flex flex-column text-center mb-40">
-                        <h2>Meet Our <span class="text-color-blue">NBFC Partners</span></h2>
+                        <h3 class="display-6 fw-bold text-dark mb-0">Meet Our <span class="text-color-blue">NBFC Partners</span></h3>
                         <p>We partner with the best to serve you better.
                         <p>
                     </header>
@@ -589,113 +652,135 @@ $this->load->view('includes/header');
             </div>
         </div>
     </section>
-    
+
     <section
         class="section section-contact section-theme-1 pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-600 contact-section"
         id="contactus" style="background:rgba(234, 242, 255, 1)">
         <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-6 col-xl-5 form-right-main">
+                    <ul class="contact-support text-light h-100">
+                        <div class="section-header text-start">
+                            <span class="text-white text-outlined text-top mb-10 d-block">We'd Love To Hear From You
+                                Your Financial Planning</span>
+                            <h4 class="mb-10 text-white">Get in <span class="text-color-blue">touch</span></h4>
+                            <p class="text-light">Fill in your basic information, and our experts will contact you as
+                                soon as possible.</p>
+                        </div>
+                        <li>
+                            <div class="contact-box">
+                                <div class="text-start mb-10">
+                                    <div class="icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="textbox ms-20">
+                                    <h3 class="h4 text-uppercase text-light">Customer Support</h3>
+                                    <p>
+                                        <a href="tel:<?php echo COMPANY_MOBILE; ?>"
+                                            class="text-light"><?php echo COMPANY_MOBILE; ?></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-box">
+                                <div class="text-start mb-10">
+                                    <div class="icon">
+                                        <i class="far fa-envelope"></i>
 
-            <div class="row">
-                <div class="col-xl-7 col-12 m-auto">
-                    <header class="section-header text-center text-lg-center">
-                        <span class="text-success text-uppercase text-outlined text-top mb-10 d-block">Drop Us a
-                            Message</span>
-                        <h2>We'd Love To <span class="text-color-blue">Help You</span></h2>
-                        <p class="text-center">Fill in your details and our team will get back to you shortly.</p>
-                    </header>
+                                    </div>
+                                </div>
+                                <div class="textbox ms-20">
+                                    <h3 class="h4 text-uppercase text-light">Mail Us</h3>
+                                    <p>
+                                        <a href="mailto:<?php echo COMPANY_EMAIL; ?>"
+                                            class="text-light"><?php echo COMPANY_EMAIL; ?></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-box">
+                                <div class="text-start mb-10">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="textbox ms-20">
+                                    <h3 class="h4 text-uppercase text-light">Address</h3>
+                                    <address class="text-light"><?php echo COMPANY_ADDRESS; ?></address>
+                                    </address>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="contact-box mb-0">
+                                <div class="text-start mb-10">
+                                    <div class="icon">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="textbox ms-20">
+                                    <h3 class="h4 text-uppercase text-light">Working Hours</h3>
+                                    <p class="text-white">
+                                        Monday to Saturday: 10:00 AM - 5:00 PM
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="contact-form">
-
-                <div class="row justify-content-between">
-
-                    <div class="col-12 col-md-6 col-xl-6">
-
-                        <ul class="contact-support text-light">
-                            <div class="mb-20">
-                                <h6 class="mb-0">Get in touch</h6>
-                                <p class="text-light">Our team responds within 24 hours.</p>
-                            </div>
-                            <li>
-                                <div class="contact-box">
-                                    <div class="text-start mb-10">
-                                        <div class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/journey.png'); ?>"
-                                                alt="icon">
-                                        </div>
-                                    </div>
-                                    <div class="textbox ms-20">
-                                        <h3 class="h4 text-uppercase text-light">Location</h3>
-                                        <address class="text-light"><?php echo COMPANY_ADDRESS; ?></address>
-                                        </address>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact-box">
-                                    <div class="text-start mb-10">
-                                        <div class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/call.png'); ?>"
-                                                alt="icon">
-                                        </div>
-                                    </div>
-                                    <div class="textbox ms-20">
-                                        <h3 class="h4 text-uppercase text-light">Call Us</h3>
-                                        <p>
-                                            <a href="tel:<?php echo COMPANY_MOBILE; ?>"
-                                                class="text-light"><?php echo COMPANY_MOBILE; ?></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact-box mb-0">
-                                    <div class="text-start mb-10">
-                                        <div class="icon">
-                                            <img src="<?php echo base_url('assets/images/icons/envelope.png'); ?>"
-                                                alt="icon">
-                                        </div>
-                                    </div>
-                                    <div class="textbox ms-20">
-                                        <h3 class="h4 text-uppercase text-light">Email</h3>
-                                        <p>
-                                            <a href="mailto:<?php echo COMPANY_EMAIL; ?>"
-                                                class="text-light"><?php echo COMPANY_EMAIL; ?></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-sm-10 col-md-6 m-auto mb-40 mb-md-0">
-                        <?php echo form_open('infopage/contactsubmission', array('id' => 'contactForm', 'class' => 'contac-form customefrm', 'novalidate' => 'novalidate')); ?>
+                <div class="col-12 col-sm-10 col-md-6 col-xl-7 form-right-main">
+                    <div class="bg-white shadow  p-45 contact-form-right border form-right h-100">
+                        <?php echo form_open('infopage/contactsubmission', array('id' => 'contactForm', 'class' => 'contac-form', 'novalidate' => 'novalidate')); ?>
+                        <p>Fill out the form below and you'll hear from us soon.</p>
                         <div class="row">
-                            <div class="form-group col-6 mb-15 mb-md-20 mb-lg-25">
-                                <input class="form-control" type="text" name="fullname" placeholder="Your Name" required
-                                    data-validation-regex-regex="^[a-zA-Z ]*$">
-                                <div class="help-block font-small-3"></div>
+                            <div class="col-md-6 col-12">
+                                <div class="form-group mb-15 mb-md-20 mb-lg-25">
+                                    <label class="text-dark text-uppercase fa-sm" for="fullname">Full Name *</label>
+                                    <input class="form-control" type="text" name="fullname" placeholder="Your Name"
+                                        required data-validation-regex-regex="^[a-zA-Z ]*$">
+                                    <div class="help-block font-small-3"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-6 mb-15 mb-md-20 mb-lg-25">
-                                <input class="form-control" type="text" name="mobile" placeholder="Your Mobile" required
-                                    minlength="10" maxlength="10" inputmode="numeric"
-                                    data-validation-regex-regex="^[6789]\d{9}$"
-                                    data-validation-regex-message="Enter valid mobile number">
-                                <div class="help-block font-small-3"></div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="form-group mb-15 mb-md-20 mb-lg-25">
+                                    <label class="text-dark text-uppercase fa-sm" for="email">Mobile no *</label>
+                                    <input class="form-control" type="text" name="mobile" placeholder="Your Mobile"
+                                        required minlength="10" maxlength="10" inputmode="numeric"
+                                        data-validation-regex-regex="^[6789]\d{9}$"
+                                        data-validation-regex-message="Enter valid mobile number">
+                                    <div class="help-block font-small-3"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-6 mb-15 mb-md-20 mb-lg-25">
-                                <input class="form-control" type="email" name="email" placeholder="Your Email Id"
-                                    required>
-                                <div class="help-block font-small-3"></div>
+                            <div class="col-md-6 col-12">
+                                <div class="form-group mb-15 mb-md-20 mb-lg-25">
+                                    <label class="text-dark text-uppercase fa-sm" for="email">Email id *</label>
+                                    <input class="form-control" type="email" name="email" placeholder="Your Email Id"
+                                        required>
+                                    <div class="help-block font-small-3"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-6 mb-15 mb-md-20 mb-lg-25">
-                                <input class="form-control" type="text" name="subject" placeholder="Your Subject"
-                                    required>
-                                <div class="help-block font-small-3"></div>
+                            <div class="col-md-6 col-12">
+                                <div class="form-group mb-15 mb-md-20 mb-lg-25">
+                                    <label class="text-dark text-uppercase fa-sm" for="subject">Subject</label>
+                                    <input class="form-control" type="text" name="subject" placeholder="Your Subject"
+                                        required>
+                                    <div class="help-block font-small-3"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-12 mb-15 mb-md-20 mb-lg-25">
-                                <textarea class="form-control" name="message" cols="30" rows="10"
-                                    placeholder="Your Message" required></textarea>
-                                <div class="help-block font-small-3"></div>
+                            <div class="col-md-12 col-12">
+                                <div class="form-group mb-15 mb-md-20 mb-lg-25">
+                                    <label class="text-dark text-uppercase fa-sm" for="message">Message *</label>
+                                    <textarea class="form-control" name="message" cols="30" rows="10"
+                                        placeholder="Your Message" required></textarea>
+                                    <div class="help-block font-small-3"></div>
+                                </div>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-green btn-sm w-100 text-uppercase"><span
