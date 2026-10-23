@@ -5,9 +5,7 @@ $this->load->view('includes/header-offer');
 <main class="jobplugin__main">
 	<div class="container">
 		<div class="jobplugin__main-holder">
-			<span class="jobplugin__pattern default-right"></span>
-			<span class="jobplugin__pattern default-left"></span>
-		 
+			
 			<div class="jobplugin__container">
 				<div class="row">
 					<div class="jobplugin__settings-head">
