@@ -1386,11 +1386,7 @@
     padding: 50px 0 70px;
   }
 }
-@media (min-width: 1024px) {
-  .jobplugin__main-holder {
-    min-height: 700px;
-  }
-}
+ 
 .jobplugin__main-holder .jobplugin__pattern {
   width: 180px;
 }
@@ -3892,7 +3888,7 @@
 @media (min-width: 768px) {
   .jobplugin__userbox-textinfo {
     font-size: 18px;
-    margin: 35px 0 0 !important;
+    margin: 0px 0 0 !important;
   }
 }
 .jobplugin__userbox-textinfo a {
@@ -6545,7 +6541,7 @@
   width: 100%;
 }
 .jobplugin__settings-card__subbox + .jobplugin__settings-card__subbox {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .jobplugin__settings-card__subbox-head {
   display: -webkit-box;

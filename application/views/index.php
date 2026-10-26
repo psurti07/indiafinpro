@@ -9,7 +9,7 @@ $this->load->view('includes/header');
                 <div class="me-25">
 
                     <div class="visual-textbox text-center pt-0">
-                        <span class="text-white limited-offer py-5 px-10 rounded-pill mb-3 d-inline-block fa-xs"><i
+                        <span class="text-white limited-offer py-5 px-10 rounded-pill mb-3 d-inline-block fa-xs mb-10"><i
                                 class="fa fa-bolt me-5"></i><small>100% Online Business Loans</small></span>
 
                         <h1 class="text-light">Unlock business growth <br>with <span
@@ -55,7 +55,7 @@ $this->load->view('includes/header');
                     </header>
                 </div>
                 <div class="col-12 col-lg-6 mt-10 mb-15 mb-md-30 mb-lg-0 aboutus-cnt">
-                    <div class="p-20 content-right">
+                    <div class="p-25 content-right">
 
                         <h6 class="text-light mb-3">Helping You Achieve Financial Freedom !</h6>
                         <ul class="text-light">
@@ -75,7 +75,7 @@ $this->load->view('includes/header');
     </section>
 
     <section
-        class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky">
+        class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky" id="how-it-works">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-12 m-auto">
@@ -276,7 +276,7 @@ $this->load->view('includes/header');
     </section>
 
     <section class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60"
-        style="background: rgba(5, 11, 31, 1);">
+        style="background: rgba(5, 11, 31, 1);" id="emi-calculator">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-12 m-auto">
@@ -466,7 +466,7 @@ $this->load->view('includes/header');
     </section>
 
     <section
-        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100">
+        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">

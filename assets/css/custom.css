@@ -1369,3 +1369,13 @@ small {
 .card-block-main{
     border-radius: 16px;
 }
+
+ .testimonial-card:hover{
+      background: #0B5FD0 !important;
+}
+
+.testimonial-card:hover .fa-quote-left,
+.testimonial-card:hover p{
+    color: #ffffff !important;
+ 
+}

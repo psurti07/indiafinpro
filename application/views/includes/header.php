@@ -142,8 +142,11 @@
                         <ul class="navigation">
                             <li><a href="<?php echo site_url(); ?>">Home</a></li>
                             <li><a href="javascript:;" onclick="goToMenu('aboutus')">About Us</a></li>
-                            <li><a href="javascript:;" onclick="goToMenu('contactus')">Contact</a></li>
-                            <li><a href="javascript:;" onclick="goToMenu('testimonial')">Testimonial</a></li>
+                      
+                            <li><a href="javascript:;" onclick="goToMenu('how-it-works')">How It Works</a></li>
+                                     <li><a href="javascript:;" onclick="goToMenu('emi-calculator')">EMI Calculator</a></li>
+                                           <li><a href="javascript:;" onclick="goToMenu('faq')">Faq   </a></li>
+                                  <li><a href="javascript:;" onclick="goToMenu('contactus')">Contact</a></li>
                             <li><a href="<?php echo site_url('customer'); ?>">Customer Login</a></li>
 
                         </ul>

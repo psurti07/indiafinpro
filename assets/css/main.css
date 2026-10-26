@@ -837,6 +837,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px !important;
 }
 
 @media (max-width: 1374.98px) {
@@ -966,7 +967,10 @@ a {
   /* min-width: 380px; */
 }
 .commmon-box:hover{
- background: #0B5FD0 !important;
+    background: #0B5FD0 !important  ;
+}
+.commmon-bo.card-box-main:hover{
+ background: transparent !important;
 }
 .commmon-box:hover,
 .commmon-box:hover h6,
@@ -1587,7 +1591,7 @@ textarea.form-control.form-control-lg {
 
 @media (min-width: 992px) {
   .navigation>li:not(:last-child) {
-    padding: 0 12px;
+    padding: 0 8px;
   }
 }
 
@@ -50309,3 +50313,4 @@ textarea.form-control.form-control-lg {
 .rates-review img {
   display: inline-block;
 }
+

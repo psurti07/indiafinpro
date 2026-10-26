@@ -692,7 +692,7 @@ $this->load->view('includes/header-apply.php');
                     <div class="left_align">
                         <div class="detail_box candidate border p-0">
                             <div class="p-20">
-                                <div class="commmon-box p-0 border-0 card-wrap d-flex align-items-center">
+                                <div class="commmon-box card-box-main p-0 border-0 card-wrap d-flex align-items-center mb-25">
                                     <div class="icon d-flex align-items-center justify-content-center bg-light-sky">
                                         <i class="fas fa-briefcase text-color-blue fs-4"></i>
                                     </div>
@@ -700,7 +700,7 @@ $this->load->view('includes/header-apply.php');
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
-                                    <li class="ps-0 text-dark">
+                                    <li class="ps-0 text-dark mb-20 mt-20">
 
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
@@ -710,7 +710,7 @@ $this->load->view('includes/header-apply.php');
 
                                     </li>
                                     <hr>
-                                    <li class="ps-0 text-dark">
+                                    <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
                                                     class="far fa-check-circle text-color-blue me-10"></i>Minimum
@@ -720,7 +720,7 @@ $this->load->view('includes/header-apply.php');
                                     </li>
 
                                     <hr>
-                                    <li class="ps-0 text-dark">
+                                    <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
                                                     class="far fa-check-circle text-color-blue me-10"></i>Job
@@ -736,7 +736,7 @@ $this->load->view('includes/header-apply.php');
                     <div class="right_align">
                         <div class="detail_box candidate border p-0">
                             <div class="p-20">
-                                <div class="commmon-box p-0 border-0 card-wrap d-flex align-items-center">
+                                <div class="commmon-box card-box-main p-0 border-0 card-wrap d-flex align-items-center mb-25">
                                     <div class="icon d-flex align-items-center justify-content-center">
 
                                         <i class="fas fa-calculator text-color-blue fs-4"></i>
@@ -745,7 +745,7 @@ $this->load->view('includes/header-apply.php');
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
-                                    <li class="ps-0 text-dark">
+                                    <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
                                                     class="far fa-check-circle text-color-blue me-10"></i>Minimum
@@ -755,7 +755,7 @@ $this->load->view('includes/header-apply.php');
                                     </li>
                                     <hr>
 
-                                    <li class="ps-0 text-dark">
+                                    <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
                                                     class="far fa-check-circle text-color-blue me-10"></i>Minimum
@@ -765,7 +765,7 @@ $this->load->view('includes/header-apply.php');
                                     </li>
                                     <hr>
 
-                                    <li class="ps-0 text-dark">
+                                    <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
                                                     class="far fa-check-circle text-color-blue me-10"></i>Job
