@@ -741,7 +741,7 @@ $this->load->view('includes/header-apply.php');
 
                                         <i class="fas fa-calculator text-color-blue fs-4"></i>
                                     </div>
-                                    <h5 class="text-dark ms-10 mb-0">For Salaried</h5>
+                                    <h5 class="text-dark ms-10 mb-0">For Self-Employed</h5>
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
