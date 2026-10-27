@@ -307,163 +307,163 @@ $this->load->view('includes/header');
         </div>
     </section>
 
-    <section
-        class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky"
-        id="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-12 m-auto">
-                    <header class="section-header text-center text-lg-center">
-                        <span
-                            class="text-color-blue text-uppercase text-outlined text-top mb-0 d-block">TESTIMONIALS</span>
-                        <h3 class="display-6 fw-bold text-dark mb-0">Hear from <span class="text-color-blue">Our Customers</span></h3>
-                        <p class="text-center">Hear what our clients have to say about us.</p>
-                    </header>
+        <section
+            class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky"
+            id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-12 m-auto">
+                        <header class="section-header text-center text-lg-center">
+                            <span
+                                class="text-color-blue text-uppercase text-outlined text-top mb-0 d-block">TESTIMONIALS</span>
+                            <h3 class="display-6 fw-bold text-dark mb-0">Hear from <span class="text-color-blue">Our Customers</span></h3>
+                            <p class="text-center">Hear what our clients have to say about us.</p>
+                        </header>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12 col-12 m-auto">
-                    <div class="client_testimonials">
-                        <div class="client_testimonials_slider">
-                            <div>
-                                <div class="bg-white p-25 testimonial-card border">
-                                    <div class="mb-25">
+                <div class="row">
+                    <div class="col-xl-12 col-12 m-auto">
+                        <div class="client_testimonials">
+                            <div class="client_testimonials_slider">
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
 
-                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
-                                    </div>
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
 
-                                    <div class="card-comment">
-                                        <p>indiafinpro made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
-                                    <hr>
-                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
-                                    <div class="rates-review mb-0">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                        <div class="card-comment">
+                                            <p>indiafinpro made the application process easier to understand. The guidance
+                                                on documents and next steps was helpful.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="bg-white p-25 testimonial-card border">
-                                    <div class="mb-25">
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
 
-                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
-                                    </div>
-                                    <div class="card-comment">
-                                        <p>indiafinpro made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
-                                    <hr>
-                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
-                                    <div class="rates-review mb-0">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>indiafinpro made the application process easier to understand. The guidance
+                                                on documents and next steps was helpful.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="bg-white p-25 testimonial-card border">
-                                    <div class="mb-25">
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
 
-                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
-                                    </div>
-                                    <div class="card-comment">
-                                        <p>indiafinproo made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
-                                    <hr>
-                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
-                                    <div class="rates-review mb-0">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>indiafinproo made the application process easier to understand. The guidance
+                                                on documents and next steps was helpful.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="bg-white p-25 testimonial-card border">
-                                    <div class="mb-25">
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
 
-                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
-                                    </div>
-                                    <div class="card-comment">
-                                        <p>indiafinpro made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
-                                    <hr>
-                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
-                                    <div class="rates-review mb-0">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>indiafinpro made the application process easier to understand. The guidance
+                                                on documents and next steps was helpful.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="bg-white p-25 testimonial-card border">
-                                    <div class="mb-25">
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
 
-                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
-                                    </div>
-                                    <div class="card-comment mb-0">
-                                        <p>indiafinpro made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
-                                    </hr>
-                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
-                                    <div class="rates-review mb-0">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment mb-0">
+                                            <p>indiafinpro made the application process easier to understand. The guidance
+                                                on documents and next steps was helpful.”</p>
+                                        </div>
+                                        </hr>
+                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="bg-white p-25 testimonial-card border">
-                                    <div class="mb-25">
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
 
-                                        <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
-                                    </div>
-                                    <div class="card-comment">
-                                        <p>indiafinpro made the application process easier to understand. The guidance
-                                            on documents and next steps was helpful.”</p>
-                                    </div>
-                                    <hr>
-                                    <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
-                                    <div class="rates-review mb-0">
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                        <img src="<?= base_url('assets/images/star.svg'); ?>" />
-                                    </div>
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>indiafinpro made the application process easier to understand. The guidance
+                                                on documents and next steps was helpful.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <section
         class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100" id="faq">
