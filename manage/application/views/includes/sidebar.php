@@ -215,7 +215,7 @@
 				<!-- ================== NEW NAVIGATION HEADER ================== -->
 				<li class=" navigation-header"><span>PAYMENTS LOG</span></li>
 
-				<li id="166" class="nav-item">
+				<!--<li id="166" class="nav-item">
 					<a href="<?php echo site_url('payment/phonepelog'); ?>"><i class="la la-inr"></i><span
 							class="menu-title">PhonePe Log</span></a>
 				</li>
@@ -228,11 +228,6 @@
 					<a href="<?php echo site_url('payment/razorpaylog'); ?>"><i class="la la-inr"></i><span
 							class="menu-title">Razorpay Log</span></a>
 				</li>
-
-				<!--  <li id="168" class="nav-item">
-				<a href="<?php echo site_url('payment/worldlinelog'); ?>"><i class="la la-inr"></i><span class="menu-title">Worldline Log</span></a>
-			</li> -->
-
 			<li id="169" class="nav-item">
 				<a href="<?php echo site_url('payment/zaakpaylog'); ?>"><i class="la la-inr"></i><span class="menu-title">Zaakpay Log</span></a>
 			</li>
@@ -244,7 +239,7 @@
 			</li>
 			<li id="173" class="nav-item">
 				<a href="<?php echo site_url('payment/easebuzzlog'); ?>"><i class="la la-inr"></i><span class="menu-title">Easebuzz Log</span></a>
-			</li>
+			</li>-->
 
 
 			<!-- ================== NEW NAVIGATION HEADER ================== -->

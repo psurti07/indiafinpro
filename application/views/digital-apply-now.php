@@ -9,11 +9,10 @@ $this->load->view('includes/header-apply.php');
 
                 <div class="visual-textbox pt-0">
                     <h2 class="text-light">Your Loan Search <br> Starts Here </h2>
-                    <p class="text-light">Access Options Up to <span class="d-inline-block"
+                    <p class="text-light">Explore Loan Options Up to <span class="d-inline-block"
                             style="background: linear-gradient(167.62deg, #2052B6 9%, #F4DECA 428%); padding: 9px; border-radius: 22px;">
                             ₹10 Lakhs*</span></p>
-                    <p class="text-light">Get your business loan approved quickly with minimal paperwork, transparent
-                        terms and a simple 100% online process.</p>
+                    <p class="text-light">Get guidance on business loan options, application steps and required documents.</p>
                 </div>
                 <div class="banner__img-two">
                     <img src="<?= base_url('assets/images/image_30.png'); ?>" alt="" class="img-fluid">
@@ -440,134 +439,122 @@ $this->load->view('includes/header-apply.php');
             </div>
         </div>
 </section>
-
 <section
-    class="section section-theme-5 how-work-block pt-40 pt-md-50 pt-lg-75 pt-xl-80 pt-xxl-80 pb-40 pb-md-50 pb-lg-75 pb-xl-70 pb-xxl-80  bg-light-sky">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 col-12 m-auto">
-                <header class="section-header text-center text-lg-center">
-                    <span class="text-uppercase text-outlined text-top mb-15 d-block text-color-blue">APPLY nOW IN 6
-                        EASY STEPS</span>
-                    <h3 class="display-6 fw-bold text-dark mb-0">How It <span class="text-color-blue">Works !</span>
-                    </h3>
-                </header>
+        class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky" id="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-12 m-auto">
+                    <header class="section-header text-center text-lg-center">
+                        <span class="text-uppercase text-outlined text-top mb-15 d-block text-color-blue">Our
+                            Process</span>
+                        <h3 class="display-6 fw-bold text-dark mb-0">How It <span class="text-color-blue">Works !</span></h3>
+                    </header>
+                </div>
             </div>
-        </div>
 
-        <div class="row align-items-center">
-            <div class="col-lg-12 col-12">
-                <div class="categories-list bg-transparent p-0">
-                    <div class="row g-15">
-                        <div class="col-md-6 col-sm-6">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-12">
+                    <div class="categories-list bg-transparent p-0">
+                        <div class="row g-10">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item shadow h-100">
-                                <div>
-                                    <div class="categories-image">
-                                        <h6 class="icon mb-0 text-white">
-                                            01
-                                        </h6>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                01
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Enter your mobile number and bank-registered name to begin.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-start ms-20 content-text">
-                                    <p class="mb-0">Start by entering your mobile number and bank-registered name.
-                                    </p>
+
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                02
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Share the required details to explore loan options based on the information provided.</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 col-sm-6 mb-0">
 
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-
-                            <div class="categories-item shadow h-100">
-                                <div>
-                                    <div class="categories-image">
-                                        <h6 class="icon mb-0 text-white">
-                                            02
-                                        </h6>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                03
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20 content-text">
-                                    <p class="mb-0">Fill in the required information to let our automated system
-                                        assess
-                                        your eligibility and show your pre-approved loan offer(s). This is not the
-                                        final
-                                        offer.</p>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Choose application support after reviewing the applicable service fee and terms.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item shadow h-100">
-                                <div>
-                                    <div class="categories-image">
-                                        <h6 class="icon mb-0 text-white">
-                                            03
-                                        </h6>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                04
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20 content-text">
-                                    <p class="mb-0">Subscribe to unlock access to your displayed pre-approved loan
-                                        offer(s).</p>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">Our team will contact you to verify your details and guide you through document submission.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item shadow h-100">
-                                <div>
-                                    <div class="categories-image">
-                                        <h6 class="icon mb-0 text-white">
-                                            04
-                                        </h6>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                05
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20 content-text">
-                                    <p class="mb-0">Within 24-48 hours, our login team will reach out for
-                                        verification
-                                        and guide you through the document submission process.</p>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">The NBFC will review your profile and documents according to its criteria.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6">
 
-                            <div class="categories-item shadow h-100">
-                                <div>
-                                    <div class="categories-image">
-                                        <h6 class="icon mb-0 text-white">
-                                            05
-                                        </h6>
+                                <div class="categories-item">
+                                    <div>
+                                        <div class="categories-image">
+                                            <h6 class="icon mb-0 text-white">
+                                                06
+                                            </h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20 content-text">
-                                    <p class="mb-0">Your documents and profile will be verified by the NBFC in
-                                        accordance with its terms and conditions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-
-                            <div class="categories-item shadow h-100">
-                                <div>
-                                    <div class="categories-image">
-                                        <h6 class="icon mb-0 text-white">
-                                            06
-                                        </h6>
+                                    <div class="text-start ms-20 content-text">
+                                        <p class="mb-0">The NBFC will communicate its decision and applicable loan terms after completing its review.</p>
                                     </div>
-                                </div>
-                                <div class="text-start ms-20 content-text">
-                                    <p class="mb-0">The NBFC will determine loan sanction, approval, and
-                                        disbursement in
-                                        accordance with its rules and regulations.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 <section
@@ -696,7 +683,7 @@ $this->load->view('includes/header-apply.php');
                                     <div class="icon d-flex align-items-center justify-content-center bg-light-sky">
                                         <i class="fas fa-briefcase text-color-blue fs-4"></i>
                                     </div>
-                                    <h5 class="text-dark ms-10 mb-0">For Salaried</h5>
+                                    <h5 class="text-dark ms-10 mb-0">NBFC Criteria For Salaried Applicants</h5>
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
@@ -704,8 +691,7 @@ $this->load->view('includes/header-apply.php');
 
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
-                                                    class="far fa-check-circle text-color-blue me-10"></i>Age</span>
-                                            <span class="fw-bold fa-sm">21 Years</span>
+                                                    class="far fa-check-circle text-color-blue me-10"></i>Minimum age  21 years</span>
                                         </div>
 
                                     </li>
@@ -713,9 +699,7 @@ $this->load->view('includes/header-apply.php');
                                     <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
-                                                    class="far fa-check-circle text-color-blue me-10"></i>Minimum
-                                                Salary</span>
-                                            <span class="fw-bold fa-sm">Rs. 15,000/month</span>
+                                                    class="far fa-check-circle text-color-blue me-10"></i>Monthly salary  ₹15,000 or more</span>
                                         </div>
                                     </li>
 
@@ -723,9 +707,7 @@ $this->load->view('includes/header-apply.php');
                                     <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
-                                                    class="far fa-check-circle text-color-blue me-10"></i>Job
-                                                Duration</span>
-                                            <span class="fw-bold fa-sm">Min. 1 Year</span>
+                                                    class="far fa-check-circle text-color-blue me-10"></i>Employment history  At least 1 year</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -741,16 +723,14 @@ $this->load->view('includes/header-apply.php');
 
                                         <i class="fas fa-calculator text-color-blue fs-4"></i>
                                     </div>
-                                    <h5 class="text-dark ms-10 mb-0">For Self-Employed</h5>
+                                    <h5 class="text-dark ms-10 mb-0">NBFC Criteria for Self-Employed Applicants</h5>
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
                                     <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
-                                                    class="far fa-check-circle text-color-blue me-10"></i>Minimum
-                                                Age</span>
-                                            <span class="fw-bold fa-sm">21 Years</span>
+                                                    class="far fa-check-circle text-color-blue me-10"></i>Minimum age  21 yearsMinimum age  21 years</span>
                                         </div>
                                     </li>
                                     <hr>
@@ -758,9 +738,7 @@ $this->load->view('includes/header-apply.php');
                                     <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
-                                                    class="far fa-check-circle text-color-blue me-10"></i>Minimum
-                                                Salary</span>
-                                            <span class="fw-bold fa-sm">Rs. 15,000/month</span>
+                                                    class="far fa-check-circle text-color-blue me-10"></i>Business history  At least 1 year</span>
                                         </div>
                                     </li>
                                     <hr>
@@ -768,9 +746,7 @@ $this->load->view('includes/header-apply.php');
                                     <li class="ps-0 text-dark mb-20 mt-20">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span class="fa-sm"> <i
-                                                    class="far fa-check-circle text-color-blue me-10"></i>Job
-                                                Stability</span>
-                                            <span class="fw-bold fa-sm">1 Year</span>
+                                                    class="far fa-check-circle text-color-blue me-10"></i>Income tax returns  At least 1 year</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -784,189 +760,133 @@ $this->load->view('includes/header-apply.php');
 
     </div>
 </section>
-<section
-    class="section section-theme-1 section-faqs pt-40 pt-md-50 pt-lg-75 pt-xl-80 pt-xxl-80 pb-40 pb-md-50 pb-lg-75 pb-xl-70 pb-xxl-80   bg-light-sky">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+    <section
+        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
 
-                <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">FAQ</p>
-                <h3 class="display-6 fw-bold text-dark mb-15">Frequently Asked <span
-                        class="text-color-blue">Questions</span></h3>
-                <p>Got questions? We’ve got answers. Here’s everything you need to know about applying for a loan
-                    with indiafinpro.</p>
+                    <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">FAQ</p>
+                    <h3 class="display-6 fw-bold text-dark mb-15">Frequently Asked <span class="text-color-blue">Questions</span></h3>
+                    <p>Find answers to common questions about personal loan applications with IndiaFinPro.</p>
 
-            </div>
-            <div class="col-md-8">
-                <div class="accordion" id="faq-accordion-2">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed bg-white border" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                                aria-controls="collapseOne">
-                                <span class="bullet"></span>
-                                <span class="title">What purposes can a personal loan be used for?</span>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#faq-accordion-1">
-                            <div class="accordion-body">
-                                <p>A personal loan can be used for any personal expenses, including paying-off
-                                    unexpected bills, debt consolidation, wedding expenses, higher education, home
-                                    renovation, travel, shopping, covering a business cost, etc.</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="accordion" id="faq-accordion-2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    <span class="bullet"></span>
+                                    <span class="title">What can a personal loan be used for?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>A personal loan may be used for various personal expenses, subject to the lender’s terms and permitted purposes.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed bg-white border" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                                <span class="bullet"></span>
-                                <span class="title">Do I have to pledge any assets to avail a personal loan?</span>
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#faq-accordion-1">
-                            <div class="accordion-body">
-                                <p>A personal loan is an unsecured type of credit, which means you do not have to
-                                    pledge any assets as collateral.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <span class="bullet"></span>
+                                    <span class="title">Is collateral required for a personal loan?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>Personal loans are generally unsecured, but requirements can vary by lender and loan product.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed bg-white border" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                aria-controls="collapseThree">
-                                <span class="bullet"></span>
-                                <span class="title">How do I know if I am eligible for a personal loan?</span>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#faq-accordion-1">
-                            <div class="accordion-body">
-                                <p>
-                                    Here are the common eligibility criteria for a personal loan:<br>
-                                    <strong>Salaried Professionals</strong><br>
-                                <ul>
-                                    <li>Minimum Age: 21 years</li>
-                                    <li>Minimum Monthly Income: Rs. 15,000 (should reflect in the bank)s</li>
-                                    <li>Minimum Job Stability: 1 Year</li>
-                                </ul>
-                                <strong>Self-employed Individuals</strong><br>
-                                <ul>
-                                    <li>Minimum Age: 21 years</li>
-                                    <li>Minimum ITR: 1 Year</li>
-                                    <li>Minimum Business Stability: 1 Year</li>
-                                </ul>
-                                </p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <span class="bullet"></span>
+                                    <span class="title">How is personal loan eligibility determined?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>
+                                        The lender assesses eligibility based on its criteria, which may include income, credit history and other factors.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed bg-white border" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                aria-controls="collapseFour">
-                                <span class="bullet"></span>
-                                <span class="title">What are the documents required for applying for a personal
-                                    loan?</span>
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#faq-accordion-1">
-                            <div class="accordion-body">
-                                <p>
-                                    When applying for a personal loan, the following general documents are needed:
-                                    <br>
-                                    <strong>For Salaried:</strong> <br>
-                                <ul>
-                                    <li>Aadhaar Card</li>
-                                    <li>PAN Card</li>
-                                    <li>Residence Proof</li>
-                                    <li>Bank Statement</li>
-                                    <li>Income Proof</li>
-                                </ul>
-                                <strong>For Self-Employed:</strong> <br>
-                                <ul>
-                                    <li>Aadhaar Card</li>
-                                    <li>PAN Card</li>
-                                    <li>Residence Proof</li>
-                                    <li>Bank Statement</li>
-                                    <li>Income Computation</li>
-                                    <li>Profit & Loss Account Statement</li>
-                                    <li>Balance Sheet</li>
-                                    <li>Service Tax Registration, License, Registration Certificate</li>
-                                    <li>Clearance Certificate/IT Assessment</li>
-                                    <li>Income Tax Returns</li>
-                                </ul>
-                                </p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <span class="bullet"></span>
+                                    <span class="title">What documents are required to apply?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lenders may ask for identity, address and income proof. The exact documents depend on the lender and your profile.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed bg-white border" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
-                                aria-controls="collapseFive">
-                                <span class="bullet"></span>
-                                <span class="title">Can I get tax benefits on personal loans?</span>
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#faq-accordion-1">
-                            <div class="accordion-body">
-                                <p>Personal loans do not have any direct tax benefits. However, if you use the funds
-                                    to renovate your house or to incur business expenses, you may get tax benefits
-                                    under the Income Tax Act of India.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    <span class="bullet"></span>
+                                    <span class="title">Are there tax benefits on personal loans?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faq-accordion-1">
+                                <div class="accordion-body">
+                                    <p>Tax benefits may be available in certain circumstances, depending on how the funds are used and applicable tax rules. Consult a qualified tax professional for guidance.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed bg-white border" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-                                aria-controls="collapseSix">
-                                <span class="bullet"></span>
-                                <span class="title">Why is having a good credit score so important?</span>
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                            data-bs-parent="#faq-accordion-2">
-                            <div class="accordion-body">
-                                <p>Your credit score represents your creditworthiness and repayment ability. Your
-                                    chances of obtaining a loan with favourable terms and a low interest rate are
-                                    very high if your credit score is high.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    <span class="bullet"></span>
+                                    <span class="title">How does a credit score affect an application?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#faq-accordion-2">
+                                <div class="accordion-body">
+                                    <p>A credit score helps lenders assess credit history. It is one of several factors considered when reviewing an application.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="section section-contact section-theme-1 bg-dark-blue">
     <div class="container">
-        <p class="mb-0 text-white"><strong>Disclaimer: </strong><small class="fa-xs"> Loan Tenure ranges from minimum 6
-                months to maximum of 60 months, with annual interest rates starting at 11% and going up to 34%. A
-                processing fee up to 2% may be applicable. Representative Example: If a loan of ₹1,00,000 is availed at
-                an interest rate of 12.5% per annum for a tenure of 12 months, and a processing fee of 2% is applied:
-                Interest Payable: ₹6,720 approx. Processing Fee: ₹2,000. Total Loan Cost (including interest + fee)
-                ₹1,08,720. APR (Annual Percentage Rate): 14.27% approx. *T&C Apply. All these numbers are
-                tentative/indicative, the final loan specifics may vary depending upon the customer profile and NBFCs'
-                criteria, rules & regulations, and terms & conditions. The amount paid is only for the service charge.
-                We are not lenders and do not guarantee any loan approval. </small></p>
+        <p class="mb-0 text-white"><strong>Disclaimer: </strong><small class="fa-xs"><?php echo COMPANY_NAME; ?> is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria. </small></p>
 
-        <p class="mb-0 text-white"><strong>Important Note: </strong><small class="fa-xs">We ask our customers to make
-                payments ONLY on our website <a class="text-white"
-                    href="<?php echo COMPANY_SITE; ?>">indiafinpro.com</a> and NOT through any other
-                source, directly or indirectly.</small></p>
+        <p class="mb-0 text-white"><strong>Important Note: </strong><small class="fa-xs">We ask our customers to make payments ONLY on our website <a class="text-white"
+                    href="<?php echo COMPANY_SITE; ?>">indiafinpro.com</a> and NOT through any other source, directly or indirectly.</small></p>
 
-        <p class="mb-0 text-white"><strong>Pre-application NOTE: </strong><small class="fa-xs">Users are advised to read
-                our terms and conditions and
-                policies before proceeding/applying/registration. </small>
+        <p class="mb-0 text-white"><strong>Pre-application NOTE: </strong><small class="fa-xs">Users are advised to read our terms and conditions and policies before proceeding/applying/registration.</small>
         </p>
         <p class="mb-0 text-white"><strong>Disclosure:</strong><small class="fa-xs"> Loan tenure minimum 6 months &
                 maximum 60 months; Maximum APR: 34%

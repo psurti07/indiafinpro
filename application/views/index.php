@@ -10,13 +10,12 @@ $this->load->view('includes/header');
 
                     <div class="visual-textbox text-center pt-0">
                         <span class="text-white limited-offer py-5 px-10 rounded-pill mb-3 d-inline-block fa-xs mb-10"><i
-                                class="fa fa-bolt me-5"></i><small>100% Online Business Loans</small></span>
+                                class="fa fa-bolt me-5"></i><small>PERSONAL LOAN APPLICATION SUPPORT</small></span>
 
-                        <h1 class="text-light">Unlock business growth <br>with <span
+                        <h1 class="text-light">Explore Personal Loan Options <br>with <span
                                 style="color:#8FB8FF">IndiaFinPro</span>
                         </h1>
-                        <p class="text-light">Get your business loan approved quickly with minimal paperwork,
-                            <br>transparent terms and a simple 100% online process.
+                        <p class="text-light">Get guidance on loan options, application steps and required documents.
                         </p>
 
                         <div>
@@ -44,28 +43,21 @@ $this->load->view('includes/header');
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 mt-10 mb-15 mb-md-30 mb-lg-0">
                     <header class="section-header">
-                        <span class="text-color-blue text-uppercase text-outlined text-top mb-15 d-block">Helping You
-                            Choose the Right Financial Path</span>
+                        <span class="text-color-blue text-uppercase text-outlined text-top mb-15 d-block">HELPING YOU UNDERSTAND LOAN OPTIONS</span>
                         <h2 class="mb-10">About <span class="text-color-blue">Us</span></h2>
-                        <p class="">Indiafinpro is a trusted financial consultation platform that connects customers
-                            with leading NBFC partners across India. Our goal is to simplify the borrowing process by
-                            offering expert guidance, transparent solutions, and a seamless digital experience. Through
-                            our technology-driven platform, users can explore loan options, receive personalized
-                            assistance, and apply for loans quickly and conveniently, all in one place.</p>
+                        <p class="">IndiaFinPro is a financial consultation platform that helps users understand loan application options and connect with participating NBFC partners across India. We provide clear information on application steps, required documents and lender processes through a simple digital experience. Final eligibility, loan terms and approval are determined by the respective lender.</p>
                     </header>
                 </div>
                 <div class="col-12 col-lg-6 mt-10 mb-15 mb-md-30 mb-lg-0 aboutus-cnt">
                     <div class="p-25 content-right">
 
-                        <h6 class="text-light mb-3">Helping You Achieve Financial Freedom !</h6>
+                        <h6 class="text-light mb-3">Clear Support for Every Application!</h6>
                         <ul class="text-light">
                             <li>
-                                We believe every financial journey is unique, which is why we offer customized support
-                                and solutions designed around individual needs.
+                               Understand application requirements, documents and available lender options with clarity.
                             </li>
                             <li>
-                                We make the loan process easy to understand, so you can move forward with confidence.
-
+                                Receive guidance on the next steps throughout the loan application process.
                             </li>
                         </ul>
                     </div>
@@ -102,7 +94,7 @@ $this->load->view('includes/header');
                                         </div>
                                     </div>
                                     <div class="text-start ms-20 content-text">
-                                        <p class="mb-0">Start by entering your mobile number and bank-registered name.
+                                        <p class="mb-0">Enter your mobile number and bank-registered name to begin.
                                         </p>
                                     </div>
                                 </div>
@@ -119,11 +111,7 @@ $this->load->view('includes/header');
                                         </div>
                                     </div>
                                     <div class="text-start ms-20 content-text">
-                                        <p class="mb-0">Fill in the required information to let our automated system
-                                            assess
-                                            your eligibility and show your pre-approved loan offer(s). This is not the
-                                            final
-                                            offer.</p>
+                                        <p class="mb-0">Share the required details to explore loan options based on the information provided.</p>
                                     </div>
                                 </div>
                             </div>
@@ -138,8 +126,7 @@ $this->load->view('includes/header');
                                         </div>
                                     </div>
                                     <div class="text-start ms-20 content-text">
-                                        <p class="mb-0">Subscribe to unlock access to your displayed pre-approved loan
-                                            offer(s).</p>
+                                        <p class="mb-0">Choose application support after reviewing the applicable service fee and terms.</p>
                                     </div>
                                 </div>
                             </div>
@@ -154,9 +141,7 @@ $this->load->view('includes/header');
                                         </div>
                                     </div>
                                     <div class="text-start ms-20 content-text">
-                                        <p class="mb-0">Within 24-48 hours, our login team will reach out for
-                                            verification
-                                            and guide you through the document submission process.</p>
+                                        <p class="mb-0">Our team will contact you to verify your details and guide you through document submission.</p>
                                     </div>
                                 </div>
                             </div>
@@ -171,8 +156,7 @@ $this->load->view('includes/header');
                                         </div>
                                     </div>
                                     <div class="text-start ms-20 content-text">
-                                        <p class="mb-0">Your documents and profile will be verified by the NBFC in
-                                            accordance with its terms and conditions.</p>
+                                        <p class="mb-0">The NBFC will review your profile and documents according to its criteria.</p>
                                     </div>
                                 </div>
                             </div>
@@ -187,9 +171,7 @@ $this->load->view('includes/header');
                                         </div>
                                     </div>
                                     <div class="text-start ms-20 content-text">
-                                        <p class="mb-0">The NBFC will determine loan sanction, approval, and
-                                            disbursement in
-                                            accordance with its rules and regulations.</p>
+                                        <p class="mb-0">The NBFC will communicate its decision and applicable loan terms after completing its review.</p>
                                     </div>
                                 </div>
                             </div>
@@ -225,9 +207,8 @@ $this->load->view('includes/header');
                                 </div>
                             </div>
                             <div class="text-start">
-                                <h6>Enriching Collaboration</h6>
-                                <p class="mt-10 mb-0">Explore multiple financial services backed by our leading NBFC
-                                    network.
+                                <h6>NBFC Network</h6>
+                                <p class="mt-10 mb-0">Explore loan options from participating NBFC partners.
                                 </p>
                             </div>
                         </div>
@@ -243,11 +224,8 @@ $this->load->view('includes/header');
                                 </div>
                             </div>
                             <div class="text-start">
-                                <h6>100% Online Process</h6>
-                                <p class="mt-10 mb-0">Enjoy a smooth and hassle-free loan experience without stepping
-                                    out
-                                    of
-                                    your home.</p>
+                                <h6>Online Process</h6>
+                                <p class="mt-10 mb-0">Start your application through a simple digital process.</p>
                             </div>
                         </div>
                     </div>
@@ -262,10 +240,8 @@ $this->load->view('includes/header');
                                 </div>
                             </div>
                             <div class="text-start">
-                                <h6>Self-Apply Feature</h6>
-                                <p class="mt-10 mb-0">Enjoy the freedom to make smarter financial decisions with
-                                    expert
-                                    support.</p>
+                                <h6>Application Support</h6>
+                                <p class="mt-10 mb-0">Get guidance on application steps and required documents.</p>
                             </div>
                         </div>
                     </div>
@@ -316,8 +292,8 @@ $this->load->view('includes/header');
                         <header class="section-header text-center text-lg-center">
                             <span
                                 class="text-color-blue text-uppercase text-outlined text-top mb-0 d-block">TESTIMONIALS</span>
-                            <h3 class="display-6 fw-bold text-dark mb-0">Hear from <span class="text-color-blue">Our Customers</span></h3>
-                            <p class="text-center">Hear what our clients have to say about us.</p>
+                            <h3 class="display-6 fw-bold text-dark mb-0">What Our  <span class="text-color-blue">Customers Say</span></h3>
+                            <p class="text-center">Hear about their experience with IndiaFinPro.</p>
                         </header>
                     </div>
                 </div>
@@ -333,11 +309,10 @@ $this->load->view('includes/header');
                                         </div>
 
                                         <div class="card-comment">
-                                            <p>indiafinpro made the application process easier to understand. The guidance
-                                                on documents and next steps was helpful.”</p>
+                                            <p>“The team explained the application steps clearly and helped me understand the documents required.”</p>
                                         </div>
                                         <hr>
-                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <p class="card-position mb-0 lh-sm">Aarav Mehta</p>
                                         <div class="rates-review mb-0">
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -355,11 +330,10 @@ $this->load->view('includes/header');
                                             <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
                                         </div>
                                         <div class="card-comment">
-                                            <p>indiafinpro made the application process easier to understand. The guidance
-                                                on documents and next steps was helpful.”</p>
+                                            <p>“IndiaFinPro made it easier to understand the process. The guidance was clear and helpful.”</p>
                                         </div>
                                         <hr>
-                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <p class="card-position mb-0 lh-sm">Neha Desai</p>
                                         <div class="rates-review mb-0">
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -377,11 +351,10 @@ $this->load->view('includes/header');
                                             <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
                                         </div>
                                         <div class="card-comment">
-                                            <p>indiafinproo made the application process easier to understand. The guidance
-                                                on documents and next steps was helpful.”</p>
+                                            <p>“I appreciated the support while gathering my documents and completing the application.”</p>
                                         </div>
                                         <hr>
-                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <p class="card-position mb-0 lh-sm">Kunal Shah</p>
                                         <div class="rates-review mb-0">
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -399,11 +372,10 @@ $this->load->view('includes/header');
                                             <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
                                         </div>
                                         <div class="card-comment">
-                                            <p>indiafinpro made the application process easier to understand. The guidance
-                                                on documents and next steps was helpful.”</p>
+                                            <p>“The team answered my questions and explained what to expect at each step.”</p>
                                         </div>
                                         <hr>
-                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <p class="card-position mb-0 lh-sm">Priya Nair</p>
                                         <div class="rates-review mb-0">
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -421,11 +393,10 @@ $this->load->view('includes/header');
                                             <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
                                         </div>
                                         <div class="card-comment mb-0">
-                                            <p>indiafinpro made the application process easier to understand. The guidance
-                                                on documents and next steps was helpful.”</p>
+                                            <p>“The platform helped me explore loan options and understand the application requirements.”</p>
                                         </div>
                                         </hr>
-                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <p class="card-position mb-0 lh-sm">Manish Patel</p>
                                         <div class="rates-review mb-0">
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -443,11 +414,94 @@ $this->load->view('includes/header');
                                             <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
                                         </div>
                                         <div class="card-comment">
-                                            <p>indiafinpro made the application process easier to understand. The guidance
-                                                on documents and next steps was helpful.”</p>
+                                            <p>“The instructions were easy to follow, and the team was supportive throughout.”</p>
                                         </div>
                                         <hr>
-                                        <p class="card-position mb-0 lh-sm">Rohan Bedi</p>
+                                        <p class="card-position mb-0 lh-sm">Kavita Joshi</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
+
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>“I found the information clear and useful when preparing my application.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Ritesh Verma</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
+
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>“The team helped me understand the documents and next steps in a simple way.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Sneha Rao</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
+
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>“IndiaFinPro provided helpful guidance throughout the application process.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Devendra Singh</p>
+                                        <div class="rates-review mb-0">
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                            <img src="<?= base_url('assets/images/star.svg'); ?>" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-white p-25 testimonial-card border">
+                                        <div class="mb-25">
+
+                                            <i class="fas fa-quote-left text-color-blue mb-3 d-block"></i>
+                                        </div>
+                                        <div class="card-comment">
+                                            <p>“The process was explained well, and I knew where to turn when I had questions.”</p>
+                                        </div>
+                                        <hr>
+                                        <p class="card-position mb-0 lh-sm">Pooja Kulkarni</p>
                                         <div class="rates-review mb-0">
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
                                             <img src="<?= base_url('assets/images/star.svg'); ?>" />
@@ -473,8 +527,7 @@ $this->load->view('includes/header');
 
                     <p class="mb-10 mb-lg-15 title-text text-color-blue text-uppercase">FAQ</p>
                     <h3 class="display-6 fw-bold text-dark mb-15">Frequently Asked <span class="text-color-blue">Questions</span></h3>
-                    <p>Got questions? We’ve got answers. Here’s everything you need to know about applying for a loan
-                        with indiafinpro.</p>
+                    <p>Find answers to common questions about personal loan applications with IndiaFinPro.</p>
 
                 </div>
                 <div class="col-md-8">
@@ -485,15 +538,13 @@ $this->load->view('includes/header');
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                     aria-controls="collapseOne">
                                     <span class="bullet"></span>
-                                    <span class="title">What purposes can a personal loan be used for?</span>
+                                    <span class="title">What can a personal loan be used for?</span>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#faq-accordion-1">
                                 <div class="accordion-body">
-                                    <p>A personal loan can be used for any personal expenses, including paying-off
-                                        unexpected bills, debt consolidation, wedding expenses, higher education, home
-                                        renovation, travel, shopping, covering a business cost, etc.</p>
+                                    <p>A personal loan may be used for various personal expenses, subject to the lender’s terms and permitted purposes.</p>
                                 </div>
                             </div>
                         </div>
@@ -503,14 +554,13 @@ $this->load->view('includes/header');
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
                                     <span class="bullet"></span>
-                                    <span class="title">Do I have to pledge any assets to avail a personal loan?</span>
+                                    <span class="title">Is collateral required for a personal loan?</span>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#faq-accordion-1">
                                 <div class="accordion-body">
-                                    <p>A personal loan is an unsecured type of credit, which means you do not have to
-                                        pledge any assets as collateral.</p>
+                                    <p>Personal loans are generally unsecured, but requirements can vary by lender and loan product.</p>
                                 </div>
                             </div>
                         </div>
@@ -520,26 +570,14 @@ $this->load->view('includes/header');
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
                                     <span class="bullet"></span>
-                                    <span class="title">How do I know if I am eligible for a personal loan?</span>
+                                    <span class="title">How is personal loan eligibility determined?</span>
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#faq-accordion-1">
                                 <div class="accordion-body">
                                     <p>
-                                        Here are the common eligibility criteria for a personal loan:<br>
-                                        <strong>Salaried Professionals</strong><br>
-                                    <ul>
-                                        <li>Minimum Age: 21 years</li>
-                                        <li>Minimum Monthly Income: Rs. 15,000 (should reflect in the bank)s</li>
-                                        <li>Minimum Job Stability: 1 Year</li>
-                                    </ul>
-                                    <strong>Self-employed Individuals</strong><br>
-                                    <ul>
-                                        <li>Minimum Age: 21 years</li>
-                                        <li>Minimum ITR: 1 Year</li>
-                                        <li>Minimum Business Stability: 1 Year</li>
-                                    </ul>
+                                        The lender assesses eligibility based on its criteria, which may include income, credit history and other factors.
                                     </p>
                                 </div>
                             </div>
@@ -550,37 +588,14 @@ $this->load->view('includes/header');
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
                                     <span class="bullet"></span>
-                                    <span class="title">What are the documents required for applying for a personal
-                                        loan?</span>
+                                    <span class="title">What documents are required to apply?</span>
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#faq-accordion-1">
                                 <div class="accordion-body">
                                     <p>
-                                        When applying for a personal loan, the following general documents are needed:
-                                        <br>
-                                        <strong>For Salaried:</strong> <br>
-                                    <ul>
-                                        <li>Aadhaar Card</li>
-                                        <li>PAN Card</li>
-                                        <li>Residence Proof</li>
-                                        <li>Bank Statement</li>
-                                        <li>Income Proof</li>
-                                    </ul>
-                                    <strong>For Self-Employed:</strong> <br>
-                                    <ul>
-                                        <li>Aadhaar Card</li>
-                                        <li>PAN Card</li>
-                                        <li>Residence Proof</li>
-                                        <li>Bank Statement</li>
-                                        <li>Income Computation</li>
-                                        <li>Profit & Loss Account Statement</li>
-                                        <li>Balance Sheet</li>
-                                        <li>Service Tax Registration, License, Registration Certificate</li>
-                                        <li>Clearance Certificate/IT Assessment</li>
-                                        <li>Income Tax Returns</li>
-                                    </ul>
+                                        Lenders may ask for identity, address and income proof. The exact documents depend on the lender and your profile.
                                     </p>
                                 </div>
                             </div>
@@ -591,15 +606,13 @@ $this->load->view('includes/header');
                                     data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseFive">
                                     <span class="bullet"></span>
-                                    <span class="title">Can I get tax benefits on personal loans?</span>
+                                    <span class="title">Are there tax benefits on personal loans?</span>
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#faq-accordion-1">
                                 <div class="accordion-body">
-                                    <p>Personal loans do not have any direct tax benefits. However, if you use the funds
-                                        to renovate your house or to incur business expenses, you may get tax benefits
-                                        under the Income Tax Act of India.</p>
+                                    <p>Tax benefits may be available in certain circumstances, depending on how the funds are used and applicable tax rules. Consult a qualified tax professional for guidance.</p>
                                 </div>
                             </div>
                         </div>
@@ -609,15 +622,13 @@ $this->load->view('includes/header');
                                     data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                                     aria-controls="collapseSix">
                                     <span class="bullet"></span>
-                                    <span class="title">Why is having a good credit score so important?</span>
+                                    <span class="title">How does a credit score affect an application?</span>
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#faq-accordion-2">
                                 <div class="accordion-body">
-                                    <p>Your credit score represents your creditworthiness and repayment ability. Your
-                                        chances of obtaining a loan with favourable terms and a low interest rate are
-                                        very high if your credit score is high.</p>
+                                    <p>A credit score helps lenders assess credit history. It is one of several factors considered when reviewing an application.</p>
                                 </div>
                             </div>
                         </div>
@@ -633,7 +644,7 @@ $this->load->view('includes/header');
             <div class="row">
                 <div class="col-xl-7 col-12 m-auto">
                     <header class="section-header d-flex flex-column text-center mb-40">
-                        <h3 class="display-6 fw-bold text-dark mb-0">Meet Our <span class="text-color-blue">NBFC Partners</span></h3>
+                        <h3 class="display-6 fw-bold text-dark mb-0">Our partnered <span class="text-color-blue">NBFC</span></h3>
                         <p>We partner with the best to serve you better.
                         <p>
                     </header>
