@@ -2,13 +2,13 @@
 $this->load->view('includes/header-apply');
 ?>
 
-<div class="subvisual-block subvisual-theme-1 bg-dark-green d-flex pt-60 pt-md-90 pt-lg-150 pb-30 text-white">
+<div class="subvisual-block subvisual-theme-1 bg-light-sky d-flex pt-50 pt-md-50 pt-lg-50 pb-30 text-white">
   <div class="pattern-image"></div>
   <div class="container position-relative text-center">
     <div class="row">
       <div class="col-12">
-        <div class="subvisual-textbox text-dark">
-          <h1>Raise a Request</h1>
+        <div class="subvisual-textbox text-dark pb-0">
+          <h1 class="text-white">Raise a Request</h1>
           <p>Useful and Helpful Question & Answers</p>
         </div>
       </div>

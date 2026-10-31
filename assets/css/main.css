@@ -837,7 +837,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px !important;
+  /*border-radius: 10px !important;*/
 }
 
 @media (max-width: 1374.98px) {
@@ -9355,7 +9355,7 @@ textarea.form-control.form-control-lg {
 }
 
 .footer-links li a {
-  color: #656966;
+  color: #b1bdb4;
   font-size: 14px;
   line-height: 20px;
 }
@@ -15026,7 +15026,7 @@ textarea.form-control.form-control-lg {
 
 .footer-theme-1 .pri-footer .footer-info p {
   margin: 0 0 15px;
-  color: #656966;
+  color: #b1bdb4;
   font-size: 14px;
   line-height: 20px;
 }
@@ -50313,4 +50313,7 @@ textarea.form-control.form-control-lg {
 .rates-review img {
   display: inline-block;
 }
-
+.form-group.issue .help-block, .form-group.issue .help-inline {
+    color: #FF9149;
+    font-size: 13px;
+}

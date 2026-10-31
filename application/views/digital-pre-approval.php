@@ -69,7 +69,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                 </div>
                                 <div class="subhead ms-15">
                                     <h5 class="mb-5 text-dark"><?php echo $userdetails['loanname']; ?></h5>
-                                    <p class="mb-0">Selecting the Right EMI Options for Your Financial Goals</p>
+                                    <p class="mb-0 small">Selecting the Right EMI Options for Your Financial Goals</p>
                                 </div>
 
                             </div>
@@ -103,7 +103,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                                 </h5>
                                                 <div class="d-flex justify-content-between mt-5">
 
-                                                    <p class="mb-0">Per Month </p>
+                                                    <p class="mb-0 small">Per Month </p>
                                                     <i class="fa-regular fa-calendar-days fs-5"></i>
                                                 </div>
                                             </span></label>
@@ -122,7 +122,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                                 </h5>
                                                 <div class="d-flex justify-content-between mt-5">
 
-                                                    <p class="mb-0">Per Month</p>
+                                                    <p class="mb-0 small">Per Month</p>
                                                     <i class="fa-regular fa-calendar-days fs-5"></i>
                                                 </div>
                                             </span></label>
@@ -141,7 +141,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                                 </h5>
                                                 <div class="d-flex justify-content-between mt-5">
 
-                                                    <p class="mb-0">Per Month</p>
+                                                    <p class="mb-0 small">Per Month</p>
                                                     <i class="fa-regular fa-calendar-days fs-5"></i>
                                                 </div>
                                             </span></label>
@@ -160,7 +160,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                                 </h5>
                                                 <div class="d-flex justify-content-between mt-5">
 
-                                                    <p class="mb-0">Per Month</p>
+                                                    <p class="mb-0 small">Per Month</p>
                                                     <i class="fa-regular fa-calendar-days fs-5"></i>
                                                 </div>
                                             </span></label>
@@ -179,7 +179,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                                 </h5>
                                                 <div class="d-flex justify-content-between mt-5">
 
-                                                    <p class="mb-0">Per Month</p>
+                                                    <p class="mb-0 small">Per Month</p>
                                                     <i class="fa-regular fa-calendar-days fs-5"></i>
                                                 </div>
                                             </span></label>
@@ -198,7 +198,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                                 </h5>
                                                 <div class="d-flex justify-content-between">
 
-                                                    <p class="mb-0">Per Month</p>
+                                                    <p class="mb-0 small">Per Month</p>
                                                     <i class="fa-regular fa-calendar-days fs-5"></i>
                                                 </div>
                                             </span>
@@ -206,7 +206,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                     </fieldset>
                                 </div>
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mb-25">
 
 
                                     <button type="submit" class="btn btn-green btn-sm js-confetti w-100"
@@ -216,8 +216,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
 
 
                                 </div>
-                             <span class="text-center 
-    text-success fa-xs fw-normal text-uppercase mb-30 mt-20">Our Lending Partners</span>
+                             
                                 <p class="text-center mb-20 text-dark fa-xs fw-bold">Meet Our NBFC Partners</p>
                                 <div class="lending-bank-slider">
                                     <?php foreach ($banklist as $row) { ?>

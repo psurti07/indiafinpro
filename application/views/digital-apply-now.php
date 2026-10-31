@@ -4,7 +4,7 @@ $this->load->view('includes/header-apply.php');
 
 <section class="visual-block visual-theme-5 bg-dark hero-section text-black pt-40 pt-md-40 pt-xl-40">
     <div class="container">
-        <div class="row justify-content-between align-items-lg-center  align-items-md-end">
+        <div class="row">
             <div class="col-12 col-md-6 col-lg-7 col-xl-7 order-2">
 
                 <div class="visual-textbox pt-0">
@@ -36,7 +36,7 @@ $this->load->view('includes/header-apply.php');
                                 <span>Loan</span>
                             </div>
 
-                            <div class="process-step-item active">
+                            <div class="process-step-item">
                                 <div class="process-step-number">2</div>
                                 <span>Personal</span>
                             </div>
@@ -133,27 +133,8 @@ $this->load->view('includes/header-apply.php');
                                         <div class="help-block ms-0 ps-0 mb-2"></div>
                                     </div>
                                 </div>
-                                <div class="col-12 mb-2">
-                                    <div class="form-group mb-15 ps-0">
-                                        <div class="d-flex align-items-start ">
-                                            <input type="checkbox" name="promotion" id="promotion"
-                                                class="custom-control-input mb-0 mt-5" value="1" checked required>
-                                            <label class="custom-control-label" for="promotion"><small
-                                                    class="ms-10 d-block fw-normal" style="font-size:12px">
-                                                    I
-                                                    agree to receive
-                                                    promotional & informational communications from indiafinproo
-                                                    through
-                                                    Emails, calls or SMS
-                                                    Services.
-                                                </small></label>
-                                        </div>
-                                        <div class="help-block ms-0 ps-0 mb-2"></div>
-                                    </div>
-                                </div>
-                                <span class="text-center 
-    text-success fa-xs fw-normal text-uppercase mb-30 mt-20">Our Lending Partners</span>
-                                <p class="text-center mb-20 text-dark fa-xs fw-bold">Meet Our NBFC Partners</p>
+                               
+                                <p class="text-center mb-20 mt-25 text-dark fa-xs fw-bold">Meet Our NBFC Partners</p>
                                 <div class="lending-bank-slider">
                                     <?php foreach ($banklist as $row) { ?>
                                     <div class="wrap text-center">
@@ -185,7 +166,7 @@ $this->load->view('includes/header-apply.php');
                                 <span>Loan</span>
                             </div>
 
-                            <div class="process-step-item active">
+                            <div class="process-step-item">
                                 <div class="process-step-number">2</div>
                                 <span>Personal</span>
                             </div>
@@ -259,13 +240,11 @@ $this->load->view('includes/header-apply.php');
                                 </div>
 
 
-                                <div class="col-12 mt-10">
+                                <div class="col-12 mt-10 mb-25">
                                     <button type="submit" id="formsubmit2" class="btn btn-green btn-sm"><span
                                             class="btn-text">Verify
                                             OTP <i class="fa-solid fa-arrow-right"></i></span></button>
                                 </div>
-                                <span class="text-center 
-    text-success fa-xs fw-normal text-uppercase mb-30 mt-20">Our Lending Partners</span>
                                 <p class="text-center mb-20 text-dark fa-xs fw-bold">Meet Our NBFC Partners</p>
                                 <div class="lending-bank-slider">
                                     <?php foreach ($banklist as $row) { ?>
@@ -299,7 +278,7 @@ $this->load->view('includes/header-apply.php');
                                 <span>Loan</span>
                             </div>
 
-                            <div class="process-step-item active">
+                            <div class="process-step-item">
                                 <div class="process-step-number">2</div>
                                 <span>Personal</span>
                             </div>
@@ -334,7 +313,7 @@ $this->load->view('includes/header-apply.php');
                                 <input type="hidden" id="usermobile" name="usermobile"
                                     value="<?php echo $userdetails['mobile']; ?>">
 
-                                <label class="text-uppercase mb-20 fa-xs fw-bold">Employment type</label>
+                                <label class="text-uppercase fa-xs fw-bold">Employment type</label>
                                 <div class="row g-10">
                                     <div class="col-md-6 col-lg-6 col-sm-6 col-12 mb-md-0 mb-10">
                                         <fieldset class="picker1">
@@ -408,14 +387,13 @@ $this->load->view('includes/header-apply.php');
                                         <div class="help-block"></div>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 mb-20">
                                     <button type="submit" id="formsubmit3" class="btn btn-green btn-sm"><span
                                             class="btn-text">Process <i
                                                 class="fa-solid fa-arrow-right"></i></span></button>
                                 </div>
                                 <!-- </div> -->
-                                <span class="text-center 
-    text-success fa-xs fw-normal text-uppercase mb-30 mt-20">Our Lending Partners</span>
+                                
                                 <p class="text-center mb-20 text-dark fa-xs fw-bold">Meet Our NBFC Partners</p>
                                 <div class="lending-bank-slider">
                                     <?php foreach ($banklist as $row) { ?>
@@ -683,7 +661,7 @@ $this->load->view('includes/header-apply.php');
                                     <div class="icon d-flex align-items-center justify-content-center bg-light-sky">
                                         <i class="fas fa-briefcase text-color-blue fs-4"></i>
                                     </div>
-                                    <h5 class="text-dark ms-10 mb-0">NBFC Criteria For Salaried Applicants</h5>
+                                    <h6 class="text-dark ms-10 mb-0">For Salaried Applicants</h6>
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
@@ -712,7 +690,6 @@ $this->load->view('includes/header-apply.php');
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                     <div class="right_align">
@@ -720,10 +697,9 @@ $this->load->view('includes/header-apply.php');
                             <div class="p-20">
                                 <div class="commmon-box card-box-main p-0 border-0 card-wrap d-flex align-items-center mb-25">
                                     <div class="icon d-flex align-items-center justify-content-center">
-
                                         <i class="fas fa-calculator text-color-blue fs-4"></i>
                                     </div>
-                                    <h5 class="text-dark ms-10 mb-0">NBFC Criteria for Self-Employed Applicants</h5>
+                                    <h6 class="text-dark ms-10 mb-0">For Self-Employed Applicants</h6>
                                 </div>
                                 <hr>
                                 <ul class="list-unstyled list m-0">
@@ -761,7 +737,7 @@ $this->load->view('includes/header-apply.php');
     </div>
 </section>
     <section
-        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100" id="faq">
+        class="section section-theme-1 section-faqs pt-35 pt-md-50 pt-lg-75 pt-xl-100 pt-xxl-100 pb-35 pb-md-50 pb-lg-75 pb-xl-100 pb-xxl-100 bg-light-sky" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -775,7 +751,7 @@ $this->load->view('includes/header-apply.php');
                     <div class="accordion" id="faq-accordion-2">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                <button class="accordion-button collapsed bg-white" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                     aria-controls="collapseOne">
                                     <span class="bullet"></span>
@@ -791,7 +767,7 @@ $this->load->view('includes/header-apply.php');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                <button class="accordion-button collapsed bg-white" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
                                     <span class="bullet"></span>
@@ -807,7 +783,7 @@ $this->load->view('includes/header-apply.php');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                <button class="accordion-button collapsed bg-white" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
                                     <span class="bullet"></span>
@@ -825,7 +801,7 @@ $this->load->view('includes/header-apply.php');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                <button class="accordion-button collapsed bg-white" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
                                     <span class="bullet"></span>
@@ -843,7 +819,7 @@ $this->load->view('includes/header-apply.php');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                <button class="accordion-button collapsed bg-white" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                     aria-controls="collapseFive">
                                     <span class="bullet"></span>
@@ -859,7 +835,7 @@ $this->load->view('includes/header-apply.php');
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed bg-light-sky" type="button"
+                                <button class="accordion-button collapsed bg-white" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                                     aria-controls="collapseSix">
                                     <span class="bullet"></span>
@@ -886,7 +862,7 @@ $this->load->view('includes/header-apply.php');
         <p class="mb-0 text-white"><strong>Important Note: </strong><small class="fa-xs">We ask our customers to make payments ONLY on our website <a class="text-white"
                     href="<?php echo COMPANY_SITE; ?>">indiafinpro.com</a> and NOT through any other source, directly or indirectly.</small></p>
 
-        <p class="mb-0 text-white"><strong>Pre-application NOTE: </strong><small class="fa-xs">Users are advised to read our terms and conditions and policies before proceeding/applying/registration.</small>
+        <p class="mb-0 text-white"><strong>Pre-application Note: </strong><small class="fa-xs">Users are advised to read our terms and conditions and policies before proceeding/applying/registration.</small>
         </p>
         <p class="mb-0 text-white"><strong>Disclosure:</strong><small class="fa-xs"> Loan tenure minimum 6 months &
                 maximum 60 months; Maximum APR: 34%

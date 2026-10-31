@@ -53,17 +53,16 @@
 	                        <li><a href="javascript:;" onclick="goToMenu('aboutus')">About Us</a></li>
 	                        <li><a href="javascript:;" onclick="goToMenu('contactus')">Contact</a></li>
 	                        <li><a href="<?php echo site_url('faqs'); ?>">FAQs</a></li>
-							<li><a href="#">Blog</a></li>
+							
 	                    </ul>
 	                </div>
 	                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-15 mb-md-0">
 	                    <h6>Useful Links</h6>
 	                    <ul class="footer-links">
 	                        <li><a href="<?php echo site_url('privacy-policy'); ?>">Privacy Policy</a></li>
-							  <li><a href="<?php echo site_url('terms-conditions'); ?>">Terms &amp; Conditions</a></li>
-							  			  <li><a href="#">Refund Policy</a></li>
-											<li><a href="<?php echo site_url('disclaimer'); ?>">Disclaimer</a></li>
-	                        <li><a href="#">Terms of Use</a>
+							<li><a href="<?php echo site_url('terms-conditions'); ?>">Terms &amp; Conditions</a></li>
+							<li><a href="<?php echo site_url('refund-policy'); ?>">Refund Policy</a></li>
+							<li><a href="<?php echo site_url('disclaimer'); ?>">Disclaimer</a></li>
 	                        </li>
 	                      
 	                    </ul>
@@ -99,7 +98,8 @@
 	            </div>
 	        </div>
 	    </div>
-	    <div class="sec-footer pt-0 pb-25 py-md-20 py-lg-35">
+		<hr style="color:rgba(255, 255, 255, 0.15) !important">
+	    <div class="sec-footer pt-0 pb-10 py-md-10 py-lg-10">
 	        <div class="container">
 	            <div class="row align-items-center">
 	                <div class="col-12 col-md-12 text-center">

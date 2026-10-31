@@ -131,14 +131,12 @@ $this->load->view('includes/header-apply.php');
                                         placeholder="State*" required>
                                     <div class="help-block font-small-3"></div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-end">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-25 text-end mt-15">
                                     <button type="submit" class="btn btn-green btn-sm w-100" id="formsubmit1"><span
                                             class="btn-text">Check Your Eligibility <i
                                                 class="fa-solid fa-arrow-right"></i></span></button>
                                 </div>
 
-                                <span class="text-center 
-    text-success fa-xs fw-normal text-uppercase mb-30 mt-20">Our Lending Partners</span>
                                 <p class="text-center mb-20 text-dark fa-xs fw-bold">Meet Our NBFC Partners</p>
                                 <div class="lending-bank-slider">
                                     <?php foreach ($banklist as $row) { ?>

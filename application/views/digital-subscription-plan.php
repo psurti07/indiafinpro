@@ -98,7 +98,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
                                             <div class="block-holder p-20 subscription-card">
                                                 <div class="d-flex align-items-start justify-content-between mb-10">
                                                     <div class="plan-details border-0 p-0">
-                                                        <span class="fw-bold text-dark mb-0">Self Apply Plan</span>
+                                                        <span class="fw-bold text-dark mb-0">Subscription Plan</span>
 
                                                     </div>
                                                     <div>
