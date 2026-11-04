@@ -132,7 +132,7 @@
 </div>
                 <div class="header-right">
                 <a class="btn btn-green btn-sm mobile-btn"
-                    href="<?php echo site_url('onlineprocess/applynow'); ?>"><span class="btn-text">+ Apply
+                    href="<?php echo site_url('onlineprocess/applynow'); ?>"><span class="btn-text"> Apply
                         Now</span></a>
                 <div class="main-nav ms-10 header-menu">
                     <a href="<?php echo site_url(); ?>" class="nav-opener d-flex d-lg-none"><span></span></a>
@@ -158,7 +158,7 @@
                 <div>
 
                     <a class="btn btn-green desktop-btn btn-sm"
-                        href="<?php echo site_url('onlineprocess/applynow'); ?>"><span class="btn-text">+ Apply
+                        href="<?php echo site_url('onlineprocess/applynow'); ?>"><span class="btn-text"> Apply
                             Now</span></a>
 
                 </div>

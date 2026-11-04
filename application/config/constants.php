@@ -91,14 +91,14 @@ defined('EXIT__AUTO_MAX') or define('EXIT__AUTO_MAX', 125); // highest automatic
 
 // Project details
 define('PROJECT_NAME', 'indiafinpro');
-define('COMPANY_NAME', '#');
+define('COMPANY_NAME', 'Indiafinpro Consultancy Services');
 define('COMPANY_EMAIL', 'info@indiafinpro.com');
-define('COMPANY_MOBILE', '#');
+define('COMPANY_MOBILE', '+91 73837-92421');
 define('COMPANY_CIN', '#');
 define('COMPANY_GST', '#');
 define('COMPANY_SITE', 'https://indiafinpro.com');
 define('PARTNER_SITE', '#');
-define('COMPANY_ADDRESS', '#');
+define('COMPANY_ADDRESS', '20 Shahjand Society, Chikuvadi, chor rasta, Katargam, Surat, Gujarat 395004');
 define('COMPANY_TIMING', '10 AM to 5 PM (Monday to Saturday)');
 
 define('SECURE_SALT', 'verloopweb');

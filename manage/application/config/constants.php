@@ -90,14 +90,14 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 // Project details
 define('PROJECT_NAME', 'indiafinpro');
-define('COMPANY_NAME', 'Shree Ram Finhub Solutions LLp');
+define('COMPANY_NAME', 'Indiafinpro Consultancy Services');
 define('COMPANY_EMAIL', 'info@indiafinproo.com');
-define('COMPANY_MOBILE', '+91-95127-63889');
-define('COMPANY_CIN', 'ACP-2746');
-define('COMPANY_GST', '24ACKFA3022A1Z8');
+define('COMPANY_MOBILE', '+91 73837-92421');
+define('COMPANY_CIN', '#');
+define('COMPANY_GST', '#');
 define('COMPANY_SITE', 'https://indiafinpro.com');
-define('PARTNER_SITE', 'https://site.indiafinpro.com');
-define('COMPANY_ADDRESS', '1st Flr, Plot 29, Parvati Nagar CHS2, Katargam Road, Katargam, Surat, Gujarat - 395004');
+define('PARTNER_SITE', '#');
+define('COMPANY_ADDRESS', '20 Shahjand Society, Chikuvadi, chor rasta, Katargam, Surat, Gujarat 395004');
 define('COMPANY_TIMING', '10 AM to 5 PM (Monday to Saturday)');
 
 define('SECURE_SALT', 'verloopweb');

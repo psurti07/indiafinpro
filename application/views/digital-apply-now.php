@@ -38,7 +38,7 @@ $this->load->view('includes/header-apply.php');
 
                             <div class="process-step-item">
                                 <div class="process-step-number">2</div>
-                                <span>Personal</span>
+                                <span>Personal Details</span>
                             </div>
 
                             <div class="process-step-item">
@@ -54,14 +54,13 @@ $this->load->view('includes/header-apply.php');
 
                         <div class="account-box-frame text-dark bg-white pt-10 ">
                             <div class="text-center">
-                                <h6 class="text-black">Apply For <div class="range d-inline-block">
+                                <h6 class="text-black">Explore Personal Loans up to <div class="range d-inline-block">
                                         <div class="">
-                                            <span class="text-success fs-5 text-color-blue">₹10 Lakhs</span> Loan in
-                                            Minutes!
+                                            <span class="text-success fs-5 text-color-blue">₹10 Lakhs</span>
                                         </div>
                                     </div>
                                 </h6>
-                                <small>Start off the process with just a few details</small>
+                                <small>Start your application by sharing a few details.</small>
                             </div>
                             <?php echo form_open('onlineprocess/sendotpCode', array('id' => 'submitForm1', 'class' => 'contac-form mb-0', 'novalidate' => 'novalidate')); ?>
                             <div class="row">
@@ -168,7 +167,7 @@ $this->load->view('includes/header-apply.php');
 
                             <div class="process-step-item">
                                 <div class="process-step-number">2</div>
-                                <span>Personal</span>
+                                <span>Personal Details</span>
                             </div>
 
                             <div class="process-step-item">
@@ -280,7 +279,7 @@ $this->load->view('includes/header-apply.php');
 
                             <div class="process-step-item">
                                 <div class="process-step-number">2</div>
-                                <span>Personal</span>
+                                <span>Personal Details</span>
                             </div>
 
                             <div class="process-step-item">
