@@ -199,7 +199,8 @@ Class Infopage extends CI_Controller {
 		$this->load->model('Site_General_Model');
 		$content = $this->Site_General_Model->customerwelcomeemailtemplate($maildata);
 
-		
+		echo $content;
+		die;
 		if ($content != '') {
 			 $maildata = array(
 					'fullname' => $maildata['fullname'],
