@@ -1,0 +1,133 @@
+/* Footer Theme 5 Styles */
+.footer-theme-3 {
+    font-family: $font-family-epilogue;
+    color: $black;
+
+    .pri-footer {
+        position: relative;
+        overflow: visible;
+        border-top: 1px solid #eaeaea;
+
+        .logo {
+            width: 175px;
+            display: block;
+            margin: 0;
+
+            img {
+                @include size(100%, auto);
+                
+                display: block;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            min-width: 206px;
+            border-radius: 10px;
+
+            @include media-breakpoint-up(md) {
+                width: inherit;
+            }
+
+            &:before {
+                border-radius: 10px;
+            }
+        }
+
+        .contact-info {
+            max-width: 370px;
+            width: 100%;
+            line-height: 1.5;
+
+            @include media-breakpoint-up(md) {
+                margin-left: auto;
+            }
+        }
+
+        .phone-number {
+            margin: 0 0 20px;
+
+            .number {
+                color: $black;
+                display: inline-block;
+                border-bottom: 2px solid $brown;
+                line-height: 1;
+
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+
+        .address-info {
+            display: flex;
+            align-items: center;
+
+            i {
+                margin: 0 10px 0 0;
+                font-size: 20px;
+                line-height: 1;
+                position: relative;
+                top: -2px;
+            }
+        }
+
+        .footer-info {
+            p {
+                @include media-breakpoint-up(xl) {
+                    margin: 0 0 15px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .sec-footer {
+        font-weight: 400;
+        color: $black;
+
+        @include media-breakpoint-up(md) {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 16px;
+        }
+
+        p {
+            .site-link {
+                font-weight: 600;
+                color: currentColor;
+                border-bottom: 1px solid rgba(0,0,0,0.55);
+
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+    }
+
+    .social-networks {
+        li {
+            a {
+                color: currentColor;
+
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+
+        &.no-bg {
+            li {
+                &:before {
+                    background: currentColor;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,141 @@
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 576px,
+	'tablet': 768px,
+	'desktop': 992px,
+	'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+
+@import "vendors/bootstrap/functions";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/icomoon';
+@import 'base/reset';
+
+@import 'layout/header';
+@import 'layout/common';
+@import 'layout/footer';
+
+// Theme 1 Styles
+@import 'layout/header-theme-1';
+@import 'layout/visual-theme-1';
+@import 'layout/common-theme-1';
+@import 'layout/footer-theme-1';
+
+// Theme 2 Styles
+@import 'layout/header-theme-2';
+@import 'layout/visual-theme-2';
+@import 'layout/common-theme-2';
+@import 'layout/footer-theme-2';
+
+// Theme 3 Styles
+@import 'layout/header-theme-3';
+@import 'layout/visual-theme-3';
+@import 'layout/common-theme-3';
+@import 'layout/footer-theme-3';
+
+// Theme 4 Styles
+@import 'layout/header-theme-4';
+@import 'layout/visual-theme-4';
+@import 'layout/common-theme-4';
+@import 'layout/footer-theme-4';
+
+// Theme 5 Styles
+@import 'layout/header-theme-5';
+@import 'layout/visual-theme-5';
+@import 'layout/common-theme-5';
+@import 'layout/footer-theme-5';
+
+// Theme 6 Styles
+@import 'layout/header-theme-6';
+@import 'layout/visual-theme-6';
+@import 'layout/common-theme-6';
+@import 'layout/footer-theme-6';
+
+// Theme 7 Styles
+@import 'layout/header-theme-7';
+@import 'layout/visual-theme-7';
+@import 'layout/common-theme-7';
+@import 'layout/footer-theme-7';
+
+// Theme 8 Styles
+@import 'layout/header-theme-8';
+@import 'layout/visual-theme-8';
+@import 'layout/common-theme-8';
+@import 'layout/footer-theme-8';
+
+// Theme 9 Styles
+@import 'layout/header-theme-9';
+@import 'layout/visual-theme-9';
+@import 'layout/common-theme-9';
+@import 'layout/footer-theme-9';
+
+// Theme 10 Styles
+@import 'layout/header-theme-10';
+@import 'layout/visual-theme-10';
+@import 'layout/common-theme-10';
+@import 'layout/footer-theme-10';
+
+// Theme 11 Styles
+@import 'layout/header-theme-11';
+@import 'layout/visual-theme-11';
+@import 'layout/common-theme-11';
+@import 'layout/footer-theme-11';
+
+// Theme 12 Styles
+@import 'layout/header-theme-12';
+@import 'layout/visual-theme-12';
+@import 'layout/common-theme-12';
+@import 'layout/footer-theme-12';
+
+// Theme 13 Styles
+@import 'layout/header-theme-13';
+@import 'layout/visual-theme-13';
+@import 'layout/common-theme-13';
+@import 'layout/footer-theme-13';
+
+// Theme 14 Styles
+@import 'layout/header-theme-14';
+@import 'layout/visual-theme-14';
+@import 'layout/common-theme-14';
+@import 'layout/footer-theme-14';
+
+// Theme 15 Styles
+@import 'layout/header-theme-15';
+@import 'layout/visual-theme-15';
+@import 'layout/common-theme-15';
+@import 'layout/footer-theme-15';
+
+// Theme 16 Styles
+@import 'layout/header-theme-16';
+@import 'layout/visual-theme-16';
+@import 'layout/common-theme-16';
+@import 'layout/footer-theme-16';
+
+// Theme 17 Styles
+@import 'layout/header-theme-17';
+@import 'layout/visual-theme-17';
+@import 'layout/common-theme-17';
+@import 'layout/footer-theme-17';
+
+// Theme 18 Styles
+@import 'layout/header-theme-18';

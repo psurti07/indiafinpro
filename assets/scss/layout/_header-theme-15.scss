@@ -1,0 +1,157 @@
+.header-theme-15 {
+	background: $white;
+	
+	.btn {
+		color: $white;
+		background: $royal-blue;
+
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($royal-blue, 10%);
+		}
+	}
+
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $black;
+			.nav-active & {
+				background: $black;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $royal-blue;
+			}
+		}
+	}
+
+	.nav-drop {
+		@include media-breakpoint-down(lg) {
+			background: $white;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+		}
+	}
+
+	.navigation {
+		> li {
+			> a {
+				&:not(.btn) {
+					color: $black;
+					@include media-breakpoint-up(lg) {
+						color: $black;
+					}
+
+					&:hover {
+						color: $royal-blue;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $royal-blue;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $royal-blue;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $royal-blue;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			li {
+				&.active {
+					> a {
+						color: $royal-blue;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $royal-blue;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				color: $black;
+
+				&:hover {
+					color: $white;
+					background: $royal-blue;
+				}
+			}
+		}
+	}
+}
+
+.sticky-header {
+	.header-theme-15 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $royal-blue;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $royal-blue;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $royal-blue;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $royal-blue;
+					}
+				}
+			}
+		}
+	}
+}

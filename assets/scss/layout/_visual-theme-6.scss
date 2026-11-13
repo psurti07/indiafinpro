@@ -1,0 +1,94 @@
+.visal-theme-6 {
+	font-family: $font-family-epilogue;
+	background-color: $white;
+	background-image: url('../images/vawe.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	.container {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.visual-textbox {
+		margin: 0;
+		padding-top: 0;
+		max-width: inherit;
+
+		@include media-breakpoint-up(xxl) {
+			padding-top: 180px;
+		}
+
+		h1, .h1 {
+			font-weight: 800;
+			line-height: 1.2;
+			padding-bottom: 0;
+			font-family: $font-family-epilogue;
+
+			@include media-breakpoint-up(lg) {
+				margin: 0 0 26px;
+			}
+			@include media-breakpoint-up(xxl) {
+				font-size: 60px;
+			}
+
+			@include media-breakpoint-up(xxxl) {
+				font-size: 75px;
+				margin: 0 0 30px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		p {
+			margin: 0 0 15px;
+			@include media-breakpoint-up(xxxl) {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.buttons-block {
+		.btn:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+	.btn {
+		color: $black;
+		background: $texas-rose;
+		span {
+			z-index: 2;
+			position: relative;
+		}
+		&:before {
+			z-index: 1;
+			background: darken($texas-rose, 10%);
+		}
+	}
+	.btn-gray {
+		background: $concrete;
+		&:before {
+			background: darken($concrete, 10%);
+		}
+	}
+
+	.image-holder {
+		overflow: hidden;
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.text-bold-800 {
+	font-weight: 800;
+}
+
+.invoice-logo {
+	width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dont-break-out {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.help-block ul {
+	margin-bottom: 0;
+}
+
+.bg-gradient-primary-light {
+  background: linear-gradient(0deg, #a91f24 0%, #2c1807 100%)
+}
+
+.bg-primary-light {
+  background-color: #ffebec
+}
+.green-dark{
+	color: #41d285;
+}
+.bg-green-dark{
+	background-color: #20ca6f;
+}
+.bg-green-light{
+	background-color: rgb(239,246,243);
+}

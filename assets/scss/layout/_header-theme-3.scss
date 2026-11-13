@@ -1,0 +1,210 @@
+.header-theme-3 {
+    background: $white;
+
+    + .visual-block,
+    + .subvisual-block {
+        margin-top: 80px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 91px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 94px;
+        }
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $brown;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $brown;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $brown;
+        }
+
+        .nav-opener,
+        .nav-close {
+            &:before,
+            &:after,
+            span {
+                background: $lt-brown;
+            }
+
+            &:hover {
+                &:before,
+                &:after,
+                span {
+                    background: $lt-brown;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        > li {
+
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $black;
+                    }
+
+                    &:hover {
+                        color: $brown;
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
+                    }
+                }
+
+                &.btn {
+                    @include media-breakpoint-down(lg) {
+                        border: 2px solid $lt-brown;
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
+                }
+            }
+        }
+
+        .dropdown-menu {
+            font-size: 14px;
+
+            li {
+                &.active {
+                    > a {
+                        color: $brown;
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+
+                            @include media-breakpoint-down(lg) {
+                                color: $lt-brown;
+                            }
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $brown;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-3 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $black;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $brown;
+                        }
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $brown;
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+Class Manage_Product_Model extends CI_Model {
+
+	public function getfilterproduct(){
+		
+		$prolist = $reslist = array();
+		
+		$query = $this->db->order_by('id asc')
+				->get('products')
+				->result();
+
+		if(count($query) > 0) {
+			foreach($query as $row) {
+				$reslist['id'] = $row->id;
+				$reslist['productname'] = $row->productname;
+				$reslist['productslug'] = $row->productslug;
+
+				if($row->inOffer == 1) {
+					$reslist['productprice'] = $row->offeramount;
+				}
+				else {
+					$reslist['productprice'] = $row->amount;
+				}
+
+				$prolist[] = $reslist;
+			}
+		}
+
+				
+		return $prolist;      
+	}
+
+	public function getproductdetails($slug = ''){
+		
+		$query = $this->db->where('productslug', $slug)
+				->get('products')
+				->row();
+
+				
+		return $query;
+	}
+
+}
+?>

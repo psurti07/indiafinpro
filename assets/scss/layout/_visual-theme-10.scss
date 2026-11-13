@@ -1,0 +1,256 @@
+.visal-theme-10 {
+	background-color: $peach-cream;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom left;
+	font-family: $font-family-DMSans;
+
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	.container {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.visual-textbox {
+		margin: 0;
+		max-width: inherit;
+
+		@include media-breakpoint-up(xxl) {
+			padding-top: 76px;
+		}
+
+		h1, .h1 {
+			font-weight: 800;
+			line-height: 1.2;
+			padding-bottom: 0;
+			font-family: $font-family-epilogue;
+
+			@include media-breakpoint-up(xxl) {
+				font-size: 60px;
+			}
+
+			@include media-breakpoint-up(xxxl) {
+				font-size: 75px;
+				margin: 0 0 30px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		p {
+			color: $tundora;
+
+			@include media-breakpoint-up(xxxl) {
+				font-size: 22px;
+			}
+		}
+
+		h1, .h1, p {
+			@include media-breakpoint-up(lg) {
+				max-width: 90%;
+			}
+			@include media-breakpoint-up(xxl) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.image-holder {
+		overflow: hidden;
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.form-search {
+		overflow: hidden;
+		margin-bottom: 30px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 40px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			padding: 10px;
+			background: $white;
+			border-radius: 15px;
+			max-width: inherit;
+			box-shadow: 0 3px 51px 0 rgba(0, 0, 0, 0.14);
+		}
+		@include media-breakpoint-up(xl) {
+			border-radius: 20px;
+		}
+		@include media-breakpoint-up(xxl) {
+			border-radius: 30px;
+			margin-bottom: 85px;
+		}
+	
+		.fields-holder {
+			padding: 13px 0;
+			
+			@include media-breakpoint-down(md) {
+				padding: 0;
+				background: transparent !important;
+			}
+	
+			@include media-breakpoint-up(md) {
+				border-radius: 10px;
+				margin: 0 0 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin: 0;
+				flex-grow: 1;
+				min-width: 0;
+			}
+		}
+		
+		.form-group {
+			padding: 8px 20px;
+			border-radius: 10px;
+			@include media-breakpoint-up(md) {
+				width: 100%;
+				padding: 0 25px;
+				border-radius: 0;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				width: 38%;
+			}
+
+			&:first-child {
+				@include media-breakpoint-up(xxl) {
+					width: 63%;
+				}
+			}
+	
+			+ .form-group {
+				@include media-breakpoint-up(md) {
+					border-left: 1px solid #666;
+				}
+			}
+		}
+		
+		label {
+			color: $black;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.form-control {
+			padding: 6px 0;
+			font-size: 14px;
+	
+			&::placeholder {
+				color: #666;
+			}
+		}
+	
+		.btn {
+			color: $white;
+			display: flex;
+			font-size: 15px;
+			align-items: center;
+			border-radius: 10px;
+			justify-content: center;
+			background: $burning-orange;
+			@include media-breakpoint-up(lg) {
+				min-width: 140px;
+				border-radius: 15px;
+			}
+			@include media-breakpoint-up(xl) {
+				border-radius: 20px;
+			}
+			@include media-breakpoint-up(xxl) {
+				border-radius: 30px;
+				min-width: 157px;
+			}
+			i {
+				z-index: 2;
+				margin-right: 10px;
+				position: relative;
+			}
+
+			&:before {
+				border-radius: 10px;
+				background: darken($burning-orange, 10%);
+				@include media-breakpoint-up(lg) {
+					border-radius: 15px;
+				}
+				@include media-breakpoint-up(xl) {
+					border-radius: 20px;
+				}
+				@include media-breakpoint-up(xxl) {
+					border-radius: 30px;
+				}
+			}
+		}
+	}
+
+	.tags-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 -10px;
+		align-items: center;
+		li {
+			padding: 0 0 10px;
+			&:not(:last-child) {
+				margin-right: 7px;
+			}
+			a {
+				color: $black;
+				display: block;
+				font-size: 13px;
+				line-height: 1;
+				font-weight: 700;
+				border-radius: 18px;
+				padding: 11px 22px 10px;
+				background-color: $peach-cream;
+				border: 1px solid rgb(120, 120, 120);
+				&:hover {
+					color: $white;
+					background: $burning-orange;
+					border-color: $burning-orange;
+				}
+			}
+		}
+	}
+	.circle-image {
+		right: -14%;
+		bottom: -32%;
+		width: 550px;
+		height: 550px;
+		display: none;
+		overflow: hidden;
+		border-radius: 50%;
+		position: absolute;
+		background: $meteorite;
+		@include media-breakpoint-up(lg) {
+			display: block;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 700px;
+			height: 700px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			width: 917px;
+			height: 917px;
+		}
+		@include media('>=1400px') {
+			right: -8%;
+			bottom: -35%;
+		}
+
+	}
+}

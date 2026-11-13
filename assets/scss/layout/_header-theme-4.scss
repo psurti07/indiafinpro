@@ -1,0 +1,150 @@
+.header-theme-4 {
+	background: transparent;
+
+	.btn {
+		color: $white;
+		background: var(--purple-heart);
+
+		&:hover:before {
+			opacity: 0.5;
+			background: var(--navy-dark);
+		}
+	}
+	
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $white;
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: var(--purple-heart);
+			}
+		}
+	}
+
+	.nav-drop {
+		@include media-breakpoint-down(lg) {
+			background: var(--navy-dark);
+		}
+	}
+
+	.navigation {
+		> li {
+			> a {
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $white;
+					}
+
+					&:hover {
+						color: var(--purple-heart);
+					}
+				}
+
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: var(--purple-heart);
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: var(--purple-heart);
+				}
+			}
+
+			&.active {
+				> a {
+					color: var(--purple-heart);
+				}
+			}
+		}
+
+		.dropdown-menu {
+			li {
+				&.active {
+					> a {
+						color: var(--purple-heart);
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: var(--purple-heart);
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				&:hover {
+					background: var(--purple-heart);
+				}
+			}
+		}
+	}
+}
+
+.sticky-header {
+	.header-theme-4 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: var(--navy-dark);
+				}
+			}
+		}
+		
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: var(--navy-dark);
+						}
+
+						&:hover {
+							color: var(--purple-heart);
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: var(--purple-heart);
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: var(--purple-heart);
+					}
+				}
+
+				&.active {
+					> a {
+						color: var(--purple-heart);
+					}
+				}
+			}
+		}
+	}
+}

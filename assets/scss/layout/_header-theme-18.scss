@@ -1,0 +1,121 @@
+.header-theme-18 {
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $white;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $primary;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $blue-dark;
+        }
+    }
+
+    .navigation {
+        > li {
+            > a {
+                &:not(.btn) {
+                    color: $white;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $primary;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $primary;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                &.active {
+                    > a {
+                        color: $primary;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $primary;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-18 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $secondary;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $secondary;
+                }
+            }
+        }
+    }
+}

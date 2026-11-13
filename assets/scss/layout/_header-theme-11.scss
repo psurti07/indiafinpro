@@ -1,0 +1,150 @@
+.header-theme-11 {
+	.btn { 
+		color: $white;
+		background: $dark-yellow;
+
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($burning-orange, 10%);
+		}
+	}
+	
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $dark-yellow;
+			.nav-active & {
+				background: $white;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $dark-yellow;
+			}
+		}
+	}
+
+	.nav-drop {
+		@include media-breakpoint-down(lg) {
+			background: $meteorite;
+		}
+	}
+
+	.navigation {
+		> li {
+			> a {
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $white;
+					}
+
+					&:hover {
+						color: $dark-yellow;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $burning-orange;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $dark-yellow;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $dark-yellow;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			li {
+				&.active {
+					> a {
+						color: $dark-yellow;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $dark-yellow;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				&:hover {
+					background: $dark-yellow;
+				}
+			}
+		}
+	}
+}
+
+.sticky-header { 
+	.header-theme-11 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $burning-orange;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $burning-orange;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $burning-orange;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $burning-orange;
+					}
+				}
+			}
+
+		}
+	}
+}

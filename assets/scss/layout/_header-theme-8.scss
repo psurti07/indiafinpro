@@ -1,0 +1,148 @@
+.header-theme-8 {
+    background: $white;
+
+    + .visual-block,
+    + .subvisual-block {
+        margin-top: 80px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 91px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 94px;
+        }
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $orange;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $orange;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $black;
+        }
+    }
+
+    .navigation {
+        > li {
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $black;
+                    }
+
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $orange;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $orange;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                &.active {
+                    > a {
+                        color: $orange;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $orange;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $orange;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-8 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $black;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $orange;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $orange;
+                }
+            }
+        }
+    }
+}

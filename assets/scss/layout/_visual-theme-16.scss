@@ -1,0 +1,266 @@
+.visal-theme-16 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+	font-family: $font-family-DMSans;
+	position: relative;
+	padding-top: 100px;
+
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	&:before {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+		position: absolute;
+		background: rgba(3,18,56,0.7);
+	}
+
+	.container {
+		
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.visual-textbox {
+		margin: 0;
+		text-align:center;
+		max-width: inherit;
+
+		@include media-breakpoint-up(xxl) {
+			padding-top: 185px;
+		}
+
+		h1, .h1 {
+			color: $white;
+			font-size: 22px;
+			font-weight: 800;
+			line-height: 1.2;
+			margin: 0 0 30px;
+			padding-bottom: 0;
+			max-width: 100% !important;
+			font-family: 'DM Sans', sans-serif;
+
+			@include media-breakpoint-up(md) {
+				font-size: 40px;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				font-size: 60px;
+				margin: 0 0 60px;
+			}
+
+			@include media-breakpoint-up(xxxl) {
+				margin: 0 0 18px;
+				letter-spacing: 2.1px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		h5,.h5 {
+			font-size: 18px;
+			@include media-breakpoint-up(xxl) {
+				font-size: 22px;
+			}
+		}
+
+		p {
+			color: $white;
+			font-size: 14px;
+			margin: 0 0 25px;
+
+			@include media-breakpoint-up(md) {
+				font-size: 18px;
+			}
+			@include media-breakpoint-up(xxxl) {
+				font-size: 24px;
+				letter-spacing: 1px;
+				margin: 0 0 53px;
+			}
+		}
+	}
+
+	.form-search {
+		overflow: hidden;
+		margin-bottom: 40px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 40px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			padding: 0px;
+			background: $white;
+			border-radius: 40px;
+			max-width: inherit;
+			box-shadow: 0 3px 51px 0 rgba(0, 0, 0, 0.14);
+		}
+		@include media-breakpoint-up(xl) {
+			border-radius: 40px;
+		}
+		@include media-breakpoint-up(xxl) {
+			border-radius: 40px;
+			margin-bottom: 128px;
+		}
+	
+		.fields-holder {
+			padding: 9px 0;
+			
+			@include media-breakpoint-down(md) {
+				padding: 0;
+				background: transparent !important;
+			}
+	
+			@include media-breakpoint-up(md) {
+				border-radius: 10px;
+				margin: 0 0 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin: 0;
+				flex-grow: 1;
+				min-width: 0;
+			}
+		}
+		
+		.form-group {
+			padding: 8px 20px 8px 50px;
+			border-radius: 10px;
+			@include media-breakpoint-up(md) {
+				width: 100%;
+				padding: 8px 20px 8px 60px;
+				border-radius: 0;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				width: 38%;
+			}
+
+			&:first-child {
+				@include media-breakpoint-up(xxl) {
+					width: 63%;
+				}
+			}
+	
+			+ .form-group {
+				@include media-breakpoint-up(md) {
+					border-left: 1px solid #666;
+				}
+			}
+			.icon{
+				left: 20px;
+			}
+		}
+		
+		label {
+			color: $black;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		.form-control {
+			padding: 6px 0 6px 10px;
+			font-size: 14px;
+	
+			&::placeholder {
+				color: #000;
+			}
+		}
+		.select2-selection__placeholder{
+			color : $black !important;
+			font-size: 14px;
+		}
+	}
+
+	.quick_links {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		@include media-breakpoint-up(md) {
+			margin: 0 -5px;
+			display: flex;
+			align-items: center;
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin: 0 -46px;
+		}
+
+		li {
+			margin: 0 0 25px;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			@include media-breakpoint-up(md) {
+				padding: 0 5px;
+				width: 33.333333333%;
+				margin: 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 0 46px;
+			}
+
+			a {
+				display: flex;
+			}
+
+			.icon-holder {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 54px;
+				height: 54px;
+				flex-shrink: 0;
+				margin-right: 16px;
+				border-radius: 100%;
+				background: #232b42;
+
+				@include media-breakpoint-up(lg) {
+					width: 64px;
+					height: 64px;
+				}
+
+				img {
+					display: inline-block;
+					height: auto;
+					max-width: 100%;
+					filter:brightness(0) invert(1);
+				}
+			}
+
+			.text-holder {
+				flex-grow: 1;
+				text-align: left;
+
+				p {
+					margin: 0;
+					font-size: 16px;
+					letter-spacing: 0;
+					font-weight: 700;
+				}
+			}
+
+			.h5 {
+				display: block;
+				margin: 0 0 5px; 
+				color: #fff;
+			}
+		}
+	}
+}

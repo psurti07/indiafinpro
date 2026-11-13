@@ -1,0 +1,366 @@
+.header-theme-13 {
+	background: $deap-teal;
+	font-family: $font-family-DMSans;
+	@include media-breakpoint-up(md) {
+		padding: 28px 0 !important;
+	}
+	
+	.sticky-header & {
+		background: $holy;
+		@include media-breakpoint-up(md) {
+			padding: 7px 0 !important;
+		}
+	}
+	.top-bar {
+		margin-top: -8px;
+		padding-bottom: 26px;
+		transition: all 0.3s ease-in-out;
+		
+		.sticky-header & {
+			opacity: 0;
+			margin-top: -52px;
+		}
+
+		.contact-links {
+			display: flex;
+			color: $white;
+			margin-right: 70px;
+			align-items: center;
+			font: 400 15px/1 $font-family-DMSans;
+			li {
+				display: flex;
+				align-items: center;
+				&:not(:last-child) {
+					margin-right: 15px;
+					@include media-breakpoint-up(lg) {
+						margin-right: 30px;
+					}
+					@include media-breakpoint-up(xl) {
+						margin-right: 60px;
+					}
+				}
+			}
+			i {
+				color: $white;
+				line-height: 1;
+				font-size: 18px;
+				margin-right: 11px;
+			}
+			a {
+				color: $white;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+		.social-links-top {
+			font-size: 16px;
+			line-height: normal;
+
+			.list-inline-item {
+				padding-left: 0;
+				margin-left: 35px;
+
+				&:after {
+					display: none;
+				}
+			}
+
+			a {
+				color: $white;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+	.logo {
+		display: block;
+		flex: 0 0 178px;
+		@include size(178px, 43px);
+		transition: height 0.3s ease-in-out;
+
+		a {
+			display: block;
+			@include size(100%);
+			img {
+				@include size(100%, auto);
+			}
+		}
+	}
+	.btn {
+		color: $white;
+		padding: 8px 15px;
+		border-radius: 32px;
+		background: $green;
+		font-family: $font-family-DMSans;
+		@include media-breakpoint-up(lg) {
+			padding: 8px 15px;
+		}
+		@include media-breakpoint-up(xl) {
+			padding: 15px 40px;
+		}
+		&:before {
+			border-radius: 32px;
+		}
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($green, 10%);
+		}
+	}
+
+	.main-nav {
+		display: flex;
+
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+			justify-content: space-between;
+			.nav-drop {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				background: transparent;
+				justify-content: space-between;
+			}
+		}
+
+		.sticky-header & {
+			@include media-breakpoint-up(lg) {
+				padding: 7px 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 7px 0;
+			}
+		}
+	}
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $white;
+			.nav-active & {
+				background: $white;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $green;
+			}
+		}
+	}
+
+	.nav-drop {
+		background: $holy;
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+			padding-left: 30px;
+		}
+		@include media-breakpoint-up(xl) {
+			padding-left: 80px;
+		}
+		@include media-breakpoint-up(xxl) {
+			width: 100%;
+			padding-left: 155px;
+		}
+	}
+
+	.navigation {
+		padding-bottom: 30px;
+		font-family: $font-family-DMSans;
+		@include media-breakpoint-up(lg) {
+			font-size: 15px;
+			padding-bottom: 0;
+		}
+		> li {
+			@include media-breakpoint-up(lg) {
+				padding: 0;
+			}
+			&:not(:last-child) {
+				margin-right: 10px;
+				@include media-breakpoint-up(lg) {
+					margin-right: 24px;
+				}
+				@include media-breakpoint-up(xl) {
+					margin-right: 30px;
+				}
+			}
+			> a {
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $white;
+					}
+
+					&:hover {
+						color: $green;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $green;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $green;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $green;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			font-size: 14px;
+
+			li {
+				&.active {
+					> a {
+						color: $green;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $green;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				&:hover {
+					background: $green;
+				}
+			}
+		}
+	}
+	.user-box {
+		display: flex;
+		padding: 0 30px;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;
+			justify-content: flex-end;
+		}
+		
+		.user-link {
+			display: flex;
+			margin-right: 14px;
+			align-items: center;
+			&:hover {
+				.icon {
+					background: darken($elephent, 10%);
+				}
+			}
+			.icon {
+				display: flex;
+				flex-shrink: 0;
+				border-radius: 50%;
+				@include size(40px);
+				align-items: center;
+				background: $elephent;
+				justify-content: center;
+			}
+		}
+		.btn {
+			font-size: 16px;
+			background: $rain-forst;
+			@include media-breakpoint-down(lg) {
+				width: 100%;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+			}
+		}
+	}
+	.menu-link {
+		display: flex;
+		font-size: 18px;
+		border-radius: 50%;
+		@include size(40px);
+		align-items: center;
+		background: $gallery;
+		justify-content: center;
+		transition: all ease-in-out 0.3s;
+		&:hover {
+			background: $burning-orange;
+			img {
+				filter: grayscale(0) invert(0);
+			}
+		}
+		img {
+			width: 15px;
+			filter: grayscale(1) invert(1);
+			transition: all ease-in-out 0.3s;
+		}
+	}
+}
+
+.sticky-header {
+	.header-theme-13 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $white;
+				}
+			}
+		}
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $white;
+						}
+
+						&:hover {
+							color: $green;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $green;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $green;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $green;
+					}
+				}
+			}
+
+		}
+	}
+}

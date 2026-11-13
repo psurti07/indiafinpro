@@ -1,0 +1,133 @@
+.header-theme-16 {
+    .sticky-header & {
+        background: #010a1f;
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: #db3478;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: #db3478;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: #010a1f;
+        }
+    }
+
+    .navigation {
+        > li {
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $white;
+                    }
+
+                    &:hover {
+                        color: #db3478;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: #db3478;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: #db3478;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: #db3478;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                &.active {
+                    > a {
+                        color: #db3478;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: #db3478;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: #db3478;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-16 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: #db3478;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: #db3478;
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: #db3478;
+                }
+            }
+        }
+    }
+}
