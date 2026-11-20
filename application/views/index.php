@@ -12,15 +12,15 @@ $this->load->view('includes/header');
                         <span class="text-white limited-offer py-5 px-10 rounded-pill mb-3 d-inline-block fa-xs mb-10"><i
                                 class="fa fa-bolt me-5"></i><small>PERSONAL LOAN APPLICATION SUPPORT</small></span>
 
-                        <h1 class="text-light">Explore Personal Loan Options <br>with <span
+                        <h1 class="text-light">Explore Personal Loan Consultation <br>with <span
                                 style="color:#8FB8FF">IndiaFinPro</span>
                         </h1>
-                        <p class="text-light">Get guidance on loan options, application steps and required documents.
+                        <p class="text-light">Get Consultation on loan options, application steps and required documents.
                         </p>
 
                         <div>
                             <a href="<?php echo site_url('onlineprocess/applynow'); ?>"
-                                class="btn btn-green btn-sm"><span class="btn-text">Apply Now <img
+                                class="btn btn-green btn-sm"><span class="btn-text">Get Consultation <img
                                         src="<?php echo base_url('assets/images/icons/arrow-right.png'); ?>"
                                         alt="Video Image"></span></a>
                         </div>
@@ -250,7 +250,7 @@ $this->load->view('includes/header');
         </div>
         </div>
     </section>
-
+<!--
     <section class="section section-theme-5 how-work-block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60"
         style="background: rgba(5, 11, 31, 1);" id="emi-calculator">
         <div class="container">
@@ -282,7 +282,7 @@ $this->load->view('includes/header');
             </div>
         </div>
     </section>
-
+-->
         <section
             class="section section-theme-9 featured_Jobs_Block pt-60 pt-md-60 pt-xl-100 pb-60 pb-xl-100 pb-md-60 bg-light-sky"
             id="testimonial">
